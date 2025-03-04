@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombres</ion-label>
+      <ion-input type="text" formControlName="firstName" [ngClass]="{'error-input': firstName?.invalid && firstName?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="firstName?.invalid && firstName?.touched">Campo requerido</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input type="text" formControlName="lastName" [ngClass]="{'error-input': lastName?.invalid && lastName?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="lastName?.invalid && lastName?.touched">Campo requerido</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email" [ngClass]="{'error-input': email?.invalid && email?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="email?.invalid && email?.touched">Correo inválido</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" [ngClass]="{'error-input': password?.invalid && password?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="password?.invalid && password?.touched">Campo requerido</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Número de identidad</ion-label>
+      <ion-input type="text" formControlName="identityNumber" [ngClass]="{'error-input': identityNumber?.invalid && identityNumber?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="identityNumber?.invalid && identityNumber?.touched">Mínimo 13 dígitos numéricos</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Número de teléfono</ion-label>
+      <ion-input type="text" formControlName="phoneNumber" [ngClass]="{'error-input': phoneNumber?.invalid && phoneNumber?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="phoneNumber?.invalid && phoneNumber?.touched">Mínimo 8 dígitos numéricos</ion-text>
+    </ion-item>
+
+    <ion-button type="submit" expand="full" [disabled]="!registerForm.valid">Registrar</ion-button>
+  </form>
+</ion-content>

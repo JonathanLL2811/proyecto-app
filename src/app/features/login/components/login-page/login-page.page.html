@@ -1,13 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>login-page</ion-title>
+    <ion-title>Inicio de Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login-page</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email" [ngClass]="{'error-input': email?.invalid && email?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="email?.invalid && email?.touched">Correo inválido</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" [ngClass]="{'error-input': password?.invalid && password?.touched}"></ion-input>
+      <ion-text color="danger" *ngIf="password?.invalid && password?.touched">Campo requerido</ion-text>
+    </ion-item>
+
+    <ion-button type="submit" expand="full" [disabled]="!loginForm.valid">Iniciar Sesión</ion-button>
+  </form>
 </ion-content>

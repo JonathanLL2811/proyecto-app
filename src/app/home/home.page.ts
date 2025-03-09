@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
-import { RouterModule } from '@angular/router'; //Importa el RouterModule
+import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router'; // Importa Router
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  styleUrls: ['home.page.css'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, RouterModule], //Añade IonButton y RouterModule a imports
+  imports: [IonicModule],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private router: Router) {} // Inyecta Router
+
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
 }

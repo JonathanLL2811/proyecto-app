@@ -1,25 +1,16 @@
 import {
+  AppCheckInstances,
   AuthInstances
-} from "./chunk-IR5QCW2F.js";
-import {
-  AppCheckInstances
-} from "./chunk-E2R7PNYF.js";
-import "./chunk-DIYZLUMN.js";
-import {
-  FirebaseApp,
-  FirebaseApps,
-  VERSION,
-  ɵAngularFireSchedulers,
-  ɵgetAllInstancesOf,
-  ɵgetDefaultInstanceOf,
-  ɵzoneWrap
-} from "./chunk-PDZYZDBO.js";
+} from "./chunk-AA777JYB.js";
 import {
   Component,
+  FirebaseApp,
+  FirebaseApps,
   FirebaseError,
   LogLevel,
   Logger,
   SDK_VERSION,
+  VERSION,
   _getProvider,
   _isFirebaseServerApp,
   _registerComponent,
@@ -32,9 +23,13 @@ import {
   getUA,
   isIndexedDBAvailable,
   isSafari,
-  registerVersion
-} from "./chunk-D34DVMXN.js";
-import "./chunk-4GFTN2P2.js";
+  registerVersion,
+  ɵAngularFireSchedulers,
+  ɵgetAllInstancesOf,
+  ɵgetDefaultInstanceOf,
+  ɵzoneWrap
+} from "./chunk-HK6ZQWY5.js";
+import "./chunk-TTJ53AKY.js";
 import {
   InjectionToken,
   Injector,
@@ -57,12 +52,13 @@ import {
   timer,
   ɵɵdefineInjector,
   ɵɵdefineNgModule
-} from "./chunk-FPGELOXR.js";
-import "./chunk-S3YC363S.js";
+} from "./chunk-65I7I67F.js";
+import "./chunk-N25OJVE5.js";
 import {
   __async,
+  __publicField,
   __superGet
-} from "./chunk-4VWZEZJW.js";
+} from "./chunk-UQIXM5CJ.js";
 
 // node_modules/@firebase/webchannel-wrapper/dist/bloom-blob/esm/bloom_blob_es2018.js
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
@@ -18486,20 +18482,21 @@ var DEFAULT_FIRESTORE_INSTANCE_PROVIDER = {
   useFactory: defaultFirestoreInstanceFactory,
   deps: [[new Optional(), PROVIDED_FIRESTORE_INSTANCES], FirebaseApp]
 };
-var FirestoreModule = class _FirestoreModule {
+var _FirestoreModule = class _FirestoreModule {
   constructor() {
     registerVersion("angularfire", VERSION.full, "fst");
   }
-  static ɵfac = function FirestoreModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _FirestoreModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _FirestoreModule
-  });
-  static ɵinj = ɵɵdefineInjector({
-    providers: [DEFAULT_FIRESTORE_INSTANCE_PROVIDER, FIRESTORE_INSTANCES_PROVIDER]
-  });
 };
+__publicField(_FirestoreModule, "ɵfac", function FirestoreModule_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _FirestoreModule)();
+});
+__publicField(_FirestoreModule, "ɵmod", ɵɵdefineNgModule({
+  type: _FirestoreModule
+}));
+__publicField(_FirestoreModule, "ɵinj", ɵɵdefineInjector({
+  providers: [DEFAULT_FIRESTORE_INSTANCE_PROVIDER, FIRESTORE_INSTANCES_PROVIDER]
+}));
+var FirestoreModule = _FirestoreModule;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FirestoreModule, [{
     type: NgModule,

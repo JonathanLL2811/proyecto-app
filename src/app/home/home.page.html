@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Página Principal
+      Bienvenido
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,13 +9,14 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Página Principal</ion-title>
+      <ion-title size="large">Bienvenido</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>¡Bienvenido a la aplicación!</strong>
-    <p>Explora la aplicación y descubre todas sus funcionalidades.</p>
-    <ion-button routerLink="/register-page">Ir a Registro</ion-button>
+    <strong>¡Bienvenido a tarea7!</strong>
+    <p>Revisa tu consola de Firebase para verificar que la autenticación y el nuevo registro se hayan realizado correctamente.</p>
   </div>
+
+  <ion-button expand="full" (click)="navigateToLogin()">Iniciar sesión</ion-button>
 </ion-content>

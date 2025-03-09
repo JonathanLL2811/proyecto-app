@@ -1,21 +1,24 @@
 import { Routes } from '@angular/router';
+import { LoginComponent } from '../app/login/login.component';
+import { RegisterComponent } from '../app/register/register.component';
+import { HomePage } from './home/home.page';
 
 export const routes: Routes = [
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    component: HomePage,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
   },
   {
     path: '',
-    redirectTo: 'login-page',
+    redirectTo: 'login',
     pathMatch: 'full',
-  },
-  {
-    path: 'register-page',
-    loadComponent: () => import('./features/register/components/register-page/register-page.page').then(m => m.RegisterPageComponent)
-  },
-  {
-    path: 'login-page',
-    loadComponent: () => import('./features/login/components/login-page/login-page.page').then(m => m.LoginPageComponent)
   },
 ];

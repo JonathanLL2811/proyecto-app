@@ -1,16 +1,9 @@
 import {
-  MENU_BACK_BUTTON_PRIORITY,
-  OVERLAY_BACK_BUTTON_PRIORITY,
-  shouldUseCloseWatcher
-} from "./chunk-3EERUA7U.js";
+  startFocusVisible
+} from "./chunk-7Q5HCUSL.js";
 import {
   isRTL
 } from "./chunk-EUT5B6DW.js";
-import {
-  BACKDROP_NO_SCROLL,
-  GESTURE_CONTROLLER,
-  createGesture
-} from "./chunk-4AF7KAXZ.js";
 import {
   KEYBOARD_DID_OPEN
 } from "./chunk-T7NLFTSM.js";
@@ -29,24 +22,79 @@ import {
   isIonContent,
   printIonContentErrorMsg,
   resetContentScrollY
-} from "./chunk-BS7JVCUW.js";
+} from "./chunk-2J2KTUIJ.js";
 import {
-  startFocusVisible
-} from "./chunk-7Q5HCUSL.js";
+  AngularDelegate,
+  BACKDROP,
+  Config,
+  ConfigToken,
+  CoreDelegate,
+  DomController,
+  ENABLE_HTML_CONTENT_DEFAULT,
+  FOCUS_TRAP_DISABLE_CLASS,
+  GESTURE,
+  IonBackButton,
+  IonModal,
+  IonNav,
+  IonPopover,
+  IonRouterOutlet,
+  IonTabs,
+  IonicRouteStrategy,
+  IonicSafeString,
+  IonicSlides,
+  MenuController,
+  NavController,
+  NavParams,
+  OVERLAY_GESTURE_PRIORITY,
+  OverlayBaseController,
+  Platform,
+  ProxyCmp,
+  RouterLinkDelegateDirective,
+  RouterLinkWithHrefDelegateDirective,
+  ValueAccessor,
+  actionSheetController,
+  alertController,
+  attachComponent,
+  createColorClasses,
+  createDelegateController,
+  createTriggerController,
+  detachComponent,
+  dismiss,
+  eventMethod,
+  focusFirstDescendant,
+  focusLastDescendant,
+  getClassMap,
+  getPresentedOverlay,
+  getTimeGivenProgression,
+  hostContext,
+  isCancel,
+  loadingController,
+  menuController,
+  modalController,
+  openURL,
+  pickerController,
+  popoverController,
+  prepareOverlay,
+  present,
+  provideComponentInputBinding,
+  safeCall,
+  sanitizeDOMString,
+  setIonicClasses,
+  setOverlayId,
+  toastController
+} from "./chunk-2NX6CIN6.js";
 import {
-  NG_VALUE_ACCESSOR,
-  NgControl
-} from "./chunk-KU6YBIOL.js";
+  ActivatedRoute,
+  Router
+} from "./chunk-7FGVZEEJ.js";
 import {
   iosTransitionAnimation
-} from "./chunk-BMPGH6BO.js";
+} from "./chunk-ZW2BESRS.js";
 import {
   mdTransitionAnimation
-} from "./chunk-PEDRQ2EU.js";
+} from "./chunk-EXJJJMSD.js";
 import {
-  LIFECYCLE_DID_ENTER,
   LIFECYCLE_DID_LEAVE,
-  LIFECYCLE_WILL_ENTER,
   LIFECYCLE_WILL_LEAVE,
   LIFECYCLE_WILL_UNLOAD,
   createAnimation,
@@ -55,30 +103,7 @@ import {
   setPageHidden,
   transition,
   waitForMount
-} from "./chunk-7XJZQOGT.js";
-import {
-  config,
-  getIonMode,
-  getPlatforms,
-  initialize,
-  isPlatform
-} from "./chunk-PTN7JCUR.js";
-import {
-  Build,
-  H,
-  Host,
-  createEvent,
-  forceUpdate,
-  getAssetPath,
-  h,
-  proxyCustomElement,
-  readTask,
-  writeTask
-} from "./chunk-WOJ7TRZR.js";
-import {
-  doc,
-  win
-} from "./chunk-ACUVEYEP.js";
+} from "./chunk-5NZPXPJP.js";
 import {
   printIonError,
   printIonWarning
@@ -103,28 +128,49 @@ import {
   transitionEndAsync
 } from "./chunk-OKPK4C3D.js";
 import {
-  ActivatedRoute,
-  ChildrenOutletContexts,
-  NavigationStart,
-  PRIMARY_OUTLET,
-  Router,
-  RouterLink,
-  UrlSerializer
-} from "./chunk-T4MQABEV.js";
-import "./chunk-LHHLXLPB.js";
+  GESTURE_CONTROLLER,
+  createGesture
+} from "./chunk-4AF7KAXZ.js";
+import {
+  shouldUseCloseWatcher
+} from "./chunk-CBHUWO2S.js";
+import {
+  config,
+  getIonMode,
+  getPlatforms,
+  initialize,
+  isPlatform
+} from "./chunk-BMMAQ5NI.js";
+import {
+  Build,
+  H,
+  Host,
+  createEvent,
+  forceUpdate,
+  getAssetPath,
+  h,
+  proxyCustomElement,
+  readTask,
+  writeTask
+} from "./chunk-3ICMFNLD.js";
+import {
+  doc,
+  win
+} from "./chunk-ACUVEYEP.js";
+import "./chunk-NDQFU4CQ.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-QCXWHN4D.js";
 import {
   CommonModule,
   DOCUMENT,
   Location,
-  LocationStrategy,
   NgIf,
   NgTemplateOutlet
-} from "./chunk-4GFTN2P2.js";
+} from "./chunk-TTJ53AKY.js";
 import {
   APP_INITIALIZER,
-  ApplicationRef,
   Attribute,
-  BehaviorSubject,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -133,35 +179,20 @@ import {
   Directive,
   ElementRef,
   EnvironmentInjector,
-  EventEmitter,
   HostListener,
-  Inject,
   Injectable,
-  InjectionToken,
   Injector,
-  Input,
   NgZone,
   Optional,
-  Output,
   SkipSelf,
-  Subject,
-  TemplateRef,
   ViewChild,
   ViewContainerRef,
-  combineLatest,
-  createComponent,
-  distinctUntilChanged,
-  filter,
   forwardRef,
   fromEvent,
   inject,
   makeEnvironmentProviders,
-  of,
-  reflectComponentType,
   setClassMetadata,
-  switchMap,
   ɵɵInheritDefinitionFeature,
-  ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
   ɵɵadvance,
   ɵɵcontentQuery,
@@ -189,3794 +220,16 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-FPGELOXR.js";
+} from "./chunk-65I7I67F.js";
 import {
   __decorate
-} from "./chunk-S3YC363S.js";
+} from "./chunk-N25OJVE5.js";
 import {
   __async,
-  __objRest,
+  __publicField,
   __spreadProps,
   __spreadValues
-} from "./chunk-4VWZEZJW.js";
-
-// node_modules/@ionic/core/components/cubic-bezier.js
-var getTimeGivenProgression = (p0, p1, p2, p3, progression) => {
-  return solveCubicBezier(p0[1], p1[1], p2[1], p3[1], progression).map((tValue) => {
-    return solveCubicParametricEquation(p0[0], p1[0], p2[0], p3[0], tValue);
-  });
-};
-var solveCubicParametricEquation = (p0, p1, p2, p3, t) => {
-  const partA = 3 * p1 * Math.pow(t - 1, 2);
-  const partB = -3 * p2 * t + 3 * p2 + p3 * t;
-  const partC = p0 * Math.pow(t - 1, 3);
-  return t * (partA + t * partB) - partC;
-};
-var solveCubicBezier = (p0, p1, p2, p3, refPoint) => {
-  p0 -= refPoint;
-  p1 -= refPoint;
-  p2 -= refPoint;
-  p3 -= refPoint;
-  const roots = solveCubicEquation(p3 - 3 * p2 + 3 * p1 - p0, 3 * p2 - 6 * p1 + 3 * p0, 3 * p1 - 3 * p0, p0);
-  return roots.filter((root) => root >= 0 && root <= 1);
-};
-var solveQuadraticEquation = (a, b, c) => {
-  const discriminant = b * b - 4 * a * c;
-  if (discriminant < 0) {
-    return [];
-  } else {
-    return [(-b + Math.sqrt(discriminant)) / (2 * a), (-b - Math.sqrt(discriminant)) / (2 * a)];
-  }
-};
-var solveCubicEquation = (a, b, c, d) => {
-  if (a === 0) {
-    return solveQuadraticEquation(b, c, d);
-  }
-  b /= a;
-  c /= a;
-  d /= a;
-  const p = (3 * c - b * b) / 3;
-  const q = (2 * b * b * b - 9 * b * c + 27 * d) / 27;
-  if (p === 0) {
-    return [Math.pow(-q, 1 / 3)];
-  } else if (q === 0) {
-    return [Math.sqrt(-p), -Math.sqrt(-p)];
-  }
-  const discriminant = Math.pow(q / 2, 2) + Math.pow(p / 3, 3);
-  if (discriminant === 0) {
-    return [Math.pow(q / 2, 1 / 2) - b / 3];
-  } else if (discriminant > 0) {
-    return [Math.pow(-(q / 2) + Math.sqrt(discriminant), 1 / 3) - Math.pow(q / 2 + Math.sqrt(discriminant), 1 / 3) - b / 3];
-  }
-  const r = Math.sqrt(Math.pow(-(p / 3), 3));
-  const phi = Math.acos(-(q / (2 * Math.sqrt(Math.pow(-(p / 3), 3)))));
-  const s = 2 * Math.pow(r, 1 / 3);
-  return [s * Math.cos(phi / 3) - b / 3, s * Math.cos((phi + 2 * Math.PI) / 3) - b / 3, s * Math.cos((phi + 4 * Math.PI) / 3) - b / 3];
-};
-
-// node_modules/@ionic/core/components/config.js
-var sanitizeDOMString = (untrustedString) => {
-  try {
-    if (untrustedString instanceof IonicSafeString) {
-      return untrustedString.value;
-    }
-    if (!isSanitizerEnabled() || typeof untrustedString !== "string" || untrustedString === "") {
-      return untrustedString;
-    }
-    if (untrustedString.includes("onload=")) {
-      return "";
-    }
-    const documentFragment = document.createDocumentFragment();
-    const workingDiv = document.createElement("div");
-    documentFragment.appendChild(workingDiv);
-    workingDiv.innerHTML = untrustedString;
-    blockedTags.forEach((blockedTag) => {
-      const getElementsToRemove = documentFragment.querySelectorAll(blockedTag);
-      for (let elementIndex = getElementsToRemove.length - 1; elementIndex >= 0; elementIndex--) {
-        const element = getElementsToRemove[elementIndex];
-        if (element.parentNode) {
-          element.parentNode.removeChild(element);
-        } else {
-          documentFragment.removeChild(element);
-        }
-        const childElements = getElementChildren(element);
-        for (let childIndex = 0; childIndex < childElements.length; childIndex++) {
-          sanitizeElement(childElements[childIndex]);
-        }
-      }
-    });
-    const dfChildren = getElementChildren(documentFragment);
-    for (let childIndex = 0; childIndex < dfChildren.length; childIndex++) {
-      sanitizeElement(dfChildren[childIndex]);
-    }
-    const fragmentDiv = document.createElement("div");
-    fragmentDiv.appendChild(documentFragment);
-    const getInnerDiv = fragmentDiv.querySelector("div");
-    return getInnerDiv !== null ? getInnerDiv.innerHTML : fragmentDiv.innerHTML;
-  } catch (err) {
-    console.error(err);
-    return "";
-  }
-};
-var sanitizeElement = (element) => {
-  if (element.nodeType && element.nodeType !== 1) {
-    return;
-  }
-  if (typeof NamedNodeMap !== "undefined" && !(element.attributes instanceof NamedNodeMap)) {
-    element.remove();
-    return;
-  }
-  for (let i = element.attributes.length - 1; i >= 0; i--) {
-    const attribute = element.attributes.item(i);
-    const attributeName = attribute.name;
-    if (!allowedAttributes.includes(attributeName.toLowerCase())) {
-      element.removeAttribute(attributeName);
-      continue;
-    }
-    const attributeValue = attribute.value;
-    const propertyValue = element[attributeName];
-    if (attributeValue != null && attributeValue.toLowerCase().includes("javascript:") || propertyValue != null && propertyValue.toLowerCase().includes("javascript:")) {
-      element.removeAttribute(attributeName);
-    }
-  }
-  const childElements = getElementChildren(element);
-  for (let i = 0; i < childElements.length; i++) {
-    sanitizeElement(childElements[i]);
-  }
-};
-var getElementChildren = (el) => {
-  return el.children != null ? el.children : el.childNodes;
-};
-var isSanitizerEnabled = () => {
-  var _a;
-  const win3 = window;
-  const config2 = (_a = win3 === null || win3 === void 0 ? void 0 : win3.Ionic) === null || _a === void 0 ? void 0 : _a.config;
-  if (config2) {
-    if (config2.get) {
-      return config2.get("sanitizerEnabled", true);
-    } else {
-      return config2.sanitizerEnabled === true || config2.sanitizerEnabled === void 0;
-    }
-  }
-  return true;
-};
-var allowedAttributes = ["class", "id", "href", "src", "name", "slot"];
-var blockedTags = ["script", "style", "iframe", "meta", "link", "object", "embed"];
-var IonicSafeString = class {
-  constructor(value) {
-    this.value = value;
-  }
-};
-var ENABLE_HTML_CONTENT_DEFAULT = false;
-
-// node_modules/@ionic/core/components/theme.js
-var hostContext = (selector, el) => {
-  return el.closest(selector) !== null;
-};
-var createColorClasses = (color, cssClassMap) => {
-  return typeof color === "string" && color.length > 0 ? Object.assign({
-    "ion-color": true,
-    [`ion-color-${color}`]: true
-  }, cssClassMap) : cssClassMap;
-};
-var getClassList = (classes) => {
-  if (classes !== void 0) {
-    const array = Array.isArray(classes) ? classes : classes.split(" ");
-    return array.filter((c) => c != null).map((c) => c.trim()).filter((c) => c !== "");
-  }
-  return [];
-};
-var getClassMap = (classes) => {
-  const map = {};
-  getClassList(classes).forEach((c) => map[c] = true);
-  return map;
-};
-var SCHEME = /^[a-z][a-z0-9+\-.]*:/;
-var openURL = (url, ev, direction, animation) => __async(void 0, null, function* () {
-  if (url != null && url[0] !== "#" && !SCHEME.test(url)) {
-    const router = document.querySelector("ion-router");
-    if (router) {
-      if (ev != null) {
-        ev.preventDefault();
-      }
-      return router.push(url, direction, animation);
-    }
-  }
-  return false;
-});
-
-// node_modules/@ionic/core/components/index4.js
-var baseAnimation = (isIos) => {
-  return createAnimation().duration(isIos ? 400 : 300);
-};
-var menuOverlayAnimation = (menu) => {
-  let closedX;
-  let openedX;
-  const width = menu.width + 8;
-  const menuAnimation = createAnimation();
-  const backdropAnimation = createAnimation();
-  if (menu.isEndSide) {
-    closedX = width + "px";
-    openedX = "0px";
-  } else {
-    closedX = -width + "px";
-    openedX = "0px";
-  }
-  menuAnimation.addElement(menu.menuInnerEl).fromTo("transform", `translateX(${closedX})`, `translateX(${openedX})`);
-  const mode = getIonMode(menu);
-  const isIos = mode === "ios";
-  const opacity = isIos ? 0.2 : 0.25;
-  backdropAnimation.addElement(menu.backdropEl).fromTo("opacity", 0.01, opacity);
-  return baseAnimation(isIos).addAnimation([menuAnimation, backdropAnimation]);
-};
-var menuPushAnimation = (menu) => {
-  let contentOpenedX;
-  let menuClosedX;
-  const mode = getIonMode(menu);
-  const width = menu.width;
-  if (menu.isEndSide) {
-    contentOpenedX = -width + "px";
-    menuClosedX = width + "px";
-  } else {
-    contentOpenedX = width + "px";
-    menuClosedX = -width + "px";
-  }
-  const menuAnimation = createAnimation().addElement(menu.menuInnerEl).fromTo("transform", `translateX(${menuClosedX})`, "translateX(0px)");
-  const contentAnimation = createAnimation().addElement(menu.contentEl).fromTo("transform", "translateX(0px)", `translateX(${contentOpenedX})`);
-  const backdropAnimation = createAnimation().addElement(menu.backdropEl).fromTo("opacity", 0.01, 0.32);
-  return baseAnimation(mode === "ios").addAnimation([menuAnimation, contentAnimation, backdropAnimation]);
-};
-var menuRevealAnimation = (menu) => {
-  const mode = getIonMode(menu);
-  const openedX = menu.width * (menu.isEndSide ? -1 : 1) + "px";
-  const contentOpen = createAnimation().addElement(menu.contentEl).fromTo("transform", "translateX(0px)", `translateX(${openedX})`);
-  return baseAnimation(mode === "ios").addAnimation(contentOpen);
-};
-var createMenuController = () => {
-  const menuAnimations = /* @__PURE__ */ new Map();
-  const menus = [];
-  const open = (menu) => __async(void 0, null, function* () {
-    const menuEl = yield get(menu, true);
-    if (menuEl) {
-      return menuEl.open();
-    }
-    return false;
-  });
-  const close2 = (menu) => __async(void 0, null, function* () {
-    const menuEl = yield menu !== void 0 ? get(menu, true) : getOpen();
-    if (menuEl !== void 0) {
-      return menuEl.close();
-    }
-    return false;
-  });
-  const toggle = (menu) => __async(void 0, null, function* () {
-    const menuEl = yield get(menu, true);
-    if (menuEl) {
-      return menuEl.toggle();
-    }
-    return false;
-  });
-  const enable = (shouldEnable, menu) => __async(void 0, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      menuEl.disabled = !shouldEnable;
-    }
-    return menuEl;
-  });
-  const swipeGesture = (shouldEnable, menu) => __async(void 0, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      menuEl.swipeGesture = shouldEnable;
-    }
-    return menuEl;
-  });
-  const isOpen = (menu) => __async(void 0, null, function* () {
-    if (menu != null) {
-      const menuEl = yield get(menu);
-      return menuEl !== void 0 && menuEl.isOpen();
-    } else {
-      const menuEl = yield getOpen();
-      return menuEl !== void 0;
-    }
-  });
-  const isEnabled = (menu) => __async(void 0, null, function* () {
-    const menuEl = yield get(menu);
-    if (menuEl) {
-      return !menuEl.disabled;
-    }
-    return false;
-  });
-  const get = (menu, logOnMultipleSideMenus = false) => __async(void 0, null, function* () {
-    yield waitUntilReady();
-    if (menu === "start" || menu === "end") {
-      const menuRefs = menus.filter((m) => m.side === menu && !m.disabled);
-      if (menuRefs.length >= 1) {
-        if (menuRefs.length > 1 && logOnMultipleSideMenus) {
-          printIonWarning(`menuController queried for a menu on the "${menu}" side, but ${menuRefs.length} menus were found. The first menu reference will be used. If this is not the behavior you want then pass the ID of the menu instead of its side.`, menuRefs.map((m) => m.el));
-        }
-        return menuRefs[0].el;
-      }
-      const sideMenuRefs = menus.filter((m) => m.side === menu);
-      if (sideMenuRefs.length >= 1) {
-        if (sideMenuRefs.length > 1 && logOnMultipleSideMenus) {
-          printIonWarning(`menuController queried for a menu on the "${menu}" side, but ${sideMenuRefs.length} menus were found. The first menu reference will be used. If this is not the behavior you want then pass the ID of the menu instead of its side.`, sideMenuRefs.map((m) => m.el));
-        }
-        return sideMenuRefs[0].el;
-      }
-    } else if (menu != null) {
-      return find((m) => m.menuId === menu);
-    }
-    const menuEl = find((m) => !m.disabled);
-    if (menuEl) {
-      return menuEl;
-    }
-    return menus.length > 0 ? menus[0].el : void 0;
-  });
-  const getOpen = () => __async(void 0, null, function* () {
-    yield waitUntilReady();
-    return _getOpenSync();
-  });
-  const getMenus = () => __async(void 0, null, function* () {
-    yield waitUntilReady();
-    return getMenusSync();
-  });
-  const isAnimating = () => __async(void 0, null, function* () {
-    yield waitUntilReady();
-    return isAnimatingSync();
-  });
-  const registerAnimation = (name, animation) => {
-    menuAnimations.set(name, animation);
-  };
-  const _register = (menu) => {
-    if (menus.indexOf(menu) < 0) {
-      menus.push(menu);
-    }
-  };
-  const _unregister = (menu) => {
-    const index = menus.indexOf(menu);
-    if (index > -1) {
-      menus.splice(index, 1);
-    }
-  };
-  const _setOpen = (menu, shouldOpen, animated, role) => __async(void 0, null, function* () {
-    if (isAnimatingSync()) {
-      return false;
-    }
-    if (shouldOpen) {
-      const openedMenu = yield getOpen();
-      if (openedMenu && menu.el !== openedMenu) {
-        yield openedMenu.setOpen(false, false);
-      }
-    }
-    return menu._setOpen(shouldOpen, animated, role);
-  });
-  const _createAnimation = (type, menuCmp) => {
-    const animationBuilder = menuAnimations.get(type);
-    if (!animationBuilder) {
-      throw new Error("animation not registered");
-    }
-    const animation = animationBuilder(menuCmp);
-    return animation;
-  };
-  const _getOpenSync = () => {
-    return find((m) => m._isOpen);
-  };
-  const getMenusSync = () => {
-    return menus.map((menu) => menu.el);
-  };
-  const isAnimatingSync = () => {
-    return menus.some((menu) => menu.isAnimating);
-  };
-  const find = (predicate) => {
-    const instance = menus.find(predicate);
-    if (instance !== void 0) {
-      return instance.el;
-    }
-    return void 0;
-  };
-  const waitUntilReady = () => {
-    return Promise.all(Array.from(document.querySelectorAll("ion-menu")).map((menu) => new Promise((resolve) => componentOnReady(menu, resolve))));
-  };
-  registerAnimation("reveal", menuRevealAnimation);
-  registerAnimation("push", menuPushAnimation);
-  registerAnimation("overlay", menuOverlayAnimation);
-  doc === null || doc === void 0 ? void 0 : doc.addEventListener("ionBackButton", (ev) => {
-    const openMenu = _getOpenSync();
-    if (openMenu) {
-      ev.detail.register(MENU_BACK_BUTTON_PRIORITY, () => {
-        return openMenu.close();
-      });
-    }
-  });
-  return {
-    registerAnimation,
-    get,
-    getMenus,
-    getOpen,
-    isEnabled,
-    swipeGesture,
-    isAnimating,
-    isOpen,
-    enable,
-    toggle,
-    close: close2,
-    open,
-    _getOpenSync,
-    _createAnimation,
-    _register,
-    _unregister,
-    _setOpen
-  };
-};
-var menuController = createMenuController();
-
-// node_modules/@ionic/core/components/framework-delegate.js
-var attachComponent = (delegate, container, component, cssClasses, componentProps, inline) => __async(void 0, null, function* () {
-  var _a;
-  if (delegate) {
-    return delegate.attachViewToDom(container, component, componentProps, cssClasses);
-  }
-  if (!inline && typeof component !== "string" && !(component instanceof HTMLElement)) {
-    throw new Error("framework delegate is missing");
-  }
-  const el = typeof component === "string" ? (_a = container.ownerDocument) === null || _a === void 0 ? void 0 : _a.createElement(component) : component;
-  if (cssClasses) {
-    cssClasses.forEach((c) => el.classList.add(c));
-  }
-  if (componentProps) {
-    Object.assign(el, componentProps);
-  }
-  container.appendChild(el);
-  yield new Promise((resolve) => componentOnReady(el, resolve));
-  return el;
-});
-var detachComponent = (delegate, element) => {
-  if (element) {
-    if (delegate) {
-      const container = element.parentElement;
-      return delegate.removeViewFromDom(container, element);
-    }
-    element.remove();
-  }
-  return Promise.resolve();
-};
-var CoreDelegate = () => {
-  let BaseComponent;
-  let Reference;
-  const attachViewToDom = (_0, _1, ..._2) => __async(void 0, [_0, _1, ..._2], function* (parentElement, userComponent, userComponentProps = {}, cssClasses = []) {
-    var _a, _b;
-    BaseComponent = parentElement;
-    let ChildComponent;
-    if (userComponent) {
-      const el = typeof userComponent === "string" ? (_a = BaseComponent.ownerDocument) === null || _a === void 0 ? void 0 : _a.createElement(userComponent) : userComponent;
-      cssClasses.forEach((c) => el.classList.add(c));
-      Object.assign(el, userComponentProps);
-      BaseComponent.appendChild(el);
-      ChildComponent = el;
-      yield new Promise((resolve) => componentOnReady(el, resolve));
-    } else if (BaseComponent.children.length > 0 && (BaseComponent.tagName === "ION-MODAL" || BaseComponent.tagName === "ION-POPOVER")) {
-      const root = ChildComponent = BaseComponent.children[0];
-      if (!root.classList.contains("ion-delegate-host")) {
-        const el = (_b = BaseComponent.ownerDocument) === null || _b === void 0 ? void 0 : _b.createElement("div");
-        el.classList.add("ion-delegate-host");
-        cssClasses.forEach((c) => el.classList.add(c));
-        el.append(...BaseComponent.children);
-        BaseComponent.appendChild(el);
-        ChildComponent = el;
-      }
-    }
-    const app = document.querySelector("ion-app") || document.body;
-    Reference = document.createComment("ionic teleport");
-    BaseComponent.parentNode.insertBefore(Reference, BaseComponent);
-    app.appendChild(BaseComponent);
-    return ChildComponent !== null && ChildComponent !== void 0 ? ChildComponent : BaseComponent;
-  });
-  const removeViewFromDom = () => {
-    if (BaseComponent && Reference) {
-      Reference.parentNode.insertBefore(BaseComponent, Reference);
-      Reference.remove();
-    }
-    return Promise.resolve();
-  };
-  return {
-    attachViewToDom,
-    removeViewFromDom
-  };
-};
-
-// node_modules/@ionic/core/components/overlays.js
-var focusableQueryString = '[tabindex]:not([tabindex^="-"]):not([hidden]):not([disabled]), input:not([type=hidden]):not([tabindex^="-"]):not([hidden]):not([disabled]), textarea:not([tabindex^="-"]):not([hidden]):not([disabled]), button:not([tabindex^="-"]):not([hidden]):not([disabled]), select:not([tabindex^="-"]):not([hidden]):not([disabled]), ion-checkbox:not([tabindex^="-"]):not([hidden]):not([disabled]), ion-radio:not([tabindex^="-"]):not([hidden]):not([disabled]), .ion-focusable:not([tabindex^="-"]):not([hidden]):not([disabled]), .ion-focusable[disabled="false"]:not([tabindex^="-"]):not([hidden])';
-var focusFirstDescendant = (ref, fallbackElement) => {
-  const firstInput = ref.querySelector(focusableQueryString);
-  focusElementInContext(firstInput, fallbackElement !== null && fallbackElement !== void 0 ? fallbackElement : ref);
-};
-var focusLastDescendant = (ref, fallbackElement) => {
-  const inputs = Array.from(ref.querySelectorAll(focusableQueryString));
-  const lastInput = inputs.length > 0 ? inputs[inputs.length - 1] : null;
-  focusElementInContext(lastInput, fallbackElement !== null && fallbackElement !== void 0 ? fallbackElement : ref);
-};
-var focusElementInContext = (hostToFocus, fallbackElement) => {
-  let elementToFocus = hostToFocus;
-  const shadowRoot = hostToFocus === null || hostToFocus === void 0 ? void 0 : hostToFocus.shadowRoot;
-  if (shadowRoot) {
-    elementToFocus = shadowRoot.querySelector(focusableQueryString) || hostToFocus;
-  }
-  if (elementToFocus) {
-    const radioGroup = elementToFocus.closest("ion-radio-group");
-    if (radioGroup) {
-      radioGroup.setFocus();
-    } else {
-      focusVisibleElement(elementToFocus);
-    }
-  } else {
-    fallbackElement.focus();
-  }
-};
-var lastOverlayIndex = 0;
-var lastId = 0;
-var activeAnimations = /* @__PURE__ */ new WeakMap();
-var createController = (tagName) => {
-  return {
-    create(options) {
-      return createOverlay(tagName, options);
-    },
-    dismiss(data, role, id) {
-      return dismissOverlay(document, data, role, tagName, id);
-    },
-    getTop() {
-      return __async(this, null, function* () {
-        return getPresentedOverlay(document, tagName);
-      });
-    }
-  };
-};
-var alertController = createController("ion-alert");
-var actionSheetController = createController("ion-action-sheet");
-var loadingController = createController("ion-loading");
-var modalController = createController("ion-modal");
-var pickerController = createController("ion-picker-legacy");
-var popoverController = createController("ion-popover");
-var toastController = createController("ion-toast");
-var prepareOverlay = (el) => {
-  if (typeof document !== "undefined") {
-    connectListeners(document);
-  }
-  const overlayIndex = lastOverlayIndex++;
-  el.overlayIndex = overlayIndex;
-};
-var setOverlayId = (el) => {
-  if (!el.hasAttribute("id")) {
-    el.id = `ion-overlay-${++lastId}`;
-  }
-  return el.id;
-};
-var createOverlay = (tagName, opts) => {
-  if (typeof window !== "undefined" && typeof window.customElements !== "undefined") {
-    return window.customElements.whenDefined(tagName).then(() => {
-      const element = document.createElement(tagName);
-      element.classList.add("overlay-hidden");
-      Object.assign(element, Object.assign(Object.assign({}, opts), {
-        hasController: true
-      }));
-      getAppRoot(document).appendChild(element);
-      return new Promise((resolve) => componentOnReady(element, resolve));
-    });
-  }
-  return Promise.resolve();
-};
-var isOverlayHidden = (overlay) => overlay.classList.contains("overlay-hidden");
-var focusElementInOverlay = (hostToFocus, overlay) => {
-  let elementToFocus = hostToFocus;
-  const shadowRoot = hostToFocus === null || hostToFocus === void 0 ? void 0 : hostToFocus.shadowRoot;
-  if (shadowRoot) {
-    elementToFocus = shadowRoot.querySelector(focusableQueryString) || hostToFocus;
-  }
-  if (elementToFocus) {
-    focusVisibleElement(elementToFocus);
-  } else {
-    overlay.focus();
-  }
-};
-var trapKeyboardFocus = (ev, doc2) => {
-  const lastOverlay = getPresentedOverlay(doc2, "ion-alert,ion-action-sheet,ion-loading,ion-modal,ion-picker-legacy,ion-popover");
-  const target = ev.target;
-  if (!lastOverlay || !target) {
-    return;
-  }
-  if (lastOverlay.classList.contains(FOCUS_TRAP_DISABLE_CLASS)) {
-    return;
-  }
-  const trapScopedFocus = () => {
-    if (lastOverlay === target) {
-      lastOverlay.lastFocus = void 0;
-    } else if (target.tagName === "ION-TOAST") {
-      focusElementInOverlay(lastOverlay.lastFocus, lastOverlay);
-    } else {
-      const overlayRoot = getElementRoot(lastOverlay);
-      if (!overlayRoot.contains(target)) {
-        return;
-      }
-      const overlayWrapper = overlayRoot.querySelector(".ion-overlay-wrapper");
-      if (!overlayWrapper) {
-        return;
-      }
-      if (overlayWrapper.contains(target) || target === overlayRoot.querySelector("ion-backdrop")) {
-        lastOverlay.lastFocus = target;
-      } else {
-        const lastFocus = lastOverlay.lastFocus;
-        focusFirstDescendant(overlayWrapper, lastOverlay);
-        if (lastFocus === doc2.activeElement) {
-          focusLastDescendant(overlayWrapper, lastOverlay);
-        }
-        lastOverlay.lastFocus = doc2.activeElement;
-      }
-    }
-  };
-  const trapShadowFocus = () => {
-    if (lastOverlay.contains(target)) {
-      lastOverlay.lastFocus = target;
-    } else if (target.tagName === "ION-TOAST") {
-      focusElementInOverlay(lastOverlay.lastFocus, lastOverlay);
-    } else {
-      const lastFocus = lastOverlay.lastFocus;
-      focusFirstDescendant(lastOverlay);
-      if (lastFocus === doc2.activeElement) {
-        focusLastDescendant(lastOverlay);
-      }
-      lastOverlay.lastFocus = doc2.activeElement;
-    }
-  };
-  if (lastOverlay.shadowRoot) {
-    trapShadowFocus();
-  } else {
-    trapScopedFocus();
-  }
-};
-var connectListeners = (doc2) => {
-  if (lastOverlayIndex === 0) {
-    lastOverlayIndex = 1;
-    doc2.addEventListener("focus", (ev) => {
-      trapKeyboardFocus(ev, doc2);
-    }, true);
-    doc2.addEventListener("ionBackButton", (ev) => {
-      const lastOverlay = getPresentedOverlay(doc2);
-      if (lastOverlay === null || lastOverlay === void 0 ? void 0 : lastOverlay.backdropDismiss) {
-        ev.detail.register(OVERLAY_BACK_BUTTON_PRIORITY, () => {
-          lastOverlay.dismiss(void 0, BACKDROP);
-        });
-      }
-    });
-    if (!shouldUseCloseWatcher()) {
-      doc2.addEventListener("keydown", (ev) => {
-        if (ev.key === "Escape") {
-          const lastOverlay = getPresentedOverlay(doc2);
-          if (lastOverlay === null || lastOverlay === void 0 ? void 0 : lastOverlay.backdropDismiss) {
-            lastOverlay.dismiss(void 0, BACKDROP);
-          }
-        }
-      });
-    }
-  }
-};
-var dismissOverlay = (doc2, data, role, overlayTag, id) => {
-  const overlay = getPresentedOverlay(doc2, overlayTag, id);
-  if (!overlay) {
-    return Promise.reject("overlay does not exist");
-  }
-  return overlay.dismiss(data, role);
-};
-var getOverlays = (doc2, selector) => {
-  if (selector === void 0) {
-    selector = "ion-alert,ion-action-sheet,ion-loading,ion-modal,ion-picker-legacy,ion-popover,ion-toast";
-  }
-  return Array.from(doc2.querySelectorAll(selector)).filter((c) => c.overlayIndex > 0);
-};
-var getPresentedOverlays = (doc2, overlayTag) => {
-  return getOverlays(doc2, overlayTag).filter((o) => !isOverlayHidden(o));
-};
-var getPresentedOverlay = (doc2, overlayTag, id) => {
-  const overlays = getPresentedOverlays(doc2, overlayTag);
-  return id === void 0 ? overlays[overlays.length - 1] : overlays.find((o) => o.id === id);
-};
-var setRootAriaHidden = (hidden = false) => {
-  const root = getAppRoot(document);
-  const viewContainer = root.querySelector("ion-router-outlet, ion-nav, #ion-view-container-root");
-  if (!viewContainer) {
-    return;
-  }
-  if (hidden) {
-    viewContainer.setAttribute("aria-hidden", "true");
-  } else {
-    viewContainer.removeAttribute("aria-hidden");
-  }
-};
-var present = (overlay, name, iosEnterAnimation8, mdEnterAnimation7, opts) => __async(void 0, null, function* () {
-  var _a, _b;
-  if (overlay.presented) {
-    return;
-  }
-  if (overlay.el.tagName !== "ION-TOAST") {
-    setRootAriaHidden(true);
-  }
-  document.body.classList.add(BACKDROP_NO_SCROLL);
-  hideUnderlyingOverlaysFromScreenReaders(overlay.el);
-  hideAnimatingOverlayFromScreenReaders(overlay.el);
-  overlay.presented = true;
-  overlay.willPresent.emit();
-  (_a = overlay.willPresentShorthand) === null || _a === void 0 ? void 0 : _a.emit();
-  const mode = getIonMode(overlay);
-  const animationBuilder = overlay.enterAnimation ? overlay.enterAnimation : config.get(name, mode === "ios" ? iosEnterAnimation8 : mdEnterAnimation7);
-  const completed = yield overlayAnimation(overlay, animationBuilder, overlay.el, opts);
-  if (completed) {
-    overlay.didPresent.emit();
-    (_b = overlay.didPresentShorthand) === null || _b === void 0 ? void 0 : _b.emit();
-  }
-  if (overlay.el.tagName !== "ION-TOAST") {
-    restoreElementFocus(overlay.el);
-  }
-  if (overlay.keyboardClose && (document.activeElement === null || !overlay.el.contains(document.activeElement))) {
-    overlay.el.focus();
-  }
-  overlay.el.removeAttribute("aria-hidden");
-});
-var restoreElementFocus = (overlayEl) => __async(void 0, null, function* () {
-  let previousElement = document.activeElement;
-  if (!previousElement) {
-    return;
-  }
-  const shadowRoot = previousElement === null || previousElement === void 0 ? void 0 : previousElement.shadowRoot;
-  if (shadowRoot) {
-    previousElement = shadowRoot.querySelector(focusableQueryString) || previousElement;
-  }
-  yield overlayEl.onDidDismiss();
-  if (document.activeElement === null || document.activeElement === document.body) {
-    previousElement.focus();
-  }
-});
-var dismiss = (overlay, data, role, name, iosLeaveAnimation8, mdLeaveAnimation7, opts) => __async(void 0, null, function* () {
-  var _a, _b;
-  if (!overlay.presented) {
-    return false;
-  }
-  const overlaysNotToast = doc !== void 0 ? getPresentedOverlays(doc).filter((o) => o.tagName !== "ION-TOAST") : [];
-  const lastOverlayNotToast = overlaysNotToast.length === 1 && overlaysNotToast[0].id === overlay.el.id;
-  if (lastOverlayNotToast) {
-    setRootAriaHidden(false);
-    document.body.classList.remove(BACKDROP_NO_SCROLL);
-  }
-  overlay.presented = false;
-  try {
-    hideAnimatingOverlayFromScreenReaders(overlay.el);
-    overlay.el.style.setProperty("pointer-events", "none");
-    overlay.willDismiss.emit({
-      data,
-      role
-    });
-    (_a = overlay.willDismissShorthand) === null || _a === void 0 ? void 0 : _a.emit({
-      data,
-      role
-    });
-    const mode = getIonMode(overlay);
-    const animationBuilder = overlay.leaveAnimation ? overlay.leaveAnimation : config.get(name, mode === "ios" ? iosLeaveAnimation8 : mdLeaveAnimation7);
-    if (role !== GESTURE) {
-      yield overlayAnimation(overlay, animationBuilder, overlay.el, opts);
-    }
-    overlay.didDismiss.emit({
-      data,
-      role
-    });
-    (_b = overlay.didDismissShorthand) === null || _b === void 0 ? void 0 : _b.emit({
-      data,
-      role
-    });
-    const animations = activeAnimations.get(overlay) || [];
-    animations.forEach((ani) => ani.destroy());
-    activeAnimations.delete(overlay);
-    overlay.el.classList.add("overlay-hidden");
-    overlay.el.style.removeProperty("pointer-events");
-    if (overlay.el.lastFocus !== void 0) {
-      overlay.el.lastFocus = void 0;
-    }
-  } catch (err) {
-    console.error(err);
-  }
-  overlay.el.remove();
-  revealOverlaysToScreenReaders();
-  return true;
-});
-var getAppRoot = (doc2) => {
-  return doc2.querySelector("ion-app") || doc2.body;
-};
-var overlayAnimation = (overlay, animationBuilder, baseEl, opts) => __async(void 0, null, function* () {
-  baseEl.classList.remove("overlay-hidden");
-  const aniRoot = overlay.el;
-  const animation = animationBuilder(aniRoot, opts);
-  if (!overlay.animated || !config.getBoolean("animated", true)) {
-    animation.duration(0);
-  }
-  if (overlay.keyboardClose) {
-    animation.beforeAddWrite(() => {
-      const activeElement = baseEl.ownerDocument.activeElement;
-      if (activeElement === null || activeElement === void 0 ? void 0 : activeElement.matches("input,ion-input, ion-textarea")) {
-        activeElement.blur();
-      }
-    });
-  }
-  const activeAni = activeAnimations.get(overlay) || [];
-  activeAnimations.set(overlay, [...activeAni, animation]);
-  yield animation.play();
-  return true;
-});
-var eventMethod = (element, eventName) => {
-  let resolve;
-  const promise = new Promise((r) => resolve = r);
-  onceEvent(element, eventName, (event) => {
-    resolve(event.detail);
-  });
-  return promise;
-};
-var onceEvent = (element, eventName, callback) => {
-  const handler = (ev) => {
-    removeEventListener(element, eventName, handler);
-    callback(ev);
-  };
-  addEventListener(element, eventName, handler);
-};
-var isCancel = (role) => {
-  return role === "cancel" || role === BACKDROP;
-};
-var defaultGate = (h2) => h2();
-var safeCall = (handler, arg) => {
-  if (typeof handler === "function") {
-    const jmp = config.get("_zoneGate", defaultGate);
-    return jmp(() => {
-      try {
-        return handler(arg);
-      } catch (e) {
-        throw e;
-      }
-    });
-  }
-  return void 0;
-};
-var BACKDROP = "backdrop";
-var GESTURE = "gesture";
-var OVERLAY_GESTURE_PRIORITY = 39;
-var createDelegateController = (ref) => {
-  let inline = false;
-  let workingDelegate;
-  const coreDelegate = CoreDelegate();
-  const getDelegate = (force = false) => {
-    if (workingDelegate && !force) {
-      return {
-        delegate: workingDelegate,
-        inline
-      };
-    }
-    const {
-      el,
-      hasController,
-      delegate
-    } = ref;
-    const parentEl = el.parentNode;
-    inline = parentEl !== null && !hasController;
-    workingDelegate = inline ? delegate || coreDelegate : delegate;
-    return {
-      inline,
-      delegate: workingDelegate
-    };
-  };
-  const attachViewToDom = (component) => __async(void 0, null, function* () {
-    const {
-      delegate
-    } = getDelegate(true);
-    if (delegate) {
-      return yield delegate.attachViewToDom(ref.el, component);
-    }
-    const {
-      hasController
-    } = ref;
-    if (hasController && component !== void 0) {
-      throw new Error("framework delegate is missing");
-    }
-    return null;
-  });
-  const removeViewFromDom = () => {
-    const {
-      delegate
-    } = getDelegate();
-    if (delegate && ref.el !== void 0) {
-      delegate.removeViewFromDom(ref.el.parentElement, ref.el);
-    }
-  };
-  return {
-    attachViewToDom,
-    removeViewFromDom
-  };
-};
-var createTriggerController = () => {
-  let destroyTriggerInteraction;
-  const removeClickListener = () => {
-    if (destroyTriggerInteraction) {
-      destroyTriggerInteraction();
-      destroyTriggerInteraction = void 0;
-    }
-  };
-  const addClickListener = (el, trigger) => {
-    removeClickListener();
-    const triggerEl = trigger !== void 0 ? document.getElementById(trigger) : null;
-    if (!triggerEl) {
-      printIonWarning(`A trigger element with the ID "${trigger}" was not found in the DOM. The trigger element must be in the DOM when the "trigger" property is set on an overlay component.`, el);
-      return;
-    }
-    const configureTriggerInteraction2 = (targetEl, overlayEl) => {
-      const openOverlay = () => {
-        overlayEl.present();
-      };
-      targetEl.addEventListener("click", openOverlay);
-      return () => {
-        targetEl.removeEventListener("click", openOverlay);
-      };
-    };
-    destroyTriggerInteraction = configureTriggerInteraction2(triggerEl, el);
-  };
-  return {
-    addClickListener,
-    removeClickListener
-  };
-};
-var hideAnimatingOverlayFromScreenReaders = (overlay) => {
-  if (doc === void 0) return;
-  if (isPlatform("android")) {
-    overlay.setAttribute("aria-hidden", "true");
-  }
-};
-var hideUnderlyingOverlaysFromScreenReaders = (newTopMostOverlay) => {
-  var _a;
-  if (doc === void 0) return;
-  const overlays = getPresentedOverlays(doc);
-  for (let i = overlays.length - 1; i >= 0; i--) {
-    const presentedOverlay = overlays[i];
-    const nextPresentedOverlay = (_a = overlays[i + 1]) !== null && _a !== void 0 ? _a : newTopMostOverlay;
-    if (nextPresentedOverlay.hasAttribute("aria-hidden") || nextPresentedOverlay.tagName !== "ION-TOAST") {
-      presentedOverlay.setAttribute("aria-hidden", "true");
-    }
-  }
-};
-var revealOverlaysToScreenReaders = () => {
-  if (doc === void 0) return;
-  const overlays = getPresentedOverlays(doc);
-  for (let i = overlays.length - 1; i >= 0; i--) {
-    const currentOverlay = overlays[i];
-    currentOverlay.removeAttribute("aria-hidden");
-    if (currentOverlay.tagName !== "ION-TOAST") {
-      break;
-    }
-  }
-};
-var FOCUS_TRAP_DISABLE_CLASS = "ion-disable-focus-trap";
-
-// node_modules/@ionic/core/components/index.js
-var IonicSlides = (opts) => {
-  const {
-    swiper,
-    extendParams
-  } = opts;
-  const slidesParams = {
-    effect: void 0,
-    direction: "horizontal",
-    initialSlide: 0,
-    loop: false,
-    parallax: false,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    speed: 300,
-    slidesPerColumn: 1,
-    slidesPerColumnFill: "column",
-    slidesPerGroup: 1,
-    centeredSlides: false,
-    slidesOffsetBefore: 0,
-    slidesOffsetAfter: 0,
-    touchEventsTarget: "container",
-    freeMode: false,
-    freeModeMomentum: true,
-    freeModeMomentumRatio: 1,
-    freeModeMomentumBounce: true,
-    freeModeMomentumBounceRatio: 1,
-    freeModeMomentumVelocityRatio: 1,
-    freeModeSticky: false,
-    freeModeMinimumVelocity: 0.02,
-    autoHeight: false,
-    setWrapperSize: false,
-    zoom: {
-      maxRatio: 3,
-      minRatio: 1,
-      toggle: false
-    },
-    touchRatio: 1,
-    touchAngle: 45,
-    simulateTouch: true,
-    touchStartPreventDefault: false,
-    shortSwipes: true,
-    longSwipes: true,
-    longSwipesRatio: 0.5,
-    longSwipesMs: 300,
-    followFinger: true,
-    threshold: 0,
-    touchMoveStopPropagation: true,
-    touchReleaseOnEdges: false,
-    iOSEdgeSwipeDetection: false,
-    iOSEdgeSwipeThreshold: 20,
-    resistance: true,
-    resistanceRatio: 0.85,
-    watchSlidesProgress: false,
-    watchSlidesVisibility: false,
-    preventClicks: true,
-    preventClicksPropagation: true,
-    slideToClickedSlide: false,
-    loopAdditionalSlides: 0,
-    noSwiping: true,
-    runCallbacksOnInit: true,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true
-    },
-    flipEffect: {
-      slideShadows: true,
-      limitRotation: true
-    },
-    cubeEffect: {
-      slideShadows: true,
-      shadow: true,
-      shadowOffset: 20,
-      shadowScale: 0.94
-    },
-    fadeEffect: {
-      crossFade: false
-    },
-    a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
-      firstSlideMessage: "This is the first slide",
-      lastSlideMessage: "This is the last slide"
-    }
-  };
-  if (swiper.pagination) {
-    slidesParams.pagination = {
-      type: "bullets",
-      clickable: false,
-      hideOnClick: false
-    };
-  }
-  if (swiper.scrollbar) {
-    slidesParams.scrollbar = {
-      hide: true
-    };
-  }
-  extendParams(slidesParams);
-};
-
-// node_modules/@ionic/angular/fesm2022/ionic-angular-common.mjs
-var _c0 = ["tabsInner"];
-var MenuController = class {
-  menuController;
-  constructor(menuController2) {
-    this.menuController = menuController2;
-  }
-  /**
-   * Programmatically open the Menu.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu is fully opened
-   */
-  open(menuId) {
-    return this.menuController.open(menuId);
-  }
-  /**
-   * Programmatically close the Menu. If no `menuId` is given as the first
-   * argument then it'll close any menu which is open. If a `menuId`
-   * is given then it'll close that exact menu.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu is fully closed
-   */
-  close(menuId) {
-    return this.menuController.close(menuId);
-  }
-  /**
-   * Toggle the menu. If it's closed, it will open, and if opened, it
-   * will close.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return returns a promise when the menu has been toggled
-   */
-  toggle(menuId) {
-    return this.menuController.toggle(menuId);
-  }
-  /**
-   * Used to enable or disable a menu. For example, there could be multiple
-   * left menus, but only one of them should be able to be opened at the same
-   * time. If there are multiple menus on the same side, then enabling one menu
-   * will also automatically disable all the others that are on the same side.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu, which is useful for chaining.
-   */
-  enable(shouldEnable, menuId) {
-    return this.menuController.enable(shouldEnable, menuId);
-  }
-  /**
-   * Used to enable or disable the ability to swipe open the menu.
-   * @param shouldEnable  True if it should be swipe-able, false if not.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu, which is useful for chaining.
-   */
-  swipeGesture(shouldEnable, menuId) {
-    return this.menuController.swipeGesture(shouldEnable, menuId);
-  }
-  /**
-   * @param [menuId] Optionally get the menu by its id, or side.
-   * @return Returns true if the specified menu is currently open, otherwise false.
-   * If the menuId is not specified, it returns true if ANY menu is currenly open.
-   */
-  isOpen(menuId) {
-    return this.menuController.isOpen(menuId);
-  }
-  /**
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns true if the menu is currently enabled, otherwise false.
-   */
-  isEnabled(menuId) {
-    return this.menuController.isEnabled(menuId);
-  }
-  /**
-   * Used to get a menu instance. If a `menuId` is not provided then it'll
-   * return the first menu found. If a `menuId` is `left` or `right`, then
-   * it'll return the enabled menu on that side. Otherwise, if a `menuId` is
-   * provided, then it'll try to find the menu using the menu's `id`
-   * property. If a menu is not found then it'll return `null`.
-   * @param [menuId]  Optionally get the menu by its id, or side.
-   * @return Returns the instance of the menu if found, otherwise `null`.
-   */
-  get(menuId) {
-    return this.menuController.get(menuId);
-  }
-  /**
-   * @return Returns the instance of the menu already opened, otherwise `null`.
-   */
-  getOpen() {
-    return this.menuController.getOpen();
-  }
-  /**
-   * @return Returns an array of all menu instances.
-   */
-  getMenus() {
-    return this.menuController.getMenus();
-  }
-  registerAnimation(name, animation) {
-    return this.menuController.registerAnimation(name, animation);
-  }
-  isAnimating() {
-    return this.menuController.isAnimating();
-  }
-  _getOpenSync() {
-    return this.menuController._getOpenSync();
-  }
-  _createAnimation(type, menuCmp) {
-    return this.menuController._createAnimation(type, menuCmp);
-  }
-  _register(menu) {
-    return this.menuController._register(menu);
-  }
-  _unregister(menu) {
-    return this.menuController._unregister(menu);
-  }
-  _setOpen(menu, shouldOpen, animated) {
-    return this.menuController._setOpen(menu, shouldOpen, animated);
-  }
-};
-var DomController = class _DomController {
-  /**
-   * Schedules a task to run during the READ phase of the next frame.
-   * This task should only read the DOM, but never modify it.
-   */
-  read(cb) {
-    getQueue().read(cb);
-  }
-  /**
-   * Schedules a task to run during the WRITE phase of the next frame.
-   * This task should write the DOM, but never READ it.
-   */
-  write(cb) {
-    getQueue().write(cb);
-  }
-  /** @nocollapse */
-  static ɵfac = function DomController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DomController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _DomController,
-    factory: _DomController.ɵfac,
-    providedIn: "root"
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DomController, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var getQueue = () => {
-  const win3 = typeof window !== "undefined" ? window : null;
-  if (win3 != null) {
-    const Ionic = win3.Ionic;
-    if (Ionic?.queue) {
-      return Ionic.queue;
-    }
-    return {
-      read: (cb) => win3.requestAnimationFrame(cb),
-      write: (cb) => win3.requestAnimationFrame(cb)
-    };
-  }
-  return {
-    read: (cb) => cb(),
-    write: (cb) => cb()
-  };
-};
-var Platform = class _Platform {
-  doc;
-  _readyPromise;
-  win;
-  /**
-   * @hidden
-   */
-  backButton = new Subject();
-  /**
-   * The keyboardDidShow event emits when the
-   * on-screen keyboard is presented.
-   */
-  keyboardDidShow = new Subject();
-  /**
-   * The keyboardDidHide event emits when the
-   * on-screen keyboard is hidden.
-   */
-  keyboardDidHide = new Subject();
-  /**
-   * The pause event emits when the native platform puts the application
-   * into the background, typically when the user switches to a different
-   * application. This event would emit when a Cordova app is put into
-   * the background, however, it would not fire on a standard web browser.
-   */
-  pause = new Subject();
-  /**
-   * The resume event emits when the native platform pulls the application
-   * out from the background. This event would emit when a Cordova app comes
-   * out from the background, however, it would not fire on a standard web browser.
-   */
-  resume = new Subject();
-  /**
-   * The resize event emits when the browser window has changed dimensions. This
-   * could be from a browser window being physically resized, or from a device
-   * changing orientation.
-   */
-  resize = new Subject();
-  constructor(doc2, zone) {
-    this.doc = doc2;
-    zone.run(() => {
-      this.win = doc2.defaultView;
-      this.backButton.subscribeWithPriority = function(priority, callback) {
-        return this.subscribe((ev) => {
-          return ev.register(priority, (processNextHandler) => zone.run(() => callback(processNextHandler)));
-        });
-      };
-      proxyEvent(this.pause, doc2, "pause", zone);
-      proxyEvent(this.resume, doc2, "resume", zone);
-      proxyEvent(this.backButton, doc2, "ionBackButton", zone);
-      proxyEvent(this.resize, this.win, "resize", zone);
-      proxyEvent(this.keyboardDidShow, this.win, "ionKeyboardDidShow", zone);
-      proxyEvent(this.keyboardDidHide, this.win, "ionKeyboardDidHide", zone);
-      let readyResolve;
-      this._readyPromise = new Promise((res) => {
-        readyResolve = res;
-      });
-      if (this.win?.["cordova"]) {
-        doc2.addEventListener("deviceready", () => {
-          readyResolve("cordova");
-        }, {
-          once: true
-        });
-      } else {
-        readyResolve("dom");
-      }
-    });
-  }
-  /**
-   * @returns returns true/false based on platform.
-   * @description
-   * Depending on the platform the user is on, `is(platformName)` will
-   * return `true` or `false`. Note that the same app can return `true`
-   * for more than one platform name. For example, an app running from
-   * an iPad would return `true` for the platform names: `mobile`,
-   * `ios`, `ipad`, and `tablet`. Additionally, if the app was running
-   * from Cordova then `cordova` would be true, and if it was running
-   * from a web browser on the iPad then `mobileweb` would be `true`.
-   *
-   * ```
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyPage {
-   *   constructor(public platform: Platform) {
-   *     if (this.platform.is('ios')) {
-   *       // This will only print when on iOS
-   *       console.log('I am an iOS device!');
-   *     }
-   *   }
-   * }
-   * ```
-   *
-   * | Platform Name   | Description                        |
-   * |-----------------|------------------------------------|
-   * | android         | on a device running Android.       |
-   * | capacitor       | on a device running Capacitor.     |
-   * | cordova         | on a device running Cordova.       |
-   * | ios             | on a device running iOS.           |
-   * | ipad            | on an iPad device.                 |
-   * | iphone          | on an iPhone device.               |
-   * | phablet         | on a phablet device.               |
-   * | tablet          | on a tablet device.                |
-   * | electron        | in Electron on a desktop device.   |
-   * | pwa             | as a PWA app.                      |
-   * | mobile          | on a mobile device.                |
-   * | mobileweb       | on a mobile device in a browser.   |
-   * | desktop         | on a desktop device.               |
-   * | hybrid          | is a cordova or capacitor app.     |
-   *
-   */
-  is(platformName) {
-    return isPlatform(this.win, platformName);
-  }
-  /**
-   * @returns the array of platforms
-   * @description
-   * Depending on what device you are on, `platforms` can return multiple values.
-   * Each possible value is a hierarchy of platforms. For example, on an iPhone,
-   * it would return `mobile`, `ios`, and `iphone`.
-   *
-   * ```
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyPage {
-   *   constructor(public platform: Platform) {
-   *     // This will print an array of the current platforms
-   *     console.log(this.platform.platforms());
-   *   }
-   * }
-   * ```
-   */
-  platforms() {
-    return getPlatforms(this.win);
-  }
-  /**
-   * Returns a promise when the platform is ready and native functionality
-   * can be called. If the app is running from within a web browser, then
-   * the promise will resolve when the DOM is ready. When the app is running
-   * from an application engine such as Cordova, then the promise will
-   * resolve when Cordova triggers the `deviceready` event.
-   *
-   * The resolved value is the `readySource`, which states which platform
-   * ready was used. For example, when Cordova is ready, the resolved ready
-   * source is `cordova`. The default ready source value will be `dom`. The
-   * `readySource` is useful if different logic should run depending on the
-   * platform the app is running from. For example, only Cordova can execute
-   * the status bar plugin, so the web should not run status bar plugin logic.
-   *
-   * ```
-   * import { Component } from '@angular/core';
-   * import { Platform } from 'ionic-angular';
-   *
-   * @Component({...})
-   * export MyApp {
-   *   constructor(public platform: Platform) {
-   *     this.platform.ready().then((readySource) => {
-   *       console.log('Platform ready from', readySource);
-   *       // Platform now ready, execute any required native code
-   *     });
-   *   }
-   * }
-   * ```
-   */
-  ready() {
-    return this._readyPromise;
-  }
-  /**
-   * Returns if this app is using right-to-left language direction or not.
-   * We recommend the app's `index.html` file already has the correct `dir`
-   * attribute value set, such as `<html dir="ltr">` or `<html dir="rtl">`.
-   * [W3C: Structural markup and right-to-left text in HTML](http://www.w3.org/International/questions/qa-html-dir)
-   */
-  get isRTL() {
-    return this.doc.dir === "rtl";
-  }
-  /**
-   * Get the query string parameter
-   */
-  getQueryParam(key) {
-    return readQueryParam(this.win.location.href, key);
-  }
-  /**
-   * Returns `true` if the app is in landscape mode.
-   */
-  isLandscape() {
-    return !this.isPortrait();
-  }
-  /**
-   * Returns `true` if the app is in portrait mode.
-   */
-  isPortrait() {
-    return this.win.matchMedia?.("(orientation: portrait)").matches;
-  }
-  testUserAgent(expression) {
-    const nav = this.win.navigator;
-    return !!(nav?.userAgent && nav.userAgent.indexOf(expression) >= 0);
-  }
-  /**
-   * Get the current url.
-   */
-  url() {
-    return this.win.location.href;
-  }
-  /**
-   * Gets the width of the platform's viewport using `window.innerWidth`.
-   */
-  width() {
-    return this.win.innerWidth;
-  }
-  /**
-   * Gets the height of the platform's viewport using `window.innerHeight`.
-   */
-  height() {
-    return this.win.innerHeight;
-  }
-  /** @nocollapse */
-  static ɵfac = function Platform_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Platform)(ɵɵinject(DOCUMENT), ɵɵinject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _Platform,
-    factory: _Platform.ɵfac,
-    providedIn: "root"
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Platform, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [DOCUMENT]
-      }]
-    }, {
-      type: NgZone
-    }];
-  }, null);
-})();
-var readQueryParam = (url, key) => {
-  key = key.replace(/[[\]\\]/g, "\\$&");
-  const regex = new RegExp("[\\?&]" + key + "=([^&#]*)");
-  const results = regex.exec(url);
-  return results ? decodeURIComponent(results[1].replace(/\+/g, " ")) : null;
-};
-var proxyEvent = (emitter, el, eventName, zone) => {
-  if (el) {
-    el.addEventListener(eventName, (ev) => {
-      zone.run(() => {
-        const value = ev != null ? ev.detail : void 0;
-        emitter.next(value);
-      });
-    });
-  }
-};
-var NavController = class _NavController {
-  location;
-  serializer;
-  router;
-  topOutlet;
-  direction = DEFAULT_DIRECTION;
-  animated = DEFAULT_ANIMATED;
-  animationBuilder;
-  guessDirection = "forward";
-  guessAnimation;
-  lastNavId = -1;
-  constructor(platform, location, serializer, router) {
-    this.location = location;
-    this.serializer = serializer;
-    this.router = router;
-    if (router) {
-      router.events.subscribe((ev) => {
-        if (ev instanceof NavigationStart) {
-          const id = ev.restoredState ? ev.restoredState.navigationId : ev.id;
-          this.guessDirection = this.guessAnimation = id < this.lastNavId ? "back" : "forward";
-          this.lastNavId = this.guessDirection === "forward" ? ev.id : id;
-        }
-      });
-    }
-    platform.backButton.subscribeWithPriority(0, (processNextHandler) => {
-      this.pop();
-      processNextHandler();
-    });
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling `this.router.navigateByUrl()`, but it's explicit about the **direction** of the transition.
-   *
-   * Going **forward** means that a new page is going to be pushed to the stack of the outlet (ion-router-outlet),
-   * and that it will show a "forward" animation by default.
-   *
-   * Navigating forward can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="forward">Link</a>
-   * ```
-   */
-  navigateForward(url, options = {}) {
-    this.setDirection("forward", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling:
-   *
-   * ```ts
-   * this.navController.setDirection('back');
-   * this.router.navigateByUrl(path);
-   * ```
-   *
-   * Going **back** means that all the pages in the stack until the navigated page is found will be popped,
-   * and that it will show a "back" animation by default.
-   *
-   * Navigating back can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="back">Link</a>
-   * ```
-   */
-  navigateBack(url, options = {}) {
-    this.setDirection("back", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * This method uses Angular's [Router](https://angular.io/api/router/Router) under the hood,
-   * it's equivalent to calling:
-   *
-   * ```ts
-   * this.navController.setDirection('root');
-   * this.router.navigateByUrl(path);
-   * ```
-   *
-   * Going **root** means that all existing pages in the stack will be removed,
-   * and the navigated page will become the single page in the stack.
-   *
-   * Navigating root can also be triggered in a declarative manner by using the `[routerDirection]` directive:
-   *
-   * ```html
-   * <a routerLink="/path/to/page" routerDirection="root">Link</a>
-   * ```
-   */
-  navigateRoot(url, options = {}) {
-    this.setDirection("root", options.animated, options.animationDirection, options.animation);
-    return this.navigate(url, options);
-  }
-  /**
-   * Same as [Location](https://angular.io/api/common/Location)'s back() method.
-   * It will use the standard `window.history.back()` under the hood, but featuring a `back` animation
-   * by default.
-   */
-  back(options = {
-    animated: true,
-    animationDirection: "back"
-  }) {
-    this.setDirection("back", options.animated, options.animationDirection, options.animation);
-    return this.location.back();
-  }
-  /**
-   * This methods goes back in the context of Ionic's stack navigation.
-   *
-   * It recursively finds the top active `ion-router-outlet` and calls `pop()`.
-   * This is the recommended way to go back when you are using `ion-router-outlet`.
-   *
-   * Resolves to `true` if it was able to pop.
-   */
-  pop() {
-    return __async(this, null, function* () {
-      let outlet = this.topOutlet;
-      while (outlet) {
-        if (yield outlet.pop()) {
-          return true;
-        } else {
-          outlet = outlet.parentOutlet;
-        }
-      }
-      return false;
-    });
-  }
-  /**
-   * This methods specifies the direction of the next navigation performed by the Angular router.
-   *
-   * `setDirection()` does not trigger any transition, it just sets some flags to be consumed by `ion-router-outlet`.
-   *
-   * It's recommended to use `navigateForward()`, `navigateBack()` and `navigateRoot()` instead of `setDirection()`.
-   */
-  setDirection(direction, animated, animationDirection, animationBuilder) {
-    this.direction = direction;
-    this.animated = getAnimation(direction, animated, animationDirection);
-    this.animationBuilder = animationBuilder;
-  }
-  /**
-   * @internal
-   */
-  setTopOutlet(outlet) {
-    this.topOutlet = outlet;
-  }
-  /**
-   * @internal
-   */
-  consumeTransition() {
-    let direction = "root";
-    let animation;
-    const animationBuilder = this.animationBuilder;
-    if (this.direction === "auto") {
-      direction = this.guessDirection;
-      animation = this.guessAnimation;
-    } else {
-      animation = this.animated;
-      direction = this.direction;
-    }
-    this.direction = DEFAULT_DIRECTION;
-    this.animated = DEFAULT_ANIMATED;
-    this.animationBuilder = void 0;
-    return {
-      direction,
-      animation,
-      animationBuilder
-    };
-  }
-  navigate(url, options) {
-    if (Array.isArray(url)) {
-      return this.router.navigate(url, options);
-    } else {
-      const urlTree = this.serializer.parse(url.toString());
-      if (options.queryParams !== void 0) {
-        urlTree.queryParams = __spreadValues({}, options.queryParams);
-      }
-      if (options.fragment !== void 0) {
-        urlTree.fragment = options.fragment;
-      }
-      return this.router.navigateByUrl(urlTree, options);
-    }
-  }
-  /** @nocollapse */
-  static ɵfac = function NavController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _NavController)(ɵɵinject(Platform), ɵɵinject(Location), ɵɵinject(UrlSerializer), ɵɵinject(Router, 8));
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _NavController,
-    factory: _NavController.ɵfac,
-    providedIn: "root"
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NavController, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], function() {
-    return [{
-      type: Platform
-    }, {
-      type: Location
-    }, {
-      type: UrlSerializer
-    }, {
-      type: Router,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, null);
-})();
-var getAnimation = (direction, animated, animationDirection) => {
-  if (animated === false) {
-    return void 0;
-  }
-  if (animationDirection !== void 0) {
-    return animationDirection;
-  }
-  if (direction === "forward" || direction === "back") {
-    return direction;
-  } else if (direction === "root" && animated === true) {
-    return "forward";
-  }
-  return void 0;
-};
-var DEFAULT_DIRECTION = "auto";
-var DEFAULT_ANIMATED = void 0;
-var Config = class _Config {
-  get(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.get(key, fallback);
-    }
-    return null;
-  }
-  getBoolean(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.getBoolean(key, fallback);
-    }
-    return false;
-  }
-  getNumber(key, fallback) {
-    const c = getConfig();
-    if (c) {
-      return c.getNumber(key, fallback);
-    }
-    return 0;
-  }
-  /** @nocollapse */
-  static ɵfac = function Config_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _Config)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _Config,
-    factory: _Config.ɵfac,
-    providedIn: "root"
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Config, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var ConfigToken = new InjectionToken("USERCONFIG");
-var getConfig = () => {
-  if (typeof window !== "undefined") {
-    const Ionic = window.Ionic;
-    if (Ionic?.config) {
-      return Ionic.config;
-    }
-  }
-  return null;
-};
-var NavParams = class {
-  data;
-  constructor(data = {}) {
-    this.data = data;
-    console.warn(`[Ionic Warning]: NavParams has been deprecated in favor of using Angular's input API. Developers should migrate to either the @Input decorator or the Signals-based input API.`);
-  }
-  /**
-   * Get the value of a nav-parameter for the current view
-   *
-   * ```ts
-   * import { NavParams } from 'ionic-angular';
-   *
-   * export class MyClass{
-   *  constructor(public navParams: NavParams){
-   *    // userParams is an object we have in our nav-parameters
-   *    this.navParams.get('userParams');
-   *  }
-   * }
-   * ```
-   *
-   * @param param Which param you want to look up
-   */
-  get(param) {
-    return this.data[param];
-  }
-};
-var AngularDelegate = class _AngularDelegate {
-  zone = inject(NgZone);
-  applicationRef = inject(ApplicationRef);
-  config = inject(ConfigToken);
-  create(environmentInjector, injector, elementReferenceKey) {
-    return new AngularFrameworkDelegate(environmentInjector, injector, this.applicationRef, this.zone, elementReferenceKey, this.config.useSetInputAPI ?? false);
-  }
-  /** @nocollapse */
-  static ɵfac = function AngularDelegate_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AngularDelegate)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _AngularDelegate,
-    factory: _AngularDelegate.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AngularDelegate, [{
-    type: Injectable
-  }], null, null);
-})();
-var AngularFrameworkDelegate = class {
-  environmentInjector;
-  injector;
-  applicationRef;
-  zone;
-  elementReferenceKey;
-  enableSignalsSupport;
-  elRefMap = /* @__PURE__ */ new WeakMap();
-  elEventsMap = /* @__PURE__ */ new WeakMap();
-  constructor(environmentInjector, injector, applicationRef, zone, elementReferenceKey, enableSignalsSupport) {
-    this.environmentInjector = environmentInjector;
-    this.injector = injector;
-    this.applicationRef = applicationRef;
-    this.zone = zone;
-    this.elementReferenceKey = elementReferenceKey;
-    this.enableSignalsSupport = enableSignalsSupport;
-  }
-  attachViewToDom(container, component, params, cssClasses) {
-    return this.zone.run(() => {
-      return new Promise((resolve) => {
-        const componentProps = __spreadValues({}, params);
-        if (this.elementReferenceKey !== void 0) {
-          componentProps[this.elementReferenceKey] = container;
-        }
-        const el = attachView(this.zone, this.environmentInjector, this.injector, this.applicationRef, this.elRefMap, this.elEventsMap, container, component, componentProps, cssClasses, this.elementReferenceKey, this.enableSignalsSupport);
-        resolve(el);
-      });
-    });
-  }
-  removeViewFromDom(_container, component) {
-    return this.zone.run(() => {
-      return new Promise((resolve) => {
-        const componentRef = this.elRefMap.get(component);
-        if (componentRef) {
-          componentRef.destroy();
-          this.elRefMap.delete(component);
-          const unbindEvents = this.elEventsMap.get(component);
-          if (unbindEvents) {
-            unbindEvents();
-            this.elEventsMap.delete(component);
-          }
-        }
-        resolve();
-      });
-    });
-  }
-};
-var attachView = (zone, environmentInjector, injector, applicationRef, elRefMap, elEventsMap, container, component, params, cssClasses, elementReferenceKey, enableSignalsSupport) => {
-  const childInjector = Injector.create({
-    providers: getProviders(params),
-    parent: injector
-  });
-  const componentRef = createComponent(component, {
-    environmentInjector,
-    elementInjector: childInjector
-  });
-  const instance = componentRef.instance;
-  const hostElement = componentRef.location.nativeElement;
-  if (params) {
-    if (elementReferenceKey && instance[elementReferenceKey] !== void 0) {
-      console.error(`[Ionic Error]: ${elementReferenceKey} is a reserved property when using ${container.tagName.toLowerCase()}. Rename or remove the "${elementReferenceKey}" property from ${component.name}.`);
-    }
-    if (enableSignalsSupport === true && componentRef.setInput !== void 0) {
-      const _a = params, {
-        modal,
-        popover
-      } = _a, otherParams = __objRest(_a, [
-        "modal",
-        "popover"
-      ]);
-      for (const key in otherParams) {
-        componentRef.setInput(key, otherParams[key]);
-      }
-      if (modal !== void 0) {
-        Object.assign(instance, {
-          modal
-        });
-      }
-      if (popover !== void 0) {
-        Object.assign(instance, {
-          popover
-        });
-      }
-    } else {
-      Object.assign(instance, params);
-    }
-  }
-  if (cssClasses) {
-    for (const cssClass of cssClasses) {
-      hostElement.classList.add(cssClass);
-    }
-  }
-  const unbindEvents = bindLifecycleEvents(zone, instance, hostElement);
-  container.appendChild(hostElement);
-  applicationRef.attachView(componentRef.hostView);
-  elRefMap.set(hostElement, componentRef);
-  elEventsMap.set(hostElement, unbindEvents);
-  return hostElement;
-};
-var LIFECYCLES = [LIFECYCLE_WILL_ENTER, LIFECYCLE_DID_ENTER, LIFECYCLE_WILL_LEAVE, LIFECYCLE_DID_LEAVE, LIFECYCLE_WILL_UNLOAD];
-var bindLifecycleEvents = (zone, instance, element) => {
-  return zone.run(() => {
-    const unregisters = LIFECYCLES.filter((eventName) => typeof instance[eventName] === "function").map((eventName) => {
-      const handler = (ev) => instance[eventName](ev.detail);
-      element.addEventListener(eventName, handler);
-      return () => element.removeEventListener(eventName, handler);
-    });
-    return () => unregisters.forEach((fn) => fn());
-  });
-};
-var NavParamsToken = new InjectionToken("NavParamsToken");
-var getProviders = (params) => {
-  return [{
-    provide: NavParamsToken,
-    useValue: params
-  }, {
-    provide: NavParams,
-    useFactory: provideNavParamsInjectable,
-    deps: [NavParamsToken]
-  }];
-};
-var provideNavParamsInjectable = (params) => {
-  return new NavParams(params);
-};
-var proxyInputs = (Cmp, inputs) => {
-  const Prototype = Cmp.prototype;
-  inputs.forEach((item) => {
-    Object.defineProperty(Prototype, item, {
-      get() {
-        return this.el[item];
-      },
-      set(val) {
-        this.z.runOutsideAngular(() => this.el[item] = val);
-      }
-    });
-  });
-};
-var proxyMethods = (Cmp, methods) => {
-  const Prototype = Cmp.prototype;
-  methods.forEach((methodName) => {
-    Prototype[methodName] = function() {
-      const args = arguments;
-      return this.z.runOutsideAngular(() => this.el[methodName].apply(this.el, args));
-    };
-  });
-};
-var proxyOutputs = (instance, el, events) => {
-  events.forEach((eventName) => instance[eventName] = fromEvent(el, eventName));
-};
-function ProxyCmp(opts) {
-  const decorator = function(cls) {
-    const {
-      defineCustomElementFn,
-      inputs,
-      methods
-    } = opts;
-    if (defineCustomElementFn !== void 0) {
-      defineCustomElementFn();
-    }
-    if (inputs) {
-      proxyInputs(cls, inputs);
-    }
-    if (methods) {
-      proxyMethods(cls, methods);
-    }
-    return cls;
-  };
-  return decorator;
-}
-var POPOVER_INPUTS = ["alignment", "animated", "arrow", "keepContentsMounted", "backdropDismiss", "cssClass", "dismissOnSelect", "enterAnimation", "event", "focusTrap", "isOpen", "keyboardClose", "leaveAnimation", "mode", "showBackdrop", "translucent", "trigger", "triggerAction", "reference", "size", "side"];
-var POPOVER_METHODS = ["present", "dismiss", "onDidDismiss", "onWillDismiss"];
-var IonPopover = class IonPopover2 {
-  z;
-  // TODO(FW-2827): type
-  template;
-  isCmpOpen = false;
-  el;
-  constructor(c, r, z) {
-    this.z = z;
-    this.el = r.nativeElement;
-    this.el.addEventListener("ionMount", () => {
-      this.isCmpOpen = true;
-      c.detectChanges();
-    });
-    this.el.addEventListener("didDismiss", () => {
-      this.isCmpOpen = false;
-      c.detectChanges();
-    });
-    proxyOutputs(this, this.el, ["ionPopoverDidPresent", "ionPopoverWillPresent", "ionPopoverWillDismiss", "ionPopoverDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
-  }
-  /** @nocollapse */
-  static ɵfac = function IonPopover_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonPopover2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: IonPopover2,
-    selectors: [["ion-popover"]],
-    contentQueries: function IonPopover_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, TemplateRef, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-      }
-    },
-    inputs: {
-      alignment: "alignment",
-      animated: "animated",
-      arrow: "arrow",
-      keepContentsMounted: "keepContentsMounted",
-      backdropDismiss: "backdropDismiss",
-      cssClass: "cssClass",
-      dismissOnSelect: "dismissOnSelect",
-      enterAnimation: "enterAnimation",
-      event: "event",
-      focusTrap: "focusTrap",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      mode: "mode",
-      showBackdrop: "showBackdrop",
-      translucent: "translucent",
-      trigger: "trigger",
-      triggerAction: "triggerAction",
-      reference: "reference",
-      size: "size",
-      side: "side"
-    },
-    standalone: false
-  });
-};
-IonPopover = __decorate([
-  ProxyCmp({
-    inputs: POPOVER_INPUTS,
-    methods: POPOVER_METHODS
-  })
-  /**
-   * @Component extends from @Directive
-   * so by defining the inputs here we
-   * do not need to re-define them for the
-   * lazy loaded popover.
-   */
-], IonPopover);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonPopover, [{
-    type: Directive,
-    args: [{
-      selector: "ion-popover",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: POPOVER_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }];
-  }, {
-    template: [{
-      type: ContentChild,
-      args: [TemplateRef, {
-        static: false
-      }]
-    }]
-  });
-})();
-var MODAL_INPUTS = ["animated", "keepContentsMounted", "backdropBreakpoint", "backdropDismiss", "breakpoints", "canDismiss", "cssClass", "enterAnimation", "event", "focusTrap", "handle", "handleBehavior", "initialBreakpoint", "isOpen", "keyboardClose", "leaveAnimation", "mode", "presentingElement", "showBackdrop", "translucent", "trigger"];
-var MODAL_METHODS = ["present", "dismiss", "onDidDismiss", "onWillDismiss", "setCurrentBreakpoint", "getCurrentBreakpoint"];
-var IonModal = class IonModal2 {
-  z;
-  // TODO(FW-2827): type
-  template;
-  isCmpOpen = false;
-  el;
-  constructor(c, r, z) {
-    this.z = z;
-    this.el = r.nativeElement;
-    this.el.addEventListener("ionMount", () => {
-      this.isCmpOpen = true;
-      c.detectChanges();
-    });
-    this.el.addEventListener("didDismiss", () => {
-      this.isCmpOpen = false;
-      c.detectChanges();
-    });
-    proxyOutputs(this, this.el, ["ionModalDidPresent", "ionModalWillPresent", "ionModalWillDismiss", "ionModalDidDismiss", "ionBreakpointDidChange", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
-  }
-  /** @nocollapse */
-  static ɵfac = function IonModal_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonModal2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: IonModal2,
-    selectors: [["ion-modal"]],
-    contentQueries: function IonModal_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, TemplateRef, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-      }
-    },
-    inputs: {
-      animated: "animated",
-      keepContentsMounted: "keepContentsMounted",
-      backdropBreakpoint: "backdropBreakpoint",
-      backdropDismiss: "backdropDismiss",
-      breakpoints: "breakpoints",
-      canDismiss: "canDismiss",
-      cssClass: "cssClass",
-      enterAnimation: "enterAnimation",
-      event: "event",
-      focusTrap: "focusTrap",
-      handle: "handle",
-      handleBehavior: "handleBehavior",
-      initialBreakpoint: "initialBreakpoint",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      mode: "mode",
-      presentingElement: "presentingElement",
-      showBackdrop: "showBackdrop",
-      translucent: "translucent",
-      trigger: "trigger"
-    },
-    standalone: false
-  });
-};
-IonModal = __decorate([
-  ProxyCmp({
-    inputs: MODAL_INPUTS,
-    methods: MODAL_METHODS
-  })
-  /**
-   * @Component extends from @Directive
-   * so by defining the inputs here we
-   * do not need to re-define them for the
-   * lazy loaded popover.
-   */
-], IonModal);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonModal, [{
-    type: Directive,
-    args: [{
-      selector: "ion-modal",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: MODAL_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }];
-  }, {
-    template: [{
-      type: ContentChild,
-      args: [TemplateRef, {
-        static: false
-      }]
-    }]
-  });
-})();
-var insertView = (views, view, direction) => {
-  if (direction === "root") {
-    return setRoot(views, view);
-  } else if (direction === "forward") {
-    return setForward(views, view);
-  } else {
-    return setBack(views, view);
-  }
-};
-var setRoot = (views, view) => {
-  views = views.filter((v) => v.stackId !== view.stackId);
-  views.push(view);
-  return views;
-};
-var setForward = (views, view) => {
-  const index = views.indexOf(view);
-  if (index >= 0) {
-    views = views.filter((v) => v.stackId !== view.stackId || v.id <= view.id);
-  } else {
-    views.push(view);
-  }
-  return views;
-};
-var setBack = (views, view) => {
-  const index = views.indexOf(view);
-  if (index >= 0) {
-    return views.filter((v) => v.stackId !== view.stackId || v.id <= view.id);
-  } else {
-    return setRoot(views, view);
-  }
-};
-var getUrl = (router, activatedRoute) => {
-  const urlTree = router.createUrlTree(["."], {
-    relativeTo: activatedRoute
-  });
-  return router.serializeUrl(urlTree);
-};
-var isTabSwitch = (enteringView, leavingView) => {
-  if (!leavingView) {
-    return true;
-  }
-  return enteringView.stackId !== leavingView.stackId;
-};
-var computeStackId = (prefixUrl, url) => {
-  if (!prefixUrl) {
-    return void 0;
-  }
-  const segments = toSegments(url);
-  for (let i = 0; i < segments.length; i++) {
-    if (i >= prefixUrl.length) {
-      return segments[i];
-    }
-    if (segments[i] !== prefixUrl[i]) {
-      return void 0;
-    }
-  }
-  return void 0;
-};
-var toSegments = (path) => {
-  return path.split("/").map((s) => s.trim()).filter((s) => s !== "");
-};
-var destroyView = (view) => {
-  if (view) {
-    view.ref.destroy();
-    view.unlistenEvents();
-  }
-};
-var StackController = class {
-  containerEl;
-  router;
-  navCtrl;
-  zone;
-  location;
-  views = [];
-  runningTask;
-  skipTransition = false;
-  tabsPrefix;
-  activeView;
-  nextId = 0;
-  constructor(tabsPrefix, containerEl, router, navCtrl, zone, location) {
-    this.containerEl = containerEl;
-    this.router = router;
-    this.navCtrl = navCtrl;
-    this.zone = zone;
-    this.location = location;
-    this.tabsPrefix = tabsPrefix !== void 0 ? toSegments(tabsPrefix) : void 0;
-  }
-  createView(ref, activatedRoute) {
-    const url = getUrl(this.router, activatedRoute);
-    const element = ref?.location?.nativeElement;
-    const unlistenEvents = bindLifecycleEvents(this.zone, ref.instance, element);
-    return {
-      id: this.nextId++,
-      stackId: computeStackId(this.tabsPrefix, url),
-      unlistenEvents,
-      element,
-      ref,
-      url
-    };
-  }
-  getExistingView(activatedRoute) {
-    const activatedUrlKey = getUrl(this.router, activatedRoute);
-    const view = this.views.find((vw) => vw.url === activatedUrlKey);
-    if (view) {
-      view.ref.changeDetectorRef.reattach();
-    }
-    return view;
-  }
-  setActive(enteringView) {
-    const consumeResult = this.navCtrl.consumeTransition();
-    let {
-      direction,
-      animation,
-      animationBuilder
-    } = consumeResult;
-    const leavingView = this.activeView;
-    const tabSwitch = isTabSwitch(enteringView, leavingView);
-    if (tabSwitch) {
-      direction = "back";
-      animation = void 0;
-    }
-    const viewsSnapshot = this.views.slice();
-    let currentNavigation;
-    const router = this.router;
-    if (router.getCurrentNavigation) {
-      currentNavigation = router.getCurrentNavigation();
-    } else if (router.navigations?.value) {
-      currentNavigation = router.navigations.value;
-    }
-    if (currentNavigation?.extras?.replaceUrl) {
-      if (this.views.length > 0) {
-        this.views.splice(-1, 1);
-      }
-    }
-    const reused = this.views.includes(enteringView);
-    const views = this.insertView(enteringView, direction);
-    if (!reused) {
-      enteringView.ref.changeDetectorRef.detectChanges();
-    }
-    const customAnimation = enteringView.animationBuilder;
-    if (animationBuilder === void 0 && direction === "back" && !tabSwitch && customAnimation !== void 0) {
-      animationBuilder = customAnimation;
-    }
-    if (leavingView) {
-      leavingView.animationBuilder = animationBuilder;
-    }
-    return this.zone.runOutsideAngular(() => {
-      return this.wait(() => {
-        if (leavingView) {
-          leavingView.ref.changeDetectorRef.detach();
-        }
-        enteringView.ref.changeDetectorRef.reattach();
-        return this.transition(enteringView, leavingView, animation, this.canGoBack(1), false, animationBuilder).then(() => cleanupAsync(enteringView, views, viewsSnapshot, this.location, this.zone)).then(() => ({
-          enteringView,
-          direction,
-          animation,
-          tabSwitch
-        }));
-      });
-    });
-  }
-  canGoBack(deep, stackId = this.getActiveStackId()) {
-    return this.getStack(stackId).length > deep;
-  }
-  pop(deep, stackId = this.getActiveStackId()) {
-    return this.zone.run(() => {
-      const views = this.getStack(stackId);
-      if (views.length <= deep) {
-        return Promise.resolve(false);
-      }
-      const view = views[views.length - deep - 1];
-      let url = view.url;
-      const viewSavedData = view.savedData;
-      if (viewSavedData) {
-        const primaryOutlet = viewSavedData.get("primary");
-        if (primaryOutlet?.route?._routerState?.snapshot.url) {
-          url = primaryOutlet.route._routerState.snapshot.url;
-        }
-      }
-      const {
-        animationBuilder
-      } = this.navCtrl.consumeTransition();
-      return this.navCtrl.navigateBack(url, __spreadProps(__spreadValues({}, view.savedExtras), {
-        animation: animationBuilder
-      })).then(() => true);
-    });
-  }
-  startBackTransition() {
-    const leavingView = this.activeView;
-    if (leavingView) {
-      const views = this.getStack(leavingView.stackId);
-      const enteringView = views[views.length - 2];
-      const customAnimation = enteringView.animationBuilder;
-      return this.wait(() => {
-        return this.transition(
-          enteringView,
-          // entering view
-          leavingView,
-          // leaving view
-          "back",
-          this.canGoBack(2),
-          true,
-          customAnimation
-        );
-      });
-    }
-    return Promise.resolve();
-  }
-  endBackTransition(shouldComplete) {
-    if (shouldComplete) {
-      this.skipTransition = true;
-      this.pop(1);
-    } else if (this.activeView) {
-      cleanup(this.activeView, this.views, this.views, this.location, this.zone);
-    }
-  }
-  getLastUrl(stackId) {
-    const views = this.getStack(stackId);
-    return views.length > 0 ? views[views.length - 1] : void 0;
-  }
-  /**
-   * @internal
-   */
-  getRootUrl(stackId) {
-    const views = this.getStack(stackId);
-    return views.length > 0 ? views[0] : void 0;
-  }
-  getActiveStackId() {
-    return this.activeView ? this.activeView.stackId : void 0;
-  }
-  /**
-   * @internal
-   */
-  getActiveView() {
-    return this.activeView;
-  }
-  hasRunningTask() {
-    return this.runningTask !== void 0;
-  }
-  destroy() {
-    this.containerEl = void 0;
-    this.views.forEach(destroyView);
-    this.activeView = void 0;
-    this.views = [];
-  }
-  getStack(stackId) {
-    return this.views.filter((v) => v.stackId === stackId);
-  }
-  insertView(enteringView, direction) {
-    this.activeView = enteringView;
-    this.views = insertView(this.views, enteringView, direction);
-    return this.views.slice();
-  }
-  transition(enteringView, leavingView, direction, showGoBack, progressAnimation, animationBuilder) {
-    if (this.skipTransition) {
-      this.skipTransition = false;
-      return Promise.resolve(false);
-    }
-    if (leavingView === enteringView) {
-      return Promise.resolve(false);
-    }
-    const enteringEl = enteringView ? enteringView.element : void 0;
-    const leavingEl = leavingView ? leavingView.element : void 0;
-    const containerEl = this.containerEl;
-    if (enteringEl && enteringEl !== leavingEl) {
-      enteringEl.classList.add("ion-page");
-      enteringEl.classList.add("ion-page-invisible");
-      if (containerEl.commit) {
-        return containerEl.commit(enteringEl, leavingEl, {
-          duration: direction === void 0 ? 0 : void 0,
-          direction,
-          showGoBack,
-          progressAnimation,
-          animationBuilder
-        });
-      }
-    }
-    return Promise.resolve(false);
-  }
-  wait(task) {
-    return __async(this, null, function* () {
-      if (this.runningTask !== void 0) {
-        yield this.runningTask;
-        this.runningTask = void 0;
-      }
-      const promise = this.runningTask = task();
-      promise.finally(() => this.runningTask = void 0);
-      return promise;
-    });
-  }
-};
-var cleanupAsync = (activeRoute, views, viewsSnapshot, location, zone) => {
-  if (typeof requestAnimationFrame === "function") {
-    return new Promise((resolve) => {
-      requestAnimationFrame(() => {
-        cleanup(activeRoute, views, viewsSnapshot, location, zone);
-        resolve();
-      });
-    });
-  }
-  return Promise.resolve();
-};
-var cleanup = (activeRoute, views, viewsSnapshot, location, zone) => {
-  zone.run(() => viewsSnapshot.filter((view) => !views.includes(view)).forEach(destroyView));
-  views.forEach((view) => {
-    const locationWithoutParams = location.path().split("?")[0];
-    const locationWithoutFragment = locationWithoutParams.split("#")[0];
-    if (view !== activeRoute && view.url !== locationWithoutFragment) {
-      const element = view.element;
-      element.setAttribute("aria-hidden", "true");
-      element.classList.add("ion-page-hidden");
-      view.ref.changeDetectorRef.detach();
-    }
-  });
-};
-var IonRouterOutlet = class _IonRouterOutlet {
-  parentOutlet;
-  nativeEl;
-  activatedView = null;
-  tabsPrefix;
-  _swipeGesture;
-  stackCtrl;
-  // Maintain map of activated route proxies for each component instance
-  proxyMap = /* @__PURE__ */ new WeakMap();
-  // Keep the latest activated route in a subject for the proxy routes to switch map to
-  currentActivatedRoute$ = new BehaviorSubject(null);
-  activated = null;
-  /** @internal */
-  get activatedComponentRef() {
-    return this.activated;
-  }
-  _activatedRoute = null;
-  /**
-   * The name of the outlet
-   */
-  name = PRIMARY_OUTLET;
-  /** @internal */
-  stackWillChange = new EventEmitter();
-  /** @internal */
-  stackDidChange = new EventEmitter();
-  // eslint-disable-next-line @angular-eslint/no-output-rename
-  activateEvents = new EventEmitter();
-  // eslint-disable-next-line @angular-eslint/no-output-rename
-  deactivateEvents = new EventEmitter();
-  parentContexts = inject(ChildrenOutletContexts);
-  location = inject(ViewContainerRef);
-  environmentInjector = inject(EnvironmentInjector);
-  inputBinder = inject(INPUT_BINDER, {
-    optional: true
-  });
-  /** @nodoc */
-  supportsBindingToComponentInputs = true;
-  // Ionic providers
-  config = inject(Config);
-  navCtrl = inject(NavController);
-  set animation(animation) {
-    this.nativeEl.animation = animation;
-  }
-  set animated(animated) {
-    this.nativeEl.animated = animated;
-  }
-  set swipeGesture(swipe) {
-    this._swipeGesture = swipe;
-    this.nativeEl.swipeHandler = swipe ? {
-      canStart: () => this.stackCtrl.canGoBack(1) && !this.stackCtrl.hasRunningTask(),
-      onStart: () => this.stackCtrl.startBackTransition(),
-      onEnd: (shouldContinue) => this.stackCtrl.endBackTransition(shouldContinue)
-    } : void 0;
-  }
-  constructor(name, tabs, commonLocation, elementRef, router, zone, activatedRoute, parentOutlet) {
-    this.parentOutlet = parentOutlet;
-    this.nativeEl = elementRef.nativeElement;
-    this.name = name || PRIMARY_OUTLET;
-    this.tabsPrefix = tabs === "true" ? getUrl(router, activatedRoute) : void 0;
-    this.stackCtrl = new StackController(this.tabsPrefix, this.nativeEl, router, this.navCtrl, zone, commonLocation);
-    this.parentContexts.onChildOutletCreated(this.name, this);
-  }
-  ngOnDestroy() {
-    this.stackCtrl.destroy();
-    this.inputBinder?.unsubscribeFromRouteData(this);
-  }
-  getContext() {
-    return this.parentContexts.getContext(this.name);
-  }
-  ngOnInit() {
-    this.initializeOutletWithName();
-  }
-  // Note: Ionic deviates from the Angular Router implementation here
-  initializeOutletWithName() {
-    if (!this.activated) {
-      const context = this.getContext();
-      if (context?.route) {
-        this.activateWith(context.route, context.injector);
-      }
-    }
-    new Promise((resolve) => componentOnReady(this.nativeEl, resolve)).then(() => {
-      if (this._swipeGesture === void 0) {
-        this.swipeGesture = this.config.getBoolean("swipeBackEnabled", this.nativeEl.mode === "ios");
-      }
-    });
-  }
-  get isActivated() {
-    return !!this.activated;
-  }
-  get component() {
-    if (!this.activated) {
-      throw new Error("Outlet is not activated");
-    }
-    return this.activated.instance;
-  }
-  get activatedRoute() {
-    if (!this.activated) {
-      throw new Error("Outlet is not activated");
-    }
-    return this._activatedRoute;
-  }
-  get activatedRouteData() {
-    if (this._activatedRoute) {
-      return this._activatedRoute.snapshot.data;
-    }
-    return {};
-  }
-  /**
-   * Called when the `RouteReuseStrategy` instructs to detach the subtree
-   */
-  detach() {
-    throw new Error("incompatible reuse strategy");
-  }
-  /**
-   * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
-   */
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  attach(_ref, _activatedRoute) {
-    throw new Error("incompatible reuse strategy");
-  }
-  deactivate() {
-    if (this.activated) {
-      if (this.activatedView) {
-        const context = this.getContext();
-        this.activatedView.savedData = new Map(context.children["contexts"]);
-        const primaryOutlet = this.activatedView.savedData.get("primary");
-        if (primaryOutlet && context.route) {
-          primaryOutlet.route = __spreadValues({}, context.route);
-        }
-        this.activatedView.savedExtras = {};
-        if (context.route) {
-          const contextSnapshot = context.route.snapshot;
-          this.activatedView.savedExtras.queryParams = contextSnapshot.queryParams;
-          this.activatedView.savedExtras.fragment = contextSnapshot.fragment;
-        }
-      }
-      const c = this.component;
-      this.activatedView = null;
-      this.activated = null;
-      this._activatedRoute = null;
-      this.deactivateEvents.emit(c);
-    }
-  }
-  activateWith(activatedRoute, environmentInjector) {
-    if (this.isActivated) {
-      throw new Error("Cannot activate an already activated outlet");
-    }
-    this._activatedRoute = activatedRoute;
-    let cmpRef;
-    let enteringView = this.stackCtrl.getExistingView(activatedRoute);
-    if (enteringView) {
-      cmpRef = this.activated = enteringView.ref;
-      const saved = enteringView.savedData;
-      if (saved) {
-        const context = this.getContext();
-        context.children["contexts"] = saved;
-      }
-      this.updateActivatedRouteProxy(cmpRef.instance, activatedRoute);
-    } else {
-      const snapshot = activatedRoute._futureSnapshot;
-      const childContexts = this.parentContexts.getOrCreateContext(this.name).children;
-      const component$ = new BehaviorSubject(null);
-      const activatedRouteProxy = this.createActivatedRouteProxy(component$, activatedRoute);
-      const injector = new OutletInjector(activatedRouteProxy, childContexts, this.location.injector);
-      const component = snapshot.routeConfig.component ?? snapshot.component;
-      cmpRef = this.activated = this.outletContent.createComponent(component, {
-        index: this.outletContent.length,
-        injector,
-        environmentInjector: environmentInjector ?? this.environmentInjector
-      });
-      component$.next(cmpRef.instance);
-      enteringView = this.stackCtrl.createView(this.activated, activatedRoute);
-      this.proxyMap.set(cmpRef.instance, activatedRouteProxy);
-      this.currentActivatedRoute$.next({
-        component: cmpRef.instance,
-        activatedRoute
-      });
-    }
-    this.inputBinder?.bindActivatedRouteToOutletComponent(this);
-    this.activatedView = enteringView;
-    this.navCtrl.setTopOutlet(this);
-    const leavingView = this.stackCtrl.getActiveView();
-    this.stackWillChange.emit({
-      enteringView,
-      tabSwitch: isTabSwitch(enteringView, leavingView)
-    });
-    this.stackCtrl.setActive(enteringView).then((data) => {
-      this.activateEvents.emit(cmpRef.instance);
-      this.stackDidChange.emit(data);
-    });
-  }
-  /**
-   * Returns `true` if there are pages in the stack to go back.
-   */
-  canGoBack(deep = 1, stackId) {
-    return this.stackCtrl.canGoBack(deep, stackId);
-  }
-  /**
-   * Resolves to `true` if it the outlet was able to sucessfully pop the last N pages.
-   */
-  pop(deep = 1, stackId) {
-    return this.stackCtrl.pop(deep, stackId);
-  }
-  /**
-   * Returns the URL of the active page of each stack.
-   */
-  getLastUrl(stackId) {
-    const active = this.stackCtrl.getLastUrl(stackId);
-    return active ? active.url : void 0;
-  }
-  /**
-   * Returns the RouteView of the active page of each stack.
-   * @internal
-   */
-  getLastRouteView(stackId) {
-    return this.stackCtrl.getLastUrl(stackId);
-  }
-  /**
-   * Returns the root view in the tab stack.
-   * @internal
-   */
-  getRootView(stackId) {
-    return this.stackCtrl.getRootUrl(stackId);
-  }
-  /**
-   * Returns the active stack ID. In the context of ion-tabs, it means the active tab.
-   */
-  getActiveStackId() {
-    return this.stackCtrl.getActiveStackId();
-  }
-  /**
-   * Since the activated route can change over the life time of a component in an ion router outlet, we create
-   * a proxy so that we can update the values over time as a user navigates back to components already in the stack.
-   */
-  createActivatedRouteProxy(component$, activatedRoute) {
-    const proxy = new ActivatedRoute();
-    proxy._futureSnapshot = activatedRoute._futureSnapshot;
-    proxy._routerState = activatedRoute._routerState;
-    proxy.snapshot = activatedRoute.snapshot;
-    proxy.outlet = activatedRoute.outlet;
-    proxy.component = activatedRoute.component;
-    proxy._paramMap = this.proxyObservable(component$, "paramMap");
-    proxy._queryParamMap = this.proxyObservable(component$, "queryParamMap");
-    proxy.url = this.proxyObservable(component$, "url");
-    proxy.params = this.proxyObservable(component$, "params");
-    proxy.queryParams = this.proxyObservable(component$, "queryParams");
-    proxy.fragment = this.proxyObservable(component$, "fragment");
-    proxy.data = this.proxyObservable(component$, "data");
-    return proxy;
-  }
-  /**
-   * Create a wrapped observable that will switch to the latest activated route matched by the given component
-   */
-  proxyObservable(component$, path) {
-    return component$.pipe(
-      // First wait until the component instance is pushed
-      filter((component) => !!component),
-      switchMap((component) => this.currentActivatedRoute$.pipe(filter((current) => current !== null && current.component === component), switchMap((current) => current && current.activatedRoute[path]), distinctUntilChanged()))
-    );
-  }
-  /**
-   * Updates the activated route proxy for the given component to the new incoming router state
-   */
-  updateActivatedRouteProxy(component, activatedRoute) {
-    const proxy = this.proxyMap.get(component);
-    if (!proxy) {
-      throw new Error(`Could not find activated route proxy for view`);
-    }
-    proxy._futureSnapshot = activatedRoute._futureSnapshot;
-    proxy._routerState = activatedRoute._routerState;
-    proxy.snapshot = activatedRoute.snapshot;
-    proxy.outlet = activatedRoute.outlet;
-    proxy.component = activatedRoute.component;
-    this.currentActivatedRoute$.next({
-      component,
-      activatedRoute
-    });
-  }
-  /** @nocollapse */
-  static ɵfac = function IonRouterOutlet_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _IonRouterOutlet)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(_IonRouterOutlet, 12));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _IonRouterOutlet,
-    selectors: [["ion-router-outlet"]],
-    inputs: {
-      animated: "animated",
-      animation: "animation",
-      mode: "mode",
-      swipeGesture: "swipeGesture",
-      name: "name"
-    },
-    outputs: {
-      stackWillChange: "stackWillChange",
-      stackDidChange: "stackDidChange",
-      activateEvents: "activate",
-      deactivateEvents: "deactivate"
-    },
-    exportAs: ["outlet"],
-    standalone: false
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonRouterOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "ion-router-outlet",
-      exportAs: "outlet",
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: ["animated", "animation", "mode", "swipeGesture"]
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Attribute,
-        args: ["name"]
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Attribute,
-        args: ["tabs"]
-      }]
-    }, {
-      type: Location
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: NgZone
-    }, {
-      type: ActivatedRoute
-    }, {
-      type: IonRouterOutlet,
-      decorators: [{
-        type: SkipSelf
-      }, {
-        type: Optional
-      }]
-    }];
-  }, {
-    name: [{
-      type: Input
-    }],
-    stackWillChange: [{
-      type: Output
-    }],
-    stackDidChange: [{
-      type: Output
-    }],
-    activateEvents: [{
-      type: Output,
-      args: ["activate"]
-    }],
-    deactivateEvents: [{
-      type: Output,
-      args: ["deactivate"]
-    }]
-  });
-})();
-var OutletInjector = class {
-  route;
-  childContexts;
-  parent;
-  constructor(route, childContexts, parent) {
-    this.route = route;
-    this.childContexts = childContexts;
-    this.parent = parent;
-  }
-  get(token, notFoundValue) {
-    if (token === ActivatedRoute) {
-      return this.route;
-    }
-    if (token === ChildrenOutletContexts) {
-      return this.childContexts;
-    }
-    return this.parent.get(token, notFoundValue);
-  }
-};
-var INPUT_BINDER = new InjectionToken("");
-var RoutedComponentInputBinder = class _RoutedComponentInputBinder {
-  outletDataSubscriptions = /* @__PURE__ */ new Map();
-  bindActivatedRouteToOutletComponent(outlet) {
-    this.unsubscribeFromRouteData(outlet);
-    this.subscribeToRouteData(outlet);
-  }
-  unsubscribeFromRouteData(outlet) {
-    this.outletDataSubscriptions.get(outlet)?.unsubscribe();
-    this.outletDataSubscriptions.delete(outlet);
-  }
-  subscribeToRouteData(outlet) {
-    const {
-      activatedRoute
-    } = outlet;
-    const dataSubscription = combineLatest([activatedRoute.queryParams, activatedRoute.params, activatedRoute.data]).pipe(switchMap(([queryParams, params, data], index) => {
-      data = __spreadValues(__spreadValues(__spreadValues({}, queryParams), params), data);
-      if (index === 0) {
-        return of(data);
-      }
-      return Promise.resolve(data);
-    })).subscribe((data) => {
-      if (!outlet.isActivated || !outlet.activatedComponentRef || outlet.activatedRoute !== activatedRoute || activatedRoute.component === null) {
-        this.unsubscribeFromRouteData(outlet);
-        return;
-      }
-      const mirror = reflectComponentType(activatedRoute.component);
-      if (!mirror) {
-        this.unsubscribeFromRouteData(outlet);
-        return;
-      }
-      for (const {
-        templateName
-      } of mirror.inputs) {
-        outlet.activatedComponentRef.setInput(templateName, data[templateName]);
-      }
-    });
-    this.outletDataSubscriptions.set(outlet, dataSubscription);
-  }
-  /** @nocollapse */
-  static ɵfac = function RoutedComponentInputBinder_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RoutedComponentInputBinder)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _RoutedComponentInputBinder,
-    factory: _RoutedComponentInputBinder.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RoutedComponentInputBinder, [{
-    type: Injectable
-  }], null, null);
-})();
-var provideComponentInputBinding = () => {
-  return {
-    provide: INPUT_BINDER,
-    useFactory: componentInputBindingFactory,
-    deps: [Router]
-  };
-};
-function componentInputBindingFactory(router) {
-  if (router?.componentInputBindingEnabled) {
-    return new RoutedComponentInputBinder();
-  }
-  return null;
-}
-var BACK_BUTTON_INPUTS = ["color", "defaultHref", "disabled", "icon", "mode", "routerAnimation", "text", "type"];
-var IonBackButton = class IonBackButton2 {
-  routerOutlet;
-  navCtrl;
-  config;
-  r;
-  z;
-  el;
-  constructor(routerOutlet, navCtrl, config2, r, z, c) {
-    this.routerOutlet = routerOutlet;
-    this.navCtrl = navCtrl;
-    this.config = config2;
-    this.r = r;
-    this.z = z;
-    c.detach();
-    this.el = this.r.nativeElement;
-  }
-  /**
-   * @internal
-   */
-  onClick(ev) {
-    const defaultHref = this.defaultHref || this.config.get("backButtonDefaultHref");
-    if (this.routerOutlet?.canGoBack()) {
-      this.navCtrl.setDirection("back", void 0, void 0, this.routerAnimation);
-      this.routerOutlet.pop();
-      ev.preventDefault();
-    } else if (defaultHref != null) {
-      this.navCtrl.navigateBack(defaultHref, {
-        animation: this.routerAnimation
-      });
-      ev.preventDefault();
-    }
-  }
-  /** @nocollapse */
-  static ɵfac = function IonBackButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBackButton2)(ɵɵdirectiveInject(IonRouterOutlet, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: IonBackButton2,
-    hostBindings: function IonBackButton_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function IonBackButton_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    },
-    inputs: {
-      color: "color",
-      defaultHref: "defaultHref",
-      disabled: "disabled",
-      icon: "icon",
-      mode: "mode",
-      routerAnimation: "routerAnimation",
-      text: "text",
-      type: "type"
-    },
-    standalone: false
-  });
-};
-IonBackButton = __decorate([ProxyCmp({
-  inputs: BACK_BUTTON_INPUTS
-})], IonBackButton);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonBackButton, [{
-    type: Directive,
-    args: [{
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: BACK_BUTTON_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: IonRouterOutlet,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NavController
-    }, {
-      type: Config
-    }, {
-      type: ElementRef
-    }, {
-      type: NgZone
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, {
-    onClick: [{
-      type: HostListener,
-      args: ["click", ["$event"]]
-    }]
-  });
-})();
-var RouterLinkDelegateDirective = class _RouterLinkDelegateDirective {
-  locationStrategy;
-  navCtrl;
-  elementRef;
-  router;
-  routerLink;
-  routerDirection = "forward";
-  routerAnimation;
-  constructor(locationStrategy, navCtrl, elementRef, router, routerLink) {
-    this.locationStrategy = locationStrategy;
-    this.navCtrl = navCtrl;
-    this.elementRef = elementRef;
-    this.router = router;
-    this.routerLink = routerLink;
-  }
-  ngOnInit() {
-    this.updateTargetUrlAndHref();
-    this.updateTabindex();
-  }
-  ngOnChanges() {
-    this.updateTargetUrlAndHref();
-  }
-  /**
-   * The `tabindex` is set to `0` by default on the host element when
-   * the `routerLink` directive is used. This causes issues with Ionic
-   * components that wrap an `a` or `button` element, such as `ion-item`.
-   * See issue https://github.com/angular/angular/issues/28345
-   *
-   * This method removes the `tabindex` attribute from the host element
-   * to allow the Ionic component to manage the focus state correctly.
-   */
-  updateTabindex() {
-    const ionicComponents = ["ION-BACK-BUTTON", "ION-BREADCRUMB", "ION-BUTTON", "ION-CARD", "ION-FAB-BUTTON", "ION-ITEM", "ION-ITEM-OPTION", "ION-MENU-BUTTON", "ION-SEGMENT-BUTTON", "ION-TAB-BUTTON"];
-    const hostElement = this.elementRef.nativeElement;
-    if (ionicComponents.includes(hostElement.tagName)) {
-      if (hostElement.getAttribute("tabindex") === "0") {
-        hostElement.removeAttribute("tabindex");
-      }
-    }
-  }
-  updateTargetUrlAndHref() {
-    if (this.routerLink?.urlTree) {
-      const href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.routerLink.urlTree));
-      this.elementRef.nativeElement.href = href;
-    }
-  }
-  /**
-   * @internal
-   */
-  onClick(ev) {
-    this.navCtrl.setDirection(this.routerDirection, void 0, void 0, this.routerAnimation);
-    ev.preventDefault();
-  }
-  /** @nocollapse */
-  static ɵfac = function RouterLinkDelegateDirective_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RouterLinkDelegateDirective)(ɵɵdirectiveInject(LocationStrategy), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(RouterLink, 8));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _RouterLinkDelegateDirective,
-    selectors: [["", "routerLink", "", 5, "a", 5, "area"]],
-    hostBindings: function RouterLinkDelegateDirective_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function RouterLinkDelegateDirective_click_HostBindingHandler($event) {
-          return ctx.onClick($event);
-        });
-      }
-    },
-    inputs: {
-      routerDirection: "routerDirection",
-      routerAnimation: "routerAnimation"
-    },
-    standalone: false,
-    features: [ɵɵNgOnChangesFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RouterLinkDelegateDirective, [{
-    type: Directive,
-    args: [{
-      selector: ":not(a):not(area)[routerLink]"
-    }]
-  }], function() {
-    return [{
-      type: LocationStrategy
-    }, {
-      type: NavController
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: RouterLink,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    routerDirection: [{
-      type: Input
-    }],
-    routerAnimation: [{
-      type: Input
-    }],
-    onClick: [{
-      type: HostListener,
-      args: ["click", ["$event"]]
-    }]
-  });
-})();
-var RouterLinkWithHrefDelegateDirective = class _RouterLinkWithHrefDelegateDirective {
-  locationStrategy;
-  navCtrl;
-  elementRef;
-  router;
-  routerLink;
-  routerDirection = "forward";
-  routerAnimation;
-  constructor(locationStrategy, navCtrl, elementRef, router, routerLink) {
-    this.locationStrategy = locationStrategy;
-    this.navCtrl = navCtrl;
-    this.elementRef = elementRef;
-    this.router = router;
-    this.routerLink = routerLink;
-  }
-  ngOnInit() {
-    this.updateTargetUrlAndHref();
-  }
-  ngOnChanges() {
-    this.updateTargetUrlAndHref();
-  }
-  updateTargetUrlAndHref() {
-    if (this.routerLink?.urlTree) {
-      const href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.routerLink.urlTree));
-      this.elementRef.nativeElement.href = href;
-    }
-  }
-  /**
-   * @internal
-   */
-  onClick() {
-    this.navCtrl.setDirection(this.routerDirection, void 0, void 0, this.routerAnimation);
-  }
-  /** @nocollapse */
-  static ɵfac = function RouterLinkWithHrefDelegateDirective_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RouterLinkWithHrefDelegateDirective)(ɵɵdirectiveInject(LocationStrategy), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(RouterLink, 8));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _RouterLinkWithHrefDelegateDirective,
-    selectors: [["a", "routerLink", ""], ["area", "routerLink", ""]],
-    hostBindings: function RouterLinkWithHrefDelegateDirective_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("click", function RouterLinkWithHrefDelegateDirective_click_HostBindingHandler() {
-          return ctx.onClick();
-        });
-      }
-    },
-    inputs: {
-      routerDirection: "routerDirection",
-      routerAnimation: "routerAnimation"
-    },
-    standalone: false,
-    features: [ɵɵNgOnChangesFeature]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RouterLinkWithHrefDelegateDirective, [{
-    type: Directive,
-    args: [{
-      selector: "a[routerLink],area[routerLink]"
-    }]
-  }], function() {
-    return [{
-      type: LocationStrategy
-    }, {
-      type: NavController
-    }, {
-      type: ElementRef
-    }, {
-      type: Router
-    }, {
-      type: RouterLink,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    routerDirection: [{
-      type: Input
-    }],
-    routerAnimation: [{
-      type: Input
-    }],
-    onClick: [{
-      type: HostListener,
-      args: ["click"]
-    }]
-  });
-})();
-var NAV_INPUTS = ["animated", "animation", "root", "rootParams", "swipeGesture"];
-var NAV_METHODS = ["push", "insert", "insertPages", "pop", "popTo", "popToRoot", "removeIndex", "setRoot", "setPages", "getActive", "getByIndex", "canGoBack", "getPrevious"];
-var IonNav = class IonNav2 {
-  z;
-  el;
-  constructor(ref, environmentInjector, injector, angularDelegate, z, c) {
-    this.z = z;
-    c.detach();
-    this.el = ref.nativeElement;
-    ref.nativeElement.delegate = angularDelegate.create(environmentInjector, injector);
-    proxyOutputs(this, this.el, ["ionNavDidChange", "ionNavWillChange"]);
-  }
-  /** @nocollapse */
-  static ɵfac = function IonNav_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonNav2)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: IonNav2,
-    inputs: {
-      animated: "animated",
-      animation: "animation",
-      root: "root",
-      rootParams: "rootParams",
-      swipeGesture: "swipeGesture"
-    },
-    standalone: false
-  });
-};
-IonNav = __decorate([ProxyCmp({
-  inputs: NAV_INPUTS,
-  methods: NAV_METHODS
-})], IonNav);
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonNav, [{
-    type: Directive,
-    args: [{
-      // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-      inputs: NAV_INPUTS
-    }]
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: EnvironmentInjector
-    }, {
-      type: Injector
-    }, {
-      type: AngularDelegate
-    }, {
-      type: NgZone
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, null);
-})();
-var IonTabs = class _IonTabs {
-  navCtrl;
-  tabsInner;
-  /**
-   * Emitted before the tab view is changed.
-   */
-  ionTabsWillChange = new EventEmitter();
-  /**
-   * Emitted after the tab view is changed.
-   */
-  ionTabsDidChange = new EventEmitter();
-  tabBarSlot = "bottom";
-  hasTab = false;
-  selectedTab;
-  leavingTab;
-  constructor(navCtrl) {
-    this.navCtrl = navCtrl;
-  }
-  ngAfterViewInit() {
-    const firstTab = this.tabs.length > 0 ? this.tabs.first : void 0;
-    if (firstTab) {
-      this.hasTab = true;
-      this.setActiveTab(firstTab.tab);
-      this.tabSwitch();
-    }
-  }
-  ngAfterContentInit() {
-    this.detectSlotChanges();
-  }
-  ngAfterContentChecked() {
-    this.detectSlotChanges();
-  }
-  /**
-   * @internal
-   */
-  onStackWillChange({
-    enteringView,
-    tabSwitch
-  }) {
-    const stackId = enteringView.stackId;
-    if (tabSwitch && stackId !== void 0) {
-      this.ionTabsWillChange.emit({
-        tab: stackId
-      });
-    }
-  }
-  /**
-   * @internal
-   */
-  onStackDidChange({
-    enteringView,
-    tabSwitch
-  }) {
-    const stackId = enteringView.stackId;
-    if (tabSwitch && stackId !== void 0) {
-      if (this.tabBar) {
-        this.tabBar.selectedTab = stackId;
-      }
-      this.ionTabsDidChange.emit({
-        tab: stackId
-      });
-    }
-  }
-  /**
-   * When a tab button is clicked, there are several scenarios:
-   * 1. If the selected tab is currently active (the tab button has been clicked
-   *    again), then it should go to the root view for that tab.
-   *
-   *   a. Get the saved root view from the router outlet. If the saved root view
-   *      matches the tabRootUrl, set the route view to this view including the
-   *      navigation extras.
-   *   b. If the saved root view from the router outlet does
-   *      not match, navigate to the tabRootUrl. No navigation extras are
-   *      included.
-   *
-   * 2. If the current tab tab is not currently selected, get the last route
-   *    view from the router outlet.
-   *
-   *   a. If the last route view exists, navigate to that view including any
-   *      navigation extras
-   *   b. If the last route view doesn't exist, then navigate
-   *      to the default tabRootUrl
-   */
-  select(tabOrEvent) {
-    const isTabString = typeof tabOrEvent === "string";
-    const tab = isTabString ? tabOrEvent : tabOrEvent.detail.tab;
-    if (this.hasTab) {
-      this.setActiveTab(tab);
-      this.tabSwitch();
-      return;
-    }
-    const alreadySelected = this.outlet.getActiveStackId() === tab;
-    const tabRootUrl = `${this.outlet.tabsPrefix}/${tab}`;
-    if (!isTabString) {
-      tabOrEvent.stopPropagation();
-    }
-    if (alreadySelected) {
-      const activeStackId = this.outlet.getActiveStackId();
-      const activeView = this.outlet.getLastRouteView(activeStackId);
-      if (activeView?.url === tabRootUrl) {
-        return;
-      }
-      const rootView = this.outlet.getRootView(tab);
-      const navigationExtras = rootView && tabRootUrl === rootView.url && rootView.savedExtras;
-      return this.navCtrl.navigateRoot(tabRootUrl, __spreadProps(__spreadValues({}, navigationExtras), {
-        animated: true,
-        animationDirection: "back"
-      }));
-    } else {
-      const lastRoute = this.outlet.getLastRouteView(tab);
-      const url = lastRoute?.url || tabRootUrl;
-      const navigationExtras = lastRoute?.savedExtras;
-      return this.navCtrl.navigateRoot(url, __spreadProps(__spreadValues({}, navigationExtras), {
-        animated: true,
-        animationDirection: "back"
-      }));
-    }
-  }
-  setActiveTab(tab) {
-    const tabs = this.tabs;
-    const selectedTab = tabs.find((t) => t.tab === tab);
-    if (!selectedTab) {
-      console.error(`[Ionic Error]: Tab with id: "${tab}" does not exist`);
-      return;
-    }
-    this.leavingTab = this.selectedTab;
-    this.selectedTab = selectedTab;
-    this.ionTabsWillChange.emit({
-      tab
-    });
-    selectedTab.el.active = true;
-  }
-  tabSwitch() {
-    const {
-      selectedTab,
-      leavingTab
-    } = this;
-    if (this.tabBar && selectedTab) {
-      this.tabBar.selectedTab = selectedTab.tab;
-    }
-    if (leavingTab?.tab !== selectedTab?.tab) {
-      if (leavingTab?.el) {
-        leavingTab.el.active = false;
-      }
-    }
-    if (selectedTab) {
-      this.ionTabsDidChange.emit({
-        tab: selectedTab.tab
-      });
-    }
-  }
-  getSelected() {
-    if (this.hasTab) {
-      return this.selectedTab?.tab;
-    }
-    return this.outlet.getActiveStackId();
-  }
-  /**
-   * Detects changes to the slot attribute of the tab bar.
-   *
-   * If the slot attribute has changed, then the tab bar
-   * should be relocated to the new slot position.
-   */
-  detectSlotChanges() {
-    this.tabBars.forEach((tabBar) => {
-      const currentSlot = tabBar.el.getAttribute("slot");
-      if (currentSlot !== this.tabBarSlot) {
-        this.tabBarSlot = currentSlot;
-        this.relocateTabBar();
-      }
-    });
-  }
-  /**
-   * Relocates the tab bar to the new slot position.
-   */
-  relocateTabBar() {
-    const tabBar = this.tabBar.el;
-    if (this.tabBarSlot === "top") {
-      this.tabsInner.nativeElement.before(tabBar);
-    } else {
-      this.tabsInner.nativeElement.after(tabBar);
-    }
-  }
-  /** @nocollapse */
-  static ɵfac = function IonTabs_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _IonTabs)(ɵɵdirectiveInject(NavController));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _IonTabs,
-    selectors: [["ion-tabs"]],
-    viewQuery: function IonTabs_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c0, 7, ElementRef);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabsInner = _t.first);
-      }
-    },
-    hostBindings: function IonTabs_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionTabButtonClick", function IonTabs_ionTabButtonClick_HostBindingHandler($event) {
-          return ctx.select($event);
-        });
-      }
-    },
-    outputs: {
-      ionTabsWillChange: "ionTabsWillChange",
-      ionTabsDidChange: "ionTabsDidChange"
-    },
-    standalone: false
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonTabs, [{
-    type: Directive,
-    args: [{
-      selector: "ion-tabs"
-    }]
-  }], function() {
-    return [{
-      type: NavController
-    }];
-  }, {
-    tabsInner: [{
-      type: ViewChild,
-      args: ["tabsInner", {
-        read: ElementRef,
-        static: true
-      }]
-    }],
-    ionTabsWillChange: [{
-      type: Output
-    }],
-    ionTabsDidChange: [{
-      type: Output
-    }],
-    select: [{
-      type: HostListener,
-      args: ["ionTabButtonClick", ["$event"]]
-    }]
-  });
-})();
-var raf2 = (h2) => {
-  if (typeof __zone_symbol__requestAnimationFrame === "function") {
-    return __zone_symbol__requestAnimationFrame(h2);
-  }
-  if (typeof requestAnimationFrame === "function") {
-    return requestAnimationFrame(h2);
-  }
-  return setTimeout(h2);
-};
-var ValueAccessor = class _ValueAccessor {
-  injector;
-  elementRef;
-  onChange = () => {
-  };
-  onTouched = () => {
-  };
-  lastValue;
-  statusChanges;
-  constructor(injector, elementRef) {
-    this.injector = injector;
-    this.elementRef = elementRef;
-  }
-  writeValue(value) {
-    this.elementRef.nativeElement.value = this.lastValue = value;
-    setIonicClasses(this.elementRef);
-  }
-  /**
-   * Notifies the ControlValueAccessor of a change in the value of the control.
-   *
-   * This is called by each of the ValueAccessor directives when we want to update
-   * the status and validity of the form control. For example with text components this
-   * is called when the ionInput event is fired. For select components this is called
-   * when the ionChange event is fired.
-   *
-   * This also updates the Ionic form status classes on the element.
-   *
-   * @param el The component element.
-   * @param value The new value of the control.
-   */
-  handleValueChange(el, value) {
-    if (el === this.elementRef.nativeElement) {
-      if (value !== this.lastValue) {
-        this.lastValue = value;
-        this.onChange(value);
-      }
-      setIonicClasses(this.elementRef);
-    }
-  }
-  _handleBlurEvent(el) {
-    if (el === this.elementRef.nativeElement) {
-      this.onTouched();
-      setIonicClasses(this.elementRef);
-    }
-  }
-  registerOnChange(fn) {
-    this.onChange = fn;
-  }
-  registerOnTouched(fn) {
-    this.onTouched = fn;
-  }
-  setDisabledState(isDisabled) {
-    this.elementRef.nativeElement.disabled = isDisabled;
-  }
-  ngOnDestroy() {
-    if (this.statusChanges) {
-      this.statusChanges.unsubscribe();
-    }
-  }
-  ngAfterViewInit() {
-    let ngControl;
-    try {
-      ngControl = this.injector.get(NgControl);
-    } catch {
-    }
-    if (!ngControl) {
-      return;
-    }
-    if (ngControl.statusChanges) {
-      this.statusChanges = ngControl.statusChanges.subscribe(() => setIonicClasses(this.elementRef));
-    }
-    const formControl = ngControl.control;
-    if (formControl) {
-      const methodsToPatch = ["markAsTouched", "markAllAsTouched", "markAsUntouched", "markAsDirty", "markAsPristine"];
-      methodsToPatch.forEach((method) => {
-        if (typeof formControl[method] !== "undefined") {
-          const oldFn = formControl[method].bind(formControl);
-          formControl[method] = (...params) => {
-            oldFn(...params);
-            setIonicClasses(this.elementRef);
-          };
-        }
-      });
-    }
-  }
-  /** @nocollapse */
-  static ɵfac = function ValueAccessor_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ValueAccessor)(ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(ElementRef));
-  };
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _ValueAccessor,
-    hostBindings: function ValueAccessor_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionBlur", function ValueAccessor_ionBlur_HostBindingHandler($event) {
-          return ctx._handleBlurEvent($event.target);
-        });
-      }
-    },
-    standalone: false
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ValueAccessor, [{
-    type: Directive
-  }], function() {
-    return [{
-      type: Injector
-    }, {
-      type: ElementRef
-    }];
-  }, {
-    _handleBlurEvent: [{
-      type: HostListener,
-      args: ["ionBlur", ["$event.target"]]
-    }]
-  });
-})();
-var setIonicClasses = (element) => {
-  raf2(() => {
-    const input = element.nativeElement;
-    const hasValue = input.value != null && input.value.toString().length > 0;
-    const classes = getClasses(input);
-    setClasses(input, classes);
-    const item = input.closest("ion-item");
-    if (item) {
-      if (hasValue) {
-        setClasses(item, [...classes, "item-has-value"]);
-      } else {
-        setClasses(item, classes);
-      }
-    }
-  });
-};
-var getClasses = (element) => {
-  const classList = element.classList;
-  const classes = [];
-  for (let i = 0; i < classList.length; i++) {
-    const item = classList.item(i);
-    if (item !== null && startsWith(item, "ng-")) {
-      classes.push(`ion-${item.substring(3)}`);
-    }
-  }
-  return classes;
-};
-var setClasses = (element, classes) => {
-  const classList = element.classList;
-  classList.remove("ion-valid", "ion-invalid", "ion-touched", "ion-untouched", "ion-dirty", "ion-pristine");
-  classList.add(...classes);
-};
-var startsWith = (input, search) => {
-  return input.substring(0, search.length) === search;
-};
-var IonicRouteStrategy = class {
-  /**
-   * Whether the given route should detach for later reuse.
-   */
-  shouldDetach(_route) {
-    return false;
-  }
-  /**
-   * Returns `false`, meaning the route (and its subtree) is never reattached
-   */
-  shouldAttach(_route) {
-    return false;
-  }
-  /**
-   * A no-op; the route is never stored since this strategy never detaches routes for later re-use.
-   */
-  store(_route, _detachedTree) {
-    return;
-  }
-  /**
-   * Returns `null` because this strategy does not store routes for later re-use.
-   */
-  retrieve(_route) {
-    return null;
-  }
-  /**
-   * Determines if a route should be reused.
-   * This strategy returns `true` when the future route config and
-   * current route config are identical and all route parameters are identical.
-   */
-  shouldReuseRoute(future, curr) {
-    if (future.routeConfig !== curr.routeConfig) {
-      return false;
-    }
-    const futureParams = future.params;
-    const currentParams = curr.params;
-    const keysA = Object.keys(futureParams);
-    const keysB = Object.keys(currentParams);
-    if (keysA.length !== keysB.length) {
-      return false;
-    }
-    for (const key of keysA) {
-      if (currentParams[key] !== futureParams[key]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
-var OverlayBaseController = class {
-  ctrl;
-  constructor(ctrl) {
-    this.ctrl = ctrl;
-  }
-  /**
-   * Creates a new overlay
-   */
-  create(opts) {
-    return this.ctrl.create(opts || {});
-  }
-  /**
-   * When `id` is not provided, it dismisses the top overlay.
-   */
-  dismiss(data, role, id) {
-    return this.ctrl.dismiss(data, role, id);
-  }
-  /**
-   * Returns the top overlay.
-   */
-  getTop() {
-    return this.ctrl.getTop();
-  }
-};
+} from "./chunk-UQIXM5CJ.js";
 
 // node_modules/@ionic/core/components/index7.js
 var arrowBackSharp = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path stroke-linecap='square' stroke-miterlimit='10' stroke-width='48' d='M244 400L100 256l144-144M120 256h292' class='ionicon-fill-none'/></svg>";
@@ -4019,7 +272,7 @@ var getIconMap = () => {
     return CACHED_MAP;
   }
 };
-var getUrl2 = (i) => {
+var getUrl = (i) => {
   let url = getSrc(i.src);
   if (url) {
     return url;
@@ -4246,7 +499,7 @@ var Icon = proxyCustomElement(class Icon2 extends H {
   }
   loadIcon() {
     if (Build.isBrowser && this.isVisible) {
-      const url = getUrl2(this);
+      const url = getUrl(this);
       if (url) {
         if (ioniconContent.has(url)) {
           this.svgContent = ioniconContent.get(url);
@@ -4663,9 +916,9 @@ var RouterOutlet = proxyCustomElement(class RouterOutlet2 extends H {
           this.swipeHandler.onStart();
         }
       };
-      this.gesture = (yield import("./swipe-back-Y5LOI6QQ.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
-        var _a;
-        return (_a = this.ani) === null || _a === void 0 ? void 0 : _a.progressStep(step);
+      this.gesture = (yield import("./swipe-back-TPBYZRZZ.js")).createSwipeBackGesture(this.el, () => !this.gestureOrAnimationInProgress && !!this.swipeHandler && this.swipeHandler.canStart(), () => onStart(), (step) => {
+        var _a91;
+        return (_a91 = this.ani) === null || _a91 === void 0 ? void 0 : _a91.progressStep(step);
       }, (shouldComplete, step, dur) => {
         if (this.ani) {
           this.ani.onFinish(() => {
@@ -5204,7 +1457,7 @@ var iosEnterAnimation = (baseEl, opts) => {
   wrapperAnimation.addElement(root.querySelectorAll(".modal-wrapper, .modal-shadow")).beforeStyles({
     opacity: 1
   });
-  const baseAnimation2 = createAnimation("entering-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(500).addAnimation(wrapperAnimation);
+  const baseAnimation = createAnimation("entering-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(500).addAnimation(wrapperAnimation);
   if (presentingEl) {
     const isMobile = window.innerWidth < 768;
     const hasCardModal = presentingEl.tagName === "ION-MODAL" && presentingEl.presentingElement !== void 0;
@@ -5233,9 +1486,9 @@ var iosEnterAnimation = (baseEl, opts) => {
         transform: finalTransform,
         borderRadius: "10px 10px 0 0"
       }]);
-      baseAnimation2.addAnimation(presentingAnimation);
+      baseAnimation.addAnimation(presentingAnimation);
     } else {
-      baseAnimation2.addAnimation(backdropAnimation);
+      baseAnimation.addAnimation(backdropAnimation);
       if (!hasCardModal) {
         wrapperAnimation.fromTo("opacity", "0", "1");
       } else {
@@ -5263,13 +1516,13 @@ var iosEnterAnimation = (baseEl, opts) => {
           opacity: "0",
           transform: finalTransform
         }]);
-        baseAnimation2.addAnimation([presentingAnimation, shadowAnimation]);
+        baseAnimation.addAnimation([presentingAnimation, shadowAnimation]);
       }
     }
   } else {
-    baseAnimation2.addAnimation(backdropAnimation);
+    baseAnimation.addAnimation(backdropAnimation);
   }
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createLeaveAnimation$1 = () => {
   const backdropAnimation = createAnimation().fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -5293,7 +1546,7 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
   wrapperAnimation.addElement(root.querySelectorAll(".modal-wrapper, .modal-shadow")).beforeStyles({
     opacity: 1
   });
-  const baseAnimation2 = createAnimation("leaving-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(duration).addAnimation(wrapperAnimation);
+  const baseAnimation = createAnimation("leaving-base").addElement(baseEl).easing("cubic-bezier(0.32,0.72,0,1)").duration(duration).addAnimation(wrapperAnimation);
   if (presentingEl) {
     const isMobile = window.innerWidth < 768;
     const hasCardModal = presentingEl.tagName === "ION-MODAL" && presentingEl.presentingElement !== void 0;
@@ -5325,9 +1578,9 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
         transform: "translateY(0px) scale(1)",
         borderRadius: "0px"
       }]);
-      baseAnimation2.addAnimation(presentingAnimation);
+      baseAnimation.addAnimation(presentingAnimation);
     } else {
-      baseAnimation2.addAnimation(backdropAnimation);
+      baseAnimation.addAnimation(backdropAnimation);
       if (!hasCardModal) {
         wrapperAnimation.fromTo("opacity", "1", "0");
       } else {
@@ -5355,13 +1608,13 @@ var iosLeaveAnimation = (baseEl, opts, duration = 500) => {
           opacity: "1",
           transform: "translateY(0) scale(1)"
         }]);
-        baseAnimation2.addAnimation([presentingAnimation, shadowAnimation]);
+        baseAnimation.addAnimation([presentingAnimation, shadowAnimation]);
       }
     }
   } else {
-    baseAnimation2.addAnimation(backdropAnimation);
+    baseAnimation.addAnimation(backdropAnimation);
   }
-  return baseAnimation2;
+  return baseAnimation;
 };
 var createEnterAnimation = () => {
   const backdropAnimation = createAnimation().fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -5736,7 +1989,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a;
+    var _a91;
     const {
       breakpoints,
       initialBreakpoint,
@@ -5763,7 +2016,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     if (breakpoints !== void 0 && initialBreakpoint !== void 0 && !breakpoints.includes(initialBreakpoint)) {
       printIonWarning("Your breakpoints array must include the initialBreakpoint value.");
     }
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -5873,7 +2126,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
     });
   }
   initSwipeToClose() {
-    var _a;
+    var _a91;
     if (getIonMode(this) !== "ios") {
       return;
     }
@@ -5889,7 +2142,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       printIonContentErrorMsg(el);
       return;
     }
-    const statusBarStyle = (_a = this.statusBarStyle) !== null && _a !== void 0 ? _a : Style.Default;
+    const statusBarStyle = (_a91 = this.statusBarStyle) !== null && _a91 !== void 0 ? _a91 : Style.Default;
     this.gesture = createSwipeToCloseGesture(el, ani, statusBarStyle, () => {
       this.gestureAnimationDismissing = true;
       setCardStatusBarDefault(this.statusBarStyle);
@@ -5920,8 +2173,8 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       gesture,
       moveSheetToBreakpoint
     } = createSheetGesture(this.el, this.backdropEl, wrapperEl, initialBreakpoint, backdropBreakpoint, ani, this.sortedBreakpoints, () => {
-      var _a;
-      return (_a = this.currentBreakpoint) !== null && _a !== void 0 ? _a : 0;
+      var _a91;
+      return (_a91 = this.currentBreakpoint) !== null && _a91 !== void 0 ? _a91 : 0;
     }, () => this.sheetOnDismiss(), (breakpoint) => {
       if (this.currentBreakpoint !== breakpoint) {
         this.currentBreakpoint = breakpoint;
@@ -5957,7 +2210,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
    */
   dismiss(data, role) {
     return __async(this, null, function* () {
-      var _a;
+      var _a91;
       if (this.gestureAnimationDismissing && role !== GESTURE) {
         return false;
       }
@@ -5979,7 +2232,7 @@ var Modal = proxyCustomElement(class Modal2 extends H {
       }
       const dismissed = yield dismiss(this, data, role, "modalLeave", iosLeaveAnimation, mdLeaveAnimation, {
         presentingEl: presentingElement,
-        currentBreakpoint: (_a = this.currentBreakpoint) !== null && _a !== void 0 ? _a : this.initialBreakpoint,
+        currentBreakpoint: (_a91 = this.currentBreakpoint) !== null && _a91 !== void 0 ? _a91 : this.initialBreakpoint,
         backdropBreakpoint: this.backdropBreakpoint
       });
       if (dismissed) {
@@ -6422,10 +2675,10 @@ var focusItem = (item) => {
 var isTriggerElement = (el) => el.hasAttribute("data-ion-popover-trigger");
 var configureKeyboardInteraction = (popoverEl) => {
   const callback = (ev) => __async(void 0, null, function* () {
-    var _a;
+    var _a91;
     const activeElement = document.activeElement;
     let items = [];
-    const targetTagName = (_a = ev.target) === null || _a === void 0 ? void 0 : _a.tagName;
+    const targetTagName = (_a91 = ev.target) === null || _a91 === void 0 ? void 0 : _a91.tagName;
     if (targetTagName !== "ION-POPOVER" && targetTagName !== "ION-ITEM") {
       return;
     }
@@ -6506,7 +2759,7 @@ var configureKeyboardInteraction = (popoverEl) => {
   return () => popoverEl.removeEventListener("keydown", callback);
 };
 var getPopoverPosition = (isRTL4, contentWidth, contentHeight, arrowWidth, arrowHeight, reference, side, align, defaultPosition, triggerEl, event) => {
-  var _a;
+  var _a91;
   let referenceCoordinates = {
     top: 0,
     left: 0,
@@ -6536,7 +2789,7 @@ var getPopoverPosition = (isRTL4, contentWidth, contentHeight, arrowWidth, arrow
     case "trigger":
     default:
       const customEv = event;
-      const actualTriggerEl = triggerEl || ((_a = customEv === null || customEv === void 0 ? void 0 : customEv.detail) === null || _a === void 0 ? void 0 : _a.ionShadowTarget) || (customEv === null || customEv === void 0 ? void 0 : customEv.target);
+      const actualTriggerEl = triggerEl || ((_a91 = customEv === null || customEv === void 0 ? void 0 : customEv.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (customEv === null || customEv === void 0 ? void 0 : customEv.target);
       if (!actualTriggerEl) {
         return defaultPosition;
       }
@@ -6798,7 +3051,7 @@ var shouldShowArrow = (side, didAdjustBounds = false, ev, trigger) => {
 };
 var POPOVER_IOS_BODY_PADDING = 5;
 var iosEnterAnimation2 = (baseEl, opts) => {
-  var _a;
+  var _a91;
   const {
     event: ev,
     size,
@@ -6814,7 +3067,7 @@ var iosEnterAnimation2 = (baseEl, opts) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
   const arrowEl = root.querySelector(".popover-arrow");
-  const referenceSizeEl = trigger || ((_a = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a === void 0 ? void 0 : _a.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
+  const referenceSizeEl = trigger || ((_a91 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
   const {
     contentWidth,
     contentHeight
@@ -6844,14 +3097,14 @@ var iosEnterAnimation2 = (baseEl, opts) => {
     arrowLeft,
     addPopoverBottomClass
   } = calculateWindowAdjustment(side, results.top, results.left, padding, bodyWidth, bodyHeight, contentWidth, contentHeight, margin, results.originX, results.originY, results.referenceCoordinates, results.arrowTop, results.arrowLeft, arrowHeight);
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const contentAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   contentAnimation.addElement(root.querySelector(".popover-arrow")).addElement(root.querySelector(".popover-content")).fromTo("opacity", 0.01, 1);
-  return baseAnimation2.easing("ease").duration(100).beforeAddWrite(() => {
+  return baseAnimation.easing("ease").duration(100).beforeAddWrite(() => {
     if (size === "cover") {
       baseEl.style.setProperty("--width", `${contentWidth}px`);
     }
@@ -6889,12 +3142,12 @@ var iosLeaveAnimation2 = (baseEl) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
   const arrowEl = root.querySelector(".popover-arrow");
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const contentAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   contentAnimation.addElement(root.querySelector(".popover-arrow")).addElement(root.querySelector(".popover-content")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("ease").afterAddWrite(() => {
+  return baseAnimation.easing("ease").afterAddWrite(() => {
     baseEl.style.removeProperty("--width");
     baseEl.classList.remove("popover-bottom");
     contentEl.style.removeProperty("top");
@@ -6910,7 +3163,7 @@ var iosLeaveAnimation2 = (baseEl) => {
 };
 var POPOVER_MD_BODY_PADDING = 12;
 var mdEnterAnimation2 = (baseEl, opts) => {
-  var _a;
+  var _a91;
   const {
     event: ev,
     size,
@@ -6925,7 +3178,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
   const bodyHeight = doc2.defaultView.innerHeight;
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
-  const referenceSizeEl = trigger || ((_a = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a === void 0 ? void 0 : _a.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
+  const referenceSizeEl = trigger || ((_a91 = ev === null || ev === void 0 ? void 0 : ev.detail) === null || _a91 === void 0 ? void 0 : _a91.ionShadowTarget) || (ev === null || ev === void 0 ? void 0 : ev.target);
   const {
     contentWidth,
     contentHeight
@@ -6945,7 +3198,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
     left,
     bottom
   } = calculateWindowAdjustment(side, results.top, results.left, padding, bodyWidth, bodyHeight, contentWidth, contentHeight, 0, results.originX, results.originY, results.referenceCoordinates);
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const contentAnimation = createAnimation();
@@ -6964,7 +3217,7 @@ var mdEnterAnimation2 = (baseEl, opts) => {
     }
   }).fromTo("transform", "scale(0.8)", "scale(1)");
   viewportAnimation.addElement(root.querySelector(".popover-viewport")).fromTo("opacity", 0.01, 1);
-  return baseAnimation2.easing("cubic-bezier(0.36,0.66,0.04,1)").duration(300).beforeAddWrite(() => {
+  return baseAnimation.easing("cubic-bezier(0.36,0.66,0.04,1)").duration(300).beforeAddWrite(() => {
     if (size === "cover") {
       baseEl.style.setProperty("--width", `${contentWidth}px`);
     }
@@ -6976,12 +3229,12 @@ var mdEnterAnimation2 = (baseEl, opts) => {
 var mdLeaveAnimation2 = (baseEl) => {
   const root = getElementRoot(baseEl);
   const contentEl = root.querySelector(".popover-content");
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(root.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(root.querySelector(".popover-wrapper")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("ease").afterAddWrite(() => {
+  return baseAnimation.easing("ease").afterAddWrite(() => {
     baseEl.style.removeProperty("--width");
     baseEl.classList.remove("popover-bottom");
     contentEl.style.removeProperty("top");
@@ -7130,11 +3383,11 @@ var Popover = proxyCustomElement(class Popover2 extends H {
     }
   }
   componentWillLoad() {
-    var _a, _b;
+    var _a91, _b;
     const {
       el
     } = this;
-    const popoverId = (_b = (_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id) !== null && _b !== void 0 ? _b : setOverlayId(el);
+    const popoverId = (_b = (_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id) !== null && _b !== void 0 ? _b : setOverlayId(el);
     this.parentPopover = el.closest(`ion-popover:not(#${popoverId})`);
     if (this.alignment === void 0) {
       this.alignment = getIonMode(this) === "ios" ? "center" : "start";
@@ -7649,8 +3902,8 @@ var Accordion = proxyCustomElement(class Accordion2 extends H {
     this.updateState();
   }
   connectedCallback() {
-    var _a;
-    const accordionGroupEl = this.accordionGroupEl = (_a = this.el) === null || _a === void 0 ? void 0 : _a.closest("ion-accordion-group");
+    var _a91;
+    const accordionGroupEl = this.accordionGroupEl = (_a91 = this.el) === null || _a91 === void 0 ? void 0 : _a91.closest("ion-accordion-group");
     if (accordionGroupEl) {
       this.updateState(true);
       addEventListener(accordionGroupEl, "ionValueChange", this.updateListener);
@@ -8184,40 +4437,40 @@ var createButtonActiveGesture = (el, isButton) => {
 
 // node_modules/@ionic/core/components/action-sheet.js
 var iosEnterAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation3 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".action-sheet-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(450).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var actionSheetIosCss = '.sc-ion-action-sheet-ios-h{--color:initial;--button-color-activated:var(--button-color);--button-color-focused:var(--button-color);--button-color-hover:var(--button-color);--button-color-selected:var(--button-color);--min-width:auto;--width:100%;--max-width:500px;--min-height:auto;--height:auto;--max-height:calc(100% - (var(--ion-safe-area-top) + var(--ion-safe-area-bottom)));-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:block;position:fixed;outline:none;font-family:var(--ion-font-family, inherit);-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-action-sheet-ios-h{display:none}.action-sheet-wrapper.sc-ion-action-sheet-ios{left:0;right:0;bottom:0;-webkit-transform:translate3d(0,  100%,  0);transform:translate3d(0,  100%,  0);display:block;position:absolute;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);z-index:10;pointer-events:none}.action-sheet-button.sc-ion-action-sheet-ios{display:block;position:relative;width:100%;border:0;outline:none;background:var(--button-background);color:var(--button-color);font-family:inherit;overflow:hidden}.action-sheet-button.sc-ion-action-sheet-ios:disabled{color:var(--button-color-disabled);opacity:0.4}.action-sheet-button-inner.sc-ion-action-sheet-ios{display:-ms-flexbox;display:flex;position:relative;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;pointer-events:none;width:100%;height:100%;z-index:1}.action-sheet-container.sc-ion-action-sheet-ios{display:-ms-flexbox;display:flex;-ms-flex-flow:column;flex-flow:column;-ms-flex-pack:end;justify-content:flex-end;height:100%;max-height:calc(100vh - (var(--ion-safe-area-top, 0) + var(--ion-safe-area-bottom, 0)));max-height:calc(100dvh - (var(--ion-safe-area-top, 0) + var(--ion-safe-area-bottom, 0)))}.action-sheet-group.sc-ion-action-sheet-ios{-ms-flex-negative:2;flex-shrink:2;overscroll-behavior-y:contain;overflow-y:auto;-webkit-overflow-scrolling:touch;pointer-events:all;background:var(--background)}@media (any-pointer: coarse){.action-sheet-group.sc-ion-action-sheet-ios::-webkit-scrollbar{display:none}}.action-sheet-group-cancel.sc-ion-action-sheet-ios{-ms-flex-negative:0;flex-shrink:0;overflow:hidden}.action-sheet-button.sc-ion-action-sheet-ios::after{left:0;right:0;top:0;bottom:0;position:absolute;content:"";opacity:0}.action-sheet-selected.sc-ion-action-sheet-ios{color:var(--button-color-selected)}.action-sheet-selected.sc-ion-action-sheet-ios::after{background:var(--button-background-selected);opacity:var(--button-background-selected-opacity)}.action-sheet-button.ion-activated.sc-ion-action-sheet-ios{color:var(--button-color-activated)}.action-sheet-button.ion-activated.sc-ion-action-sheet-ios::after{background:var(--button-background-activated);opacity:var(--button-background-activated-opacity)}.action-sheet-button.ion-focused.sc-ion-action-sheet-ios{color:var(--button-color-focused)}.action-sheet-button.ion-focused.sc-ion-action-sheet-ios::after{background:var(--button-background-focused);opacity:var(--button-background-focused-opacity)}@media (any-hover: hover){.action-sheet-button.sc-ion-action-sheet-ios:not(:disabled):hover{color:var(--button-color-hover)}.action-sheet-button.sc-ion-action-sheet-ios:not(:disabled):hover::after{background:var(--button-background-hover);opacity:var(--button-background-hover-opacity)}}.sc-ion-action-sheet-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--backdrop-opacity:var(--ion-backdrop-opacity, 0.4);--button-background:linear-gradient(0deg, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08), rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08) 50%, transparent 50%) bottom/100% 1px no-repeat transparent;--button-background-activated:var(--ion-text-color, #000);--button-background-activated-opacity:.08;--button-background-hover:currentColor;--button-background-hover-opacity:.04;--button-background-focused:currentColor;--button-background-focused-opacity:.12;--button-background-selected:var(--ion-color-step-150, var(--ion-background-color-step-150, var(--ion-background-color, #fff)));--button-background-selected-opacity:1;--button-color:var(--ion-color-primary, #0054e9);--button-color-disabled:var(--ion-color-step-850, var(--ion-text-color-step-150, #262626));--color:var(--ion-color-step-400, var(--ion-text-color-step-600, #999999));text-align:center}.action-sheet-wrapper.sc-ion-action-sheet-ios{-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:var(--ion-safe-area-top, 0);padding-bottom:var(--ion-safe-area-bottom, 0);-webkit-box-sizing:content-box;box-sizing:content-box}.action-sheet-container.sc-ion-action-sheet-ios{-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px;padding-top:0;padding-bottom:0}.action-sheet-group.sc-ion-action-sheet-ios{border-radius:13px;margin-bottom:8px}.action-sheet-group.sc-ion-action-sheet-ios:first-child{margin-top:10px}.action-sheet-group.sc-ion-action-sheet-ios:last-child{margin-bottom:10px}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-group.sc-ion-action-sheet-ios{background-color:transparent;-webkit-backdrop-filter:saturate(280%) blur(20px);backdrop-filter:saturate(280%) blur(20px)}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-title.sc-ion-action-sheet-ios,.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-button.sc-ion-action-sheet-ios{background-color:transparent;background-image:-webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8)), to(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8))), -webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4)), color-stop(50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4)), color-stop(50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8)));background-image:linear-gradient(0deg, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8), rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8) 100%), linear-gradient(0deg, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4), rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.4) 50%, rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8) 50%);background-repeat:no-repeat;background-position:top, bottom;background-size:100% calc(100% - 1px), 100% 1px;-webkit-backdrop-filter:saturate(120%);backdrop-filter:saturate(120%)}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-button.ion-activated.sc-ion-action-sheet-ios{background-color:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.7);background-image:none}.action-sheet-translucent.sc-ion-action-sheet-ios-h .action-sheet-cancel.sc-ion-action-sheet-ios{background:var(--button-background-selected)}}.action-sheet-title.sc-ion-action-sheet-ios{background:-webkit-gradient(linear, left bottom, left top, from(rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08)), color-stop(50%, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08)), color-stop(50%, transparent)) bottom/100% 1px no-repeat transparent;background:linear-gradient(0deg, rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08), rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.08) 50%, transparent 50%) bottom/100% 1px no-repeat transparent}.action-sheet-title.sc-ion-action-sheet-ios{-webkit-padding-start:10px;padding-inline-start:10px;-webkit-padding-end:10px;padding-inline-end:10px;padding-top:14px;padding-bottom:13px;color:var(--color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-size:max(13px, 0.8125rem);font-weight:400;text-align:center}.action-sheet-title.action-sheet-has-sub-title.sc-ion-action-sheet-ios{font-weight:600}.action-sheet-sub-title.sc-ion-action-sheet-ios{padding-left:0;padding-right:0;padding-top:6px;padding-bottom:0;font-size:max(13px, 0.8125rem);font-weight:400}.action-sheet-button.sc-ion-action-sheet-ios{-webkit-padding-start:14px;padding-inline-start:14px;-webkit-padding-end:14px;padding-inline-end:14px;padding-top:14px;padding-bottom:14px;min-height:56px;font-size:max(20px, 1.25rem);contain:content}.action-sheet-button.sc-ion-action-sheet-ios .action-sheet-icon.sc-ion-action-sheet-ios{-webkit-margin-end:0.3em;margin-inline-end:0.3em;font-size:max(28px, 1.75rem);pointer-events:none}.action-sheet-button.sc-ion-action-sheet-ios:last-child{background-image:none}.action-sheet-selected.sc-ion-action-sheet-ios{font-weight:bold}.action-sheet-cancel.sc-ion-action-sheet-ios{font-weight:600}.action-sheet-cancel.sc-ion-action-sheet-ios::after{background:var(--button-background-selected);opacity:var(--button-background-selected-opacity)}.action-sheet-destructive.sc-ion-action-sheet-ios,.action-sheet-destructive.ion-activated.sc-ion-action-sheet-ios,.action-sheet-destructive.ion-focused.sc-ion-action-sheet-ios{color:var(--ion-color-danger, #c5000f)}@media (any-hover: hover){.action-sheet-destructive.sc-ion-action-sheet-ios:hover{color:var(--ion-color-danger, #c5000f)}}';
 var IonActionSheetIosStyle0 = actionSheetIosCss;
@@ -8374,8 +4627,8 @@ var ActionSheet = proxyCustomElement(class ActionSheet2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a;
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -8578,7 +4831,7 @@ var defineCustomElement13 = defineCustomElement12;
 
 // node_modules/@ionic/core/components/alert.js
 var iosEnterAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -8593,10 +4846,10 @@ var iosEnterAnimation4 = (baseEl) => {
     opacity: "1",
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -8609,10 +4862,10 @@ var iosLeaveAnimation4 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -8627,15 +4880,15 @@ var mdEnterAnimation4 = (baseEl) => {
     opacity: "1",
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation4 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
   wrapperAnimation.addElement(baseEl.querySelector(".alert-wrapper")).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(150).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var alertIosCss = ".sc-ion-alert-ios-h{--min-width:250px;--width:auto;--min-height:auto;--height:auto;--max-height:90%;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-alert-ios-h{display:none}.alert-top.sc-ion-alert-ios-h{padding-top:50px;-ms-flex-align:start;align-items:flex-start}.alert-wrapper.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);contain:content;opacity:0;z-index:10}.alert-title.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0}.alert-sub-title.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:5px;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;font-weight:normal}.alert-message.sc-ion-alert-ios,.alert-input-group.sc-ion-alert-ios{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-overflow-scrolling:touch;overflow-y:auto;overscroll-behavior-y:contain}.alert-checkbox-label.sc-ion-alert-ios,.alert-radio-label.sc-ion-alert-ios{overflow-wrap:anywhere}@media (any-pointer: coarse){.alert-checkbox-group.sc-ion-alert-ios::-webkit-scrollbar,.alert-radio-group.sc-ion-alert-ios::-webkit-scrollbar,.alert-message.sc-ion-alert-ios::-webkit-scrollbar{display:none}}.alert-input.sc-ion-alert-ios{padding-left:0;padding-right:0;padding-top:10px;padding-bottom:10px;width:100%;border:0;background:inherit;font:inherit;-webkit-box-sizing:border-box;box-sizing:border-box}.alert-button-group.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;width:100%}.alert-button-group-vertical.sc-ion-alert-ios{-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap}.alert-button.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:block;border:0;font-size:0.875rem;line-height:1.25rem;z-index:0}.alert-button.ion-focused.sc-ion-alert-ios,.alert-tappable.ion-focused.sc-ion-alert-ios{background:var(--ion-color-step-100, var(--ion-background-color-step-100, #e6e6e6))}.alert-button-inner.sc-ion-alert-ios{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%;min-height:inherit}.alert-input-disabled.sc-ion-alert-ios,.alert-checkbox-button-disabled.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios,.alert-radio-button-disabled.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios{cursor:default;opacity:0.5;pointer-events:none}.alert-tappable.sc-ion-alert-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;display:-ms-flexbox;display:flex;width:100%;border:0;background:transparent;font-size:inherit;line-height:initial;text-align:start;-webkit-appearance:none;-moz-appearance:none;appearance:none;contain:content}.alert-button.sc-ion-alert-ios,.alert-checkbox.sc-ion-alert-ios,.alert-input.sc-ion-alert-ios,.alert-radio.sc-ion-alert-ios{outline:none}.alert-radio-icon.sc-ion-alert-ios,.alert-checkbox-icon.sc-ion-alert-ios,.alert-checkbox-inner.sc-ion-alert-ios{-webkit-box-sizing:border-box;box-sizing:border-box}textarea.alert-input.sc-ion-alert-ios{min-height:37px;resize:none}.sc-ion-alert-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--max-width:clamp(270px, 16.875rem, 324px);--backdrop-opacity:var(--ion-backdrop-opacity, 0.3);font-size:max(14px, 0.875rem)}.alert-wrapper.sc-ion-alert-ios{border-radius:13px;-webkit-box-shadow:none;box-shadow:none;overflow:hidden}.alert-button.sc-ion-alert-ios .alert-button-inner.sc-ion-alert-ios{pointer-events:none}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.alert-translucent.sc-ion-alert-ios-h .alert-wrapper.sc-ion-alert-ios{background:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.9);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}}.alert-head.sc-ion-alert-ios{-webkit-padding-start:16px;padding-inline-start:16px;-webkit-padding-end:16px;padding-inline-end:16px;padding-top:12px;padding-bottom:7px;text-align:center}.alert-title.sc-ion-alert-ios{margin-top:8px;color:var(--ion-text-color, #000);font-size:max(17px, 1.0625rem);font-weight:600}.alert-sub-title.sc-ion-alert-ios{color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));font-size:max(14px, 0.875rem)}.alert-message.sc-ion-alert-ios,.alert-input-group.sc-ion-alert-ios{-webkit-padding-start:16px;padding-inline-start:16px;-webkit-padding-end:16px;padding-inline-end:16px;padding-top:0;padding-bottom:21px;color:var(--ion-text-color, #000);font-size:max(13px, 0.8125rem);text-align:center}.alert-message.sc-ion-alert-ios{max-height:240px}.alert-message.sc-ion-alert-ios:empty{padding-left:0;padding-right:0;padding-top:0;padding-bottom:12px}.alert-input.sc-ion-alert-ios{border-radius:7px;margin-top:10px;-webkit-padding-start:7px;padding-inline-start:7px;-webkit-padding-end:7px;padding-inline-end:7px;padding-top:7px;padding-bottom:7px;border:0.55px solid var(--ion-color-step-250, var(--ion-background-color-step-250, #bfbfbf));background-color:var(--ion-background-color, #fff);-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:1rem}.alert-input.sc-ion-alert-ios::-webkit-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-moz-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios:-ms-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-ms-input-placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::placeholder{color:var(--ion-placeholder-color, var(--ion-color-step-400, var(--ion-text-color-step-600, #999999)));font-family:inherit;font-weight:inherit}.alert-input.sc-ion-alert-ios::-ms-clear{display:none}.alert-input.sc-ion-alert-ios::-webkit-date-and-time-value{height:18px}.alert-radio-group.sc-ion-alert-ios,.alert-checkbox-group.sc-ion-alert-ios{-ms-scroll-chaining:none;overscroll-behavior:contain;max-height:240px;border-top:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);overflow-y:auto;-webkit-overflow-scrolling:touch}.alert-tappable.sc-ion-alert-ios{min-height:44px}.alert-radio-label.sc-ion-alert-ios{-webkit-padding-start:13px;padding-inline-start:13px;-webkit-padding-end:13px;padding-inline-end:13px;padding-top:13px;padding-bottom:13px;-ms-flex:1;flex:1;-ms-flex-order:0;order:0;color:var(--ion-text-color, #000)}[aria-checked=true].sc-ion-alert-ios .alert-radio-label.sc-ion-alert-ios{color:var(--ion-color-primary, #0054e9)}.alert-radio-icon.sc-ion-alert-ios{position:relative;-ms-flex-order:1;order:1;min-width:30px}[aria-checked=true].sc-ion-alert-ios .alert-radio-inner.sc-ion-alert-ios{top:-7px;position:absolute;width:6px;height:12px;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-width:2px;border-top-width:0;border-left-width:0;border-style:solid;border-color:var(--ion-color-primary, #0054e9)}[aria-checked=true].sc-ion-alert-ios .alert-radio-inner.sc-ion-alert-ios{inset-inline-start:7px}.alert-checkbox-label.sc-ion-alert-ios{-webkit-padding-start:13px;padding-inline-start:13px;-webkit-padding-end:13px;padding-inline-end:13px;padding-top:13px;padding-bottom:13px;-ms-flex:1;flex:1;color:var(--ion-text-color, #000)}.alert-checkbox-icon.sc-ion-alert-ios{border-radius:50%;-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:6px;margin-inline-end:6px;margin-top:10px;margin-bottom:10px;position:relative;width:min(1.375rem, 55.836px);height:min(1.375rem, 55.836px);border-width:0.125rem;border-style:solid;border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-250, var(--ion-background-color-step-250, #c8c7cc))));background-color:var(--ion-item-background, var(--ion-background-color, #fff));contain:strict}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-icon.sc-ion-alert-ios{border-color:var(--ion-color-primary, #0054e9);background-color:var(--ion-color-primary, #0054e9)}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-inner.sc-ion-alert-ios{top:calc(min(1.375rem, 55.836px) / 8);position:absolute;width:calc(min(1.375rem, 55.836px) / 6 + 1px);height:calc(min(1.375rem, 55.836px) * 0.5);-webkit-transform:rotate(45deg);transform:rotate(45deg);border-width:0.125rem;border-top-width:0;border-left-width:0;border-style:solid;border-color:var(--ion-background-color, #fff)}[aria-checked=true].sc-ion-alert-ios .alert-checkbox-inner.sc-ion-alert-ios{inset-inline-start:calc(min(1.375rem, 55.836px) / 3)}.alert-button-group.sc-ion-alert-ios{-webkit-margin-end:-0.55px;margin-inline-end:-0.55px;-ms-flex-wrap:wrap;flex-wrap:wrap}.alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios{border-right:none}[dir=rtl].sc-ion-alert-ios-h .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:none}[dir=rtl].sc-ion-alert-ios .alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:none}@supports selector(:dir(rtl)){.alert-button-group-vertical.sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child:dir(rtl){border-right:none}}.alert-button.sc-ion-alert-ios{-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border-radius:0;-ms-flex:1 1 auto;flex:1 1 auto;min-width:50%;height:max(44px, 2.75rem);border-top:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);background-color:transparent;color:var(--ion-color-primary, #0054e9);font-size:max(17px, 1.0625rem);overflow:hidden}[dir=rtl].sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:first-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:first-child{border-right:0}[dir=rtl].sc-ion-alert-ios .alert-button.sc-ion-alert-ios:first-child{border-right:0}@supports selector(:dir(rtl)){.alert-button.sc-ion-alert-ios:first-child:dir(rtl){border-right:0}}.alert-button.sc-ion-alert-ios:last-child{border-right:0;font-weight:bold}[dir=rtl].sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:last-child,[dir=rtl] .sc-ion-alert-ios-h .alert-button.sc-ion-alert-ios:last-child{border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}[dir=rtl].sc-ion-alert-ios .alert-button.sc-ion-alert-ios:last-child{border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}@supports selector(:dir(rtl)){.alert-button.sc-ion-alert-ios:last-child:dir(rtl){border-right:0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2)}}.alert-button.ion-activated.sc-ion-alert-ios{background-color:rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.1)}.alert-button-role-destructive.sc-ion-alert-ios,.alert-button-role-destructive.ion-activated.sc-ion-alert-ios,.alert-button-role-destructive.ion-focused.sc-ion-alert-ios{color:var(--ion-color-danger, #c5000f)}";
 var IonAlertIosStyle0 = alertIosCss;
@@ -8753,7 +5006,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     }
     this.inputType = inputTypes.values().next().value;
     this.processedInputs = inputs.map((i, index) => {
-      var _a;
+      var _a91;
       return {
         type: i.type || "text",
         name: i.name || `${index}`,
@@ -8766,7 +5019,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
         handler: i.handler,
         min: i.min,
         max: i.max,
-        cssClass: (_a = i.cssClass) !== null && _a !== void 0 ? _a : "",
+        cssClass: (_a91 = i.cssClass) !== null && _a91 !== void 0 ? _a91 : "",
         attributes: i.attributes || {},
         tabindex: i.type === "radio" && i !== focusable ? -1 : 0
       };
@@ -8777,8 +5030,8 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     this.triggerChanged();
   }
   componentWillLoad() {
-    var _a;
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
     this.inputsChanged();
@@ -8996,7 +5249,7 @@ var Alert = proxyCustomElement(class Alert2 extends H {
     return h("div", {
       class: "alert-input-group"
     }, inputs.map((i) => {
-      var _a, _b, _c, _d;
+      var _a91, _b, _c, _d;
       if (i.type === "textarea") {
         return h("div", {
           class: "alert-input-wrapper"
@@ -9006,12 +5259,12 @@ var Alert = proxyCustomElement(class Alert2 extends H {
           id: i.id,
           tabIndex: i.tabindex
         }, i.attributes, {
-          disabled: (_b = (_a = i.attributes) === null || _a === void 0 ? void 0 : _a.disabled) !== null && _b !== void 0 ? _b : i.disabled,
+          disabled: (_b = (_a91 = i.attributes) === null || _a91 === void 0 ? void 0 : _a91.disabled) !== null && _b !== void 0 ? _b : i.disabled,
           class: inputClass(i),
           onInput: (e) => {
-            var _a2;
+            var _a92;
             i.value = e.target.value;
-            if ((_a2 = i.attributes) === null || _a2 === void 0 ? void 0 : _a2.onInput) {
+            if ((_a92 = i.attributes) === null || _a92 === void 0 ? void 0 : _a92.onInput) {
               i.attributes.onInput(e);
             }
           }
@@ -9031,9 +5284,9 @@ var Alert = proxyCustomElement(class Alert2 extends H {
           disabled: (_d = (_c = i.attributes) === null || _c === void 0 ? void 0 : _c.disabled) !== null && _d !== void 0 ? _d : i.disabled,
           class: inputClass(i),
           onInput: (e) => {
-            var _a2;
+            var _a92;
             i.value = e.target.value;
-            if ((_a2 = i.attributes) === null || _a2 === void 0 ? void 0 : _a2.onInput) {
+            if ((_a92 = i.attributes) === null || _a92 === void 0 ? void 0 : _a92.onInput) {
               i.attributes.onInput(e);
             }
           }
@@ -9188,10 +5441,10 @@ var Alert = proxyCustomElement(class Alert2 extends H {
   "inputs": ["inputsChanged"]
 }]);
 var inputClass = (input) => {
-  var _a, _b, _c;
+  var _a91, _b, _c;
   return Object.assign(Object.assign({
     "alert-input": true,
-    "alert-input-disabled": ((_b = (_a = input.attributes) === null || _a === void 0 ? void 0 : _a.disabled) !== null && _b !== void 0 ? _b : input.disabled) || false
+    "alert-input-disabled": ((_b = (_a91 = input.attributes) === null || _a91 === void 0 ? void 0 : _a91.disabled) !== null && _b !== void 0 ? _b : input.disabled) || false
   }, getClassMap(input.cssClass)), getClassMap(input.attributes ? (_c = input.attributes.class) === null || _c === void 0 ? void 0 : _c.toString() : ""));
 };
 var buttonClass2 = (button) => {
@@ -9244,16 +5497,16 @@ var App = proxyCustomElement(class App2 extends H {
       rIC(() => __async(this, null, function* () {
         const isHybrid = isPlatform(window, "hybrid");
         if (!config.getBoolean("_testing")) {
-          import("./index9-SEFGGRSB.js").then((module) => module.startTapClick(config));
+          import("./index9-6OXBP735.js").then((module) => module.startTapClick(config));
         }
         if (config.getBoolean("statusTap", isHybrid)) {
-          import("./status-tap-Q6BQSCTT.js").then((module) => module.startStatusTap());
+          import("./status-tap-OVBTXGWA.js").then((module) => module.startStatusTap());
         }
         if (config.getBoolean("inputShims", needInputShims())) {
           const platform = isPlatform(window, "ios") ? "ios" : "android";
-          import("./input-shims-GMVBRNWG.js").then((module) => module.startInputShims(config, platform));
+          import("./input-shims-WOSC4BS3.js").then((module) => module.startInputShims(config, platform));
         }
-        const hardwareBackButtonModule = yield import("./hardware-back-button-ELMW6NGU.js");
+        const hardwareBackButtonModule = yield import("./hardware-back-button-G7DMXUGN.js");
         const supportsHardwareBackButtonEvents = isHybrid || shouldUseCloseWatcher();
         if (config.getBoolean("hardwareBackButton", supportsHardwareBackButtonEvents)) {
           hardwareBackButtonModule.startHardwareBackButton();
@@ -9264,9 +5517,9 @@ var App = proxyCustomElement(class App2 extends H {
           hardwareBackButtonModule.blockHardwareBackButton();
         }
         if (typeof window !== "undefined") {
-          import("./keyboard2-PXFXJCF4.js").then((module) => module.startKeyboardAssist(window));
+          import("./keyboard2-QSMTZJPP.js").then((module) => module.startKeyboardAssist(window));
         }
-        import("./focus-visible-OVO3YVYX.js").then((module) => this.focusVisible = module.startFocusVisible());
+        import("./focus-visible-GFSZNISE.js").then((module) => this.focusVisible = module.startFocusVisible());
       }));
     }
   }
@@ -11015,11 +7268,11 @@ var Content = proxyCustomElement(class Content2 extends H {
   "scrollToPoint": [64]
 }, [[9, "resize", "onResize"]]]);
 var getParentElement = (el) => {
-  var _a;
+  var _a91;
   if (el.parentElement) {
     return el.parentElement;
   }
-  if ((_a = el.parentNode) === null || _a === void 0 ? void 0 : _a.host) {
+  if ((_a91 = el.parentNode) === null || _a91 === void 0 ? void 0 : _a91.host) {
     return el.parentNode.host;
   }
   return null;
@@ -11715,9 +7968,9 @@ var getYear = (locale, refParts) => {
   });
 };
 var getNormalizedDate = (refParts) => {
-  var _a, _b, _c;
+  var _a91, _b, _c;
   const timeString = refParts.hour !== void 0 && refParts.minute !== void 0 ? ` ${refParts.hour}:${refParts.minute}` : "";
-  return /* @__PURE__ */ new Date(`${(_a = refParts.month) !== null && _a !== void 0 ? _a : 1}/${(_b = refParts.day) !== null && _b !== void 0 ? _b : 1}/${(_c = refParts.year) !== null && _c !== void 0 ? _c : 2023}${timeString} GMT+0000`);
+  return /* @__PURE__ */ new Date(`${(_a91 = refParts.month) !== null && _a91 !== void 0 ? _a91 : 1}/${(_b = refParts.day) !== null && _b !== void 0 ? _b : 1}/${(_c = refParts.year) !== null && _c !== void 0 ? _c : 2023}${timeString} GMT+0000`);
 };
 var getLocalizedDateTime = (locale, refParts, options) => {
   const date = getNormalizedDate(refParts);
@@ -11982,7 +8235,7 @@ var getDayColumnData = (locale, refParts, minParts, maxParts, dayValues, formatO
   return days;
 };
 var getYearColumnData = (locale, refParts, minParts, maxParts, yearValues) => {
-  var _a, _b;
+  var _a91, _b;
   let processedYears = [];
   if (yearValues !== void 0) {
     processedYears = yearValues;
@@ -11996,7 +8249,7 @@ var getYearColumnData = (locale, refParts, minParts, maxParts, yearValues) => {
     const {
       year
     } = refParts;
-    const maxYear = (_a = maxParts === null || maxParts === void 0 ? void 0 : maxParts.year) !== null && _a !== void 0 ? _a : year;
+    const maxYear = (_a91 = maxParts === null || maxParts === void 0 ? void 0 : maxParts.year) !== null && _a91 !== void 0 ? _a91 : year;
     const minYear = (_b = minParts === null || minParts === void 0 ? void 0 : minParts.year) !== null && _b !== void 0 ? _b : year - 100;
     for (let i = minYear; i <= maxYear; i++) {
       processedYears.push(i);
@@ -12124,7 +8377,7 @@ var DatetimeButton = proxyCustomElement(class DatetimeButton2 extends H {
       return [value];
     };
     this.setDateTimeText = () => {
-      var _a, _b, _c, _d, _e;
+      var _a91, _b, _c, _d, _e;
       const {
         datetimeEl,
         datetimePresentation
@@ -12152,7 +8405,7 @@ var DatetimeButton = proxyCustomElement(class DatetimeButton2 extends H {
       switch (datetimePresentation) {
         case "date-time":
         case "time-date":
-          const dateText = getLocalizedDateTime(locale, firstParsedDatetime, (_a = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a !== void 0 ? _a : {
+          const dateText = getLocalizedDateTime(locale, firstParsedDatetime, (_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a91 !== void 0 ? _a91 : {
             month: "short",
             day: "numeric",
             year: "numeric"
@@ -13829,11 +10082,11 @@ var Spinner = proxyCustomElement(class Spinner2 extends H {
     return mode === "ios" ? "lines" : "circular";
   }
   render() {
-    var _a;
+    var _a91;
     const self = this;
     const mode = getIonMode(self);
     const spinnerName = self.getName();
-    const spinner = (_a = SPINNERS[spinnerName]) !== null && _a !== void 0 ? _a : SPINNERS["lines"];
+    const spinner = (_a91 = SPINNERS[spinnerName]) !== null && _a91 !== void 0 ? _a91 : SPINNERS["lines"];
     const duration = typeof self.duration === "number" && self.duration > 10 ? self.duration : spinner.dur;
     const svgs = [];
     if (spinner.circles !== void 0) {
@@ -14047,13 +10300,13 @@ var InputPasswordToggle = proxyCustomElement(class InputPasswordToggle2 extends 
     this.inputElRef = null;
   }
   render() {
-    var _a, _b;
+    var _a91, _b;
     const {
       color,
       type
     } = this;
     const mode = getIonMode(this);
-    const showPasswordIcon = (_a = this.showIcon) !== null && _a !== void 0 ? _a : eye;
+    const showPasswordIcon = (_a91 = this.showIcon) !== null && _a91 !== void 0 ? _a91 : eye;
     const hidePasswordIcon = (_b = this.hideIcon) !== null && _b !== void 0 ? _b : eyeOff;
     const isPasswordVisible = type === "text";
     return h(Host, {
@@ -14804,7 +11057,7 @@ var ItemSliding = proxyCustomElement(class ItemSliding2 extends H {
         yield this.updateOptions();
       }));
       yield this.updateOptions();
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el,
         gestureName: "item-swipe",
         gesturePriority: 100,
@@ -14855,8 +11108,8 @@ var ItemSliding = proxyCustomElement(class ItemSliding2 extends H {
    */
   open(side) {
     return __async(this, null, function* () {
-      var _a;
-      const item = this.item = (_a = this.item) !== null && _a !== void 0 ? _a : this.el.querySelector("ion-item");
+      var _a91;
+      const item = this.item = (_a91 = this.item) !== null && _a91 !== void 0 ? _a91 : this.el.querySelector("ion-item");
       if (item === null) {
         return;
       }
@@ -15410,7 +11663,7 @@ var defineCustomElement60 = defineCustomElement59;
 
 // node_modules/@ionic/core/components/ion-loading.js
 var iosEnterAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -15425,10 +11678,10 @@ var iosEnterAnimation5 = (baseEl) => {
     opacity: 1,
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -15441,10 +11694,10 @@ var iosLeaveAnimation5 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdEnterAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
@@ -15459,10 +11712,10 @@ var mdEnterAnimation5 = (baseEl) => {
     opacity: 1,
     transform: "scale(1)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var mdLeaveAnimation5 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0);
@@ -15475,7 +11728,7 @@ var mdLeaveAnimation5 = (baseEl) => {
     opacity: 0,
     transform: "scale(0.9)"
   }]);
-  return baseAnimation2.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("ease-in-out").duration(200).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var loadingIosCss = ".sc-ion-loading-ios-h{--min-width:auto;--width:auto;--min-height:auto;--height:auto;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:fixed;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-ms-touch-action:none;touch-action:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.overlay-hidden.sc-ion-loading-ios-h{display:none}.loading-wrapper.sc-ion-loading-ios{display:-ms-flexbox;display:flex;-ms-flex-align:inherit;align-items:inherit;-ms-flex-pack:inherit;justify-content:inherit;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);background:var(--background);opacity:0;z-index:10}ion-spinner.sc-ion-loading-ios{color:var(--spinner-color)}.sc-ion-loading-ios-h{--background:var(--ion-overlay-background-color, var(--ion-color-step-100, var(--ion-background-color-step-100, #f9f9f9)));--max-width:270px;--max-height:90%;--spinner-color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));--backdrop-opacity:var(--ion-backdrop-opacity, 0.3);color:var(--ion-text-color, #000);font-size:0.875rem}.loading-wrapper.sc-ion-loading-ios{border-radius:8px;-webkit-padding-start:34px;padding-inline-start:34px;-webkit-padding-end:34px;padding-inline-end:34px;padding-top:24px;padding-bottom:24px}@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))){.loading-translucent.sc-ion-loading-ios-h .loading-wrapper.sc-ion-loading-ios{background-color:rgba(var(--ion-background-color-rgb, 255, 255, 255), 0.8);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}}.loading-content.sc-ion-loading-ios{font-weight:bold}.loading-spinner.sc-ion-loading-ios+.loading-content.sc-ion-loading-ios{-webkit-margin-start:16px;margin-inline-start:16px}";
 var IonLoadingIosStyle0 = loadingIosCss;
@@ -15541,12 +11794,12 @@ var Loading = proxyCustomElement(class Loading2 extends H {
     this.triggerChanged();
   }
   componentWillLoad() {
-    var _a;
+    var _a91;
     if (this.spinner === void 0) {
       const mode = getIonMode(this);
       this.spinner = config.get("loadingSpinner", config.get("spinner", mode === "ios" ? "lines" : "crescent"));
     }
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -15845,7 +12098,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
       this.sideChanged();
       menuController._register(this);
       this.menuChanged();
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: document,
         gestureName: "menu-swipe",
         gesturePriority: 30,
@@ -16126,7 +12379,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
     }
   }
   afterAnimation(isOpen, role) {
-    var _a;
+    var _a91;
     this._isOpen = isOpen;
     this.isAnimating = false;
     if (!this._isOpen) {
@@ -16137,7 +12390,7 @@ var Menu = proxyCustomElement(class Menu2 extends H {
         this.el.removeAttribute("aria-hidden");
       }
       this.ionDidOpen.emit();
-      const focusedMenu = (_a = document.activeElement) === null || _a === void 0 ? void 0 : _a.closest("ion-menu");
+      const focusedMenu = (_a91 = document.activeElement) === null || _a91 === void 0 ? void 0 : _a91.closest("ion-menu");
       if (focusedMenu !== this.el) {
         this.el.focus();
       }
@@ -16919,9 +13172,9 @@ var Picker = proxyCustomElement(class Picker2 extends H {
       inputmode: "numeric",
       type: "number",
       onKeyDown: (ev) => {
-        var _a;
+        var _a91;
         if (ev.key === "Enter") {
-          (_a = this.inputEl) === null || _a === void 0 ? void 0 : _a.blur();
+          (_a91 = this.inputEl) === null || _a91 === void 0 ? void 0 : _a91.blur();
         }
       },
       ref: (el) => this.inputEl = el,
@@ -17044,7 +13297,7 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
       let activeEl = this.activeItem;
       const scrollCallback = () => {
         raf(() => {
-          var _a;
+          var _a91;
           if (!scrollEl) return;
           if (timeout) {
             clearTimeout(timeout);
@@ -17080,7 +13333,7 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
           activeEl = newActiveElement;
           this.setPickerItemActiveState(newActiveElement, true);
           if (this.updateValueTextOnScroll) {
-            (_a = this.assistiveFocusable) === null || _a === void 0 ? void 0 : _a.setAttribute("aria-valuetext", this.getOptionValueText(newActiveElement));
+            (_a91 = this.assistiveFocusable) === null || _a91 === void 0 ? void 0 : _a91.setAttribute("aria-valuetext", this.getOptionValueText(newActiveElement));
           }
           timeout = setTimeout(() => {
             this.isScrolling = false;
@@ -17181,8 +13434,8 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
       }
     };
     this.getOptionValueText = (el) => {
-      var _a;
-      return el ? (_a = el.getAttribute("aria-label")) !== null && _a !== void 0 ? _a : el.innerText : "";
+      var _a91;
+      return el ? (_a91 = el.getAttribute("aria-label")) !== null && _a91 !== void 0 ? _a91 : el.innerText : "";
     };
     this.renderAssistiveFocusable = () => {
       const {
@@ -17312,8 +13565,8 @@ var PickerColumn = proxyCustomElement(class PickerColumn2 extends H {
     });
   }
   connectedCallback() {
-    var _a;
-    this.ariaLabel = (_a = this.el.getAttribute("aria-label")) !== null && _a !== void 0 ? _a : "Select a value";
+    var _a91;
+    this.ariaLabel = (_a91 = this.el.getAttribute("aria-label")) !== null && _a91 !== void 0 ? _a91 : "Select a value";
   }
   get activeItem() {
     const {
@@ -17616,7 +13869,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
       }
       this.rotateFactor = pickerRotateFactor;
       this.scaleFactor = pickerScaleFactor;
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: this.el,
         gestureName: "picker-swipe",
         gesturePriority: 100,
@@ -17822,7 +14075,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
     }
   }
   refresh(forceRefresh, animated) {
-    var _a;
+    var _a91;
     let min = this.col.options.length - 1;
     let max = 0;
     const options = this.col.options;
@@ -17835,7 +14088,7 @@ var PickerColumnCmp = proxyCustomElement(class PickerColumnCmp2 extends H {
     if (this.velocity !== 0) {
       return;
     }
-    const selectedIndex = clamp(min, (_a = this.col.selectedIndex) !== null && _a !== void 0 ? _a : 0, max);
+    const selectedIndex = clamp(min, (_a91 = this.col.selectedIndex) !== null && _a91 !== void 0 ? _a91 : 0, max);
     if (this.col.prevSelected !== selectedIndex || forceRefresh) {
       const y = selectedIndex * this.optHeight * -1;
       const duration = animated ? TRANSITION_DURATION : 0;
@@ -17933,22 +14186,22 @@ function defineCustomElement73() {
 
 // node_modules/@ionic/core/components/ion-picker-legacy.js
 var iosEnterAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", 0.01, "var(--backdrop-opacity)").beforeStyles({
     "pointer-events": "none"
   }).afterClearStyles(["pointer-events"]);
   wrapperAnimation.addElement(baseEl.querySelector(".picker-wrapper")).fromTo("transform", "translateY(100%)", "translateY(0%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var iosLeaveAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const backdropAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   backdropAnimation.addElement(baseEl.querySelector("ion-backdrop")).fromTo("opacity", "var(--backdrop-opacity)", 0.01);
   wrapperAnimation.addElement(baseEl.querySelector(".picker-wrapper")).fromTo("transform", "translateY(0%)", "translateY(100%)");
-  return baseAnimation2.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
+  return baseAnimation.addElement(baseEl).easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation([backdropAnimation, wrapperAnimation]);
 };
 var pickerIosCss2 = ".sc-ion-picker-legacy-ios-h{--border-radius:0;--border-style:solid;--min-width:auto;--width:100%;--max-width:500px;--min-height:auto;--max-height:auto;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;top:0;display:block;position:absolute;width:100%;height:100%;outline:none;font-family:var(--ion-font-family, inherit);contain:strict;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1001}.sc-ion-picker-legacy-ios-h{inset-inline-start:0}.overlay-hidden.sc-ion-picker-legacy-ios-h{display:none}.picker-wrapper.sc-ion-picker-legacy-ios{border-radius:var(--border-radius);left:0;right:0;bottom:0;-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:auto;margin-bottom:auto;-webkit-transform:translate3d(0,  100%,  0);transform:translate3d(0,  100%,  0);display:-ms-flexbox;display:flex;position:absolute;-ms-flex-direction:column;flex-direction:column;width:var(--width);min-width:var(--min-width);max-width:var(--max-width);height:var(--height);min-height:var(--min-height);max-height:var(--max-height);border-width:var(--border-width);border-style:var(--border-style);border-color:var(--border-color);background:var(--background);contain:strict;overflow:hidden;z-index:10}.picker-toolbar.sc-ion-picker-legacy-ios{width:100%;background:transparent;contain:strict;z-index:1}.picker-button.sc-ion-picker-legacy-ios{border:0;font-family:inherit}.picker-button.sc-ion-picker-legacy-ios:active,.picker-button.sc-ion-picker-legacy-ios:focus{outline:none}.picker-columns.sc-ion-picker-legacy-ios{display:-ms-flexbox;display:flex;position:relative;-ms-flex-pack:center;justify-content:center;margin-bottom:var(--ion-safe-area-bottom, 0);contain:strict;overflow:hidden}.picker-above-highlight.sc-ion-picker-legacy-ios,.picker-below-highlight.sc-ion-picker-legacy-ios{display:none;pointer-events:none}.sc-ion-picker-legacy-ios-h{--background:var(--ion-background-color, #fff);--border-width:1px 0 0;--border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-250, var(--ion-background-color-step-250, #c8c7cc))));--height:260px;--backdrop-opacity:var(--ion-backdrop-opacity, 0.26);color:var(--ion-item-color, var(--ion-text-color, #000))}.picker-toolbar.sc-ion-picker-legacy-ios{display:-ms-flexbox;display:flex;height:44px;border-bottom:0.55px solid var(--border-color)}.picker-toolbar-button.sc-ion-picker-legacy-ios{-ms-flex:1;flex:1;text-align:end}.picker-toolbar-button.sc-ion-picker-legacy-ios:last-child .picker-button.sc-ion-picker-legacy-ios{font-weight:600}.picker-toolbar-button.sc-ion-picker-legacy-ios:first-child{font-weight:normal;text-align:start}.picker-button.sc-ion-picker-legacy-ios,.picker-button.ion-activated.sc-ion-picker-legacy-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;-webkit-padding-start:1em;padding-inline-start:1em;-webkit-padding-end:1em;padding-inline-end:1em;padding-top:0;padding-bottom:0;height:44px;background:transparent;color:var(--ion-color-primary, #0054e9);font-size:16px}.picker-columns.sc-ion-picker-legacy-ios{height:215px;-webkit-perspective:1000px;perspective:1000px}.picker-above-highlight.sc-ion-picker-legacy-ios{top:0;-webkit-transform:translate3d(0,  0,  90px);transform:translate3d(0,  0,  90px);display:block;position:absolute;width:100%;height:81px;border-bottom:1px solid var(--border-color);background:-webkit-gradient(linear, left top, left bottom, color-stop(20%, var(--background, var(--ion-background-color, #fff))), to(rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8)));background:linear-gradient(to bottom, var(--background, var(--ion-background-color, #fff)) 20%, rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8) 100%);z-index:10}.picker-above-highlight.sc-ion-picker-legacy-ios{inset-inline-start:0}.picker-below-highlight.sc-ion-picker-legacy-ios{top:115px;-webkit-transform:translate3d(0,  0,  90px);transform:translate3d(0,  0,  90px);display:block;position:absolute;width:100%;height:119px;border-top:1px solid var(--border-color);background:-webkit-gradient(linear, left bottom, left top, color-stop(30%, var(--background, var(--ion-background-color, #fff))), to(rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8)));background:linear-gradient(to top, var(--background, var(--ion-background-color, #fff)) 30%, rgba(var(--background-rgb, var(--ion-background-color-rgb, 255, 255, 255)), 0.8) 100%);z-index:11}.picker-below-highlight.sc-ion-picker-legacy-ios{inset-inline-start:0}";
 var IonPickerLegacyIosStyle0 = pickerIosCss2;
@@ -18022,8 +14275,8 @@ var Picker3 = proxyCustomElement(class Picker4 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a;
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -18641,7 +14894,7 @@ var createBaseAnimation = (pullingRefresherIcon) => {
   const spinnerArrowContainer = pullingRefresherIcon.querySelector(".spinner-arrow-container");
   const arrowContainer = pullingRefresherIcon.querySelector(".arrow-container");
   const arrow = arrowContainer ? arrowContainer.querySelector("ion-icon") : null;
-  const baseAnimation2 = createAnimation().duration(1e3).easing("ease-out");
+  const baseAnimation = createAnimation().duration(1e3).easing("ease-out");
   const spinnerArrowContainerAnimation = createAnimation().addElement(spinnerArrowContainer).keyframes([{
     offset: 0,
     opacity: "0.3"
@@ -18702,9 +14955,9 @@ var createBaseAnimation = (pullingRefresherIcon) => {
       offset: 1,
       transform: "translateX(-1.5px) scale(1)"
     }]);
-    baseAnimation2.addAnimation([arrowContainerAnimation, arrowAnimation]);
+    baseAnimation.addAnimation([arrowContainerAnimation, arrowAnimation]);
   }
-  return baseAnimation2.addAnimation([spinnerArrowContainerAnimation, circleInnerAnimation, circleOuterAnimation]);
+  return baseAnimation.addAnimation([spinnerArrowContainerAnimation, circleInnerAnimation, circleOuterAnimation]);
 };
 var createScaleAnimation = (pullingRefresherIcon, refresherEl) => {
   const height = refresherEl.clientHeight;
@@ -18906,7 +15159,7 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
         });
       };
       this.scrollEl.addEventListener("scroll", this.scrollListenerCallback);
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: this.scrollEl,
         gestureName: "refresher",
         gesturePriority: 31,
@@ -18954,7 +15207,7 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
           refreshingCircle.style.setProperty("animation-delay", "-655ms");
         });
       }
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: this.scrollEl,
         gestureName: "refresher",
         gesturePriority: 31,
@@ -19067,7 +15320,7 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
         if (yield shouldUseNativeRefresher(this.el, getIonMode(this))) {
           this.setupNativeRefresher(contentEl);
         } else {
-          this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+          this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
             el: contentEl,
             gestureName: "refresher",
             gesturePriority: 31,
@@ -19241,13 +15494,13 @@ var Refresher = proxyCustomElement(class Refresher2 extends H {
   }
   close(state, delay) {
     setTimeout(() => {
-      var _a;
+      var _a91;
       this.state = 1;
       this.progress = 0;
       this.didStart = false;
       this.setCss(0, "0ms", false, "", true);
       if (this.contentFullscreen && this.backgroundContentEl) {
-        (_a = this.backgroundContentEl) === null || _a === void 0 ? void 0 : _a.style.removeProperty("--offset-top");
+        (_a91 = this.backgroundContentEl) === null || _a91 === void 0 ? void 0 : _a91.style.removeProperty("--offset-top");
       }
     }, 600);
     this.state = state;
@@ -19596,7 +15849,7 @@ var ReorderGroup = proxyCustomElement(class ReorderGroup2 extends H {
       if (contentEl) {
         this.scrollEl = yield getScrollElement(contentEl);
       }
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: this.el,
         gestureName: "reorder",
         gesturePriority: 110,
@@ -20151,7 +16404,7 @@ var SegmentView = proxyCustomElement(class SegmentView2 extends H {
     this.isManualScroll = void 0;
   }
   handleScroll(ev) {
-    var _a;
+    var _a91;
     const {
       scrollLeft,
       scrollWidth,
@@ -20160,7 +16413,7 @@ var SegmentView = proxyCustomElement(class SegmentView2 extends H {
     const scrollRatio = scrollLeft / (scrollWidth - clientWidth);
     this.ionSegmentViewScroll.emit({
       scrollRatio,
-      isManualScroll: (_a = this.isManualScroll) !== null && _a !== void 0 ? _a : true
+      isManualScroll: (_a91 = this.isManualScroll) !== null && _a91 !== void 0 ? _a91 : true
     });
     this.resetScrollEndTimeout();
   }
@@ -21845,7 +18098,7 @@ var getOffsetForMiddlePosition = (toastHeight, wrapperHeight) => {
   return Math.floor(toastHeight / 2 - wrapperHeight / 2);
 };
 var iosEnterAnimation7 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -21868,10 +18121,10 @@ var iosEnterAnimation7 = (baseEl, opts) => {
       wrapperAnimation.fromTo("transform", "translateY(100%)", `translateY(${bottom})`);
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.155,1.105,.295,1.12)").duration(400).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.155,1.105,.295,1.12)").duration(400).addAnimation(wrapperAnimation);
 };
 var iosLeaveAnimation7 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -21892,10 +18145,10 @@ var iosLeaveAnimation7 = (baseEl, opts) => {
       wrapperAnimation.fromTo("transform", `translateY(${bottom})`, "translateY(100%)");
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
 };
 var mdEnterAnimation6 = (baseEl, opts) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const {
     position,
@@ -21920,15 +18173,15 @@ var mdEnterAnimation6 = (baseEl, opts) => {
       wrapperAnimation.fromTo("opacity", 0.01, 1);
       break;
   }
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(400).addAnimation(wrapperAnimation);
 };
 var mdLeaveAnimation6 = (baseEl) => {
-  const baseAnimation2 = createAnimation();
+  const baseAnimation = createAnimation();
   const wrapperAnimation = createAnimation();
   const root = getElementRoot(baseEl);
   const wrapperEl = root.querySelector(".toast-wrapper");
   wrapperAnimation.addElement(wrapperEl).fromTo("opacity", 0.99, 0);
-  return baseAnimation2.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
+  return baseAnimation.easing("cubic-bezier(.36,.66,.04,1)").duration(300).addAnimation(wrapperAnimation);
 };
 var createSwipeToDismissGesture = (el, toastPosition, onDismiss) => {
   const wrapperEl = Build.isTesting ? document.createElement("div") : getElementRoot(el).querySelector(".toast-wrapper");
@@ -22159,8 +18412,8 @@ var Toast = proxyCustomElement(class Toast2 extends H {
     this.triggerController.removeClickListener();
   }
   componentWillLoad() {
-    var _a;
-    if (!((_a = this.htmlAttributes) === null || _a === void 0 ? void 0 : _a.id)) {
+    var _a91;
+    if (!((_a91 = this.htmlAttributes) === null || _a91 === void 0 ? void 0 : _a91.id)) {
       setOverlayId(this.el);
     }
   }
@@ -22214,7 +18467,7 @@ var Toast = proxyCustomElement(class Toast2 extends H {
    */
   dismiss(data, role) {
     return __async(this, null, function* () {
-      var _a, _b;
+      var _a91, _b;
       const unlock = yield this.lockController.lock();
       const {
         durationTimeout,
@@ -22238,7 +18491,7 @@ var Toast = proxyCustomElement(class Toast2 extends H {
          */
         {
           position,
-          top: (_a = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.top) !== null && _a !== void 0 ? _a : "",
+          top: (_a91 = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.top) !== null && _a91 !== void 0 ? _a91 : "",
           bottom: (_b = lastPresentedPosition === null || lastPresentedPosition === void 0 ? void 0 : lastPresentedPosition.bottom) !== null && _b !== void 0 ? _b : ""
         }
       );
@@ -22668,7 +18921,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
     return __async(this, null, function* () {
       this.didLoad = true;
       this.rootChanged();
-      this.gesture = (yield import("./swipe-back-Y5LOI6QQ.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
+      this.gesture = (yield import("./swipe-back-TPBYZRZZ.js")).createSwipeBackGesture(this.el, this.canStart.bind(this), this.onStart.bind(this), this.onMove.bind(this), this.onEnd.bind(this));
       this.swipeGestureChanged();
     });
   }
@@ -22972,8 +19225,8 @@ var Nav = proxyCustomElement(class Nav2 extends H {
    */
   queueTrns(ti, done) {
     return __async(this, null, function* () {
-      var _a, _b;
-      if (this.isTransitioning && ((_a = ti.opts) === null || _a === void 0 ? void 0 : _a.skipIfBusy)) {
+      var _a91, _b;
+      if (this.isTransitioning && ((_a91 = ti.opts) === null || _a91 === void 0 ? void 0 : _a91.skipIfBusy)) {
         return false;
       }
       const promise = new Promise((resolve, reject) => {
@@ -23096,10 +19349,10 @@ var Nav = proxyCustomElement(class Nav2 extends H {
     });
   }
   prepareTI(ti) {
-    var _a, _b;
+    var _a91, _b;
     var _c;
     const viewsLength = this.views.length;
-    (_a = ti.opts) !== null && _a !== void 0 ? _a : ti.opts = {};
+    (_a91 = ti.opts) !== null && _a91 !== void 0 ? _a91 : ti.opts = {};
     (_b = (_c = ti.opts).delegate) !== null && _b !== void 0 ? _b : _c.delegate = this.delegate;
     if (ti.removeView !== void 0) {
       assert(ti.removeStart !== void 0, "removeView needs removeStart");
@@ -23180,7 +19433,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
    * @param ti The instructions.
    */
   postViewInit(enteringView, leavingView, ti) {
-    var _a, _b, _c;
+    var _a91, _b, _c;
     assert(leavingView || enteringView, "Both leavingView and enteringView are null");
     assert(ti.resolve, "resolve must be valid");
     assert(ti.reject, "reject must be valid");
@@ -23201,7 +19454,7 @@ var Nav = proxyCustomElement(class Nav2 extends H {
           destroyQueue.push(view);
         }
       }
-      (_a = opts.direction) !== null && _a !== void 0 ? _a : opts.direction = "back";
+      (_a91 = opts.direction) !== null && _a91 !== void 0 ? _a91 : opts.direction = "back";
     }
     const finalNumViews = this.views.length + ((_b = insertViews === null || insertViews === void 0 ? void 0 : insertViews.length) !== null && _b !== void 0 ? _b : 0) - (removeCount !== null && removeCount !== void 0 ? removeCount : 0);
     assert(finalNumViews >= 0, "final balance can not be negative");
@@ -23530,8 +19783,8 @@ var getHighlightStyles = (highlightedDates, dateIsoString, el) => {
   return void 0;
 };
 var warnIfTimeZoneProvided = (el, formatOptions) => {
-  var _a, _b, _c, _d;
-  if (((_a = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _a === void 0 ? void 0 : _a.timeZone) || ((_b = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _b === void 0 ? void 0 : _b.timeZoneName) || ((_c = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _c === void 0 ? void 0 : _c.timeZone) || ((_d = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _d === void 0 ? void 0 : _d.timeZoneName)) {
+  var _a91, _b, _c, _d;
+  if (((_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _a91 === void 0 ? void 0 : _a91.timeZone) || ((_b = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) === null || _b === void 0 ? void 0 : _b.timeZoneName) || ((_c = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _c === void 0 ? void 0 : _c.timeZone) || ((_d = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.time) === null || _d === void 0 ? void 0 : _d.timeZoneName)) {
     printIonWarning('Datetime: "timeZone" and "timeZoneName" are not supported in "formatOptions".', el);
   }
 };
@@ -23596,11 +19849,11 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       });
     };
     this.getActivePartsWithFallback = () => {
-      var _a;
+      var _a91;
       const {
         defaultParts
       } = this;
-      return (_a = this.getActivePart()) !== null && _a !== void 0 ? _a : defaultParts;
+      return (_a91 = this.getActivePart()) !== null && _a91 !== void 0 ? _a91 : defaultParts;
     };
     this.getActivePart = () => {
       const {
@@ -23653,9 +19906,9 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       const root = this.el.shadowRoot;
       const currentMonth = calendarBodyRef.querySelector(".calendar-month:nth-of-type(2)");
       const checkCalendarBodyFocus = (ev) => {
-        var _a;
+        var _a91;
         const record = ev[0];
-        if (((_a = record.oldValue) === null || _a === void 0 ? void 0 : _a.includes("ion-focused")) || !calendarBodyRef.classList.contains("ion-focused")) {
+        if (((_a91 = record.oldValue) === null || _a91 === void 0 ? void 0 : _a91.includes("ion-focused")) || !calendarBodyRef.classList.contains("ion-focused")) {
           return;
         }
         this.focusWorkingDay(currentMonth);
@@ -24479,7 +20732,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
     return renderArray;
   }
   renderDayPickerColumn(days) {
-    var _a;
+    var _a91;
     if (days.length === 0) {
       return [];
     }
@@ -24488,7 +20741,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
       workingParts
     } = this;
     const activePart = this.getActivePartsWithFallback();
-    const pickerColumnValue = (_a = workingParts.day !== null ? workingParts.day : this.defaultParts.day) !== null && _a !== void 0 ? _a : void 0;
+    const pickerColumnValue = (_a91 = workingParts.day !== null ? workingParts.day : this.defaultParts.day) !== null && _a91 !== void 0 ? _a91 : void 0;
     return h("ion-picker-column", {
       "aria-label": "Select a day",
       class: "day-column",
@@ -24982,7 +21235,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
     }, this.renderWheelPicker("time"))];
   }
   getHeaderSelectedDateText() {
-    var _a;
+    var _a91;
     const {
       activeParts,
       formatOptions,
@@ -25001,7 +21254,7 @@ var Datetime = proxyCustomElement(class Datetime2 extends H {
         }
       }
     } else {
-      headerText = getLocalizedDateTime(this.locale, this.getActivePartsWithFallback(), (_a = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a !== void 0 ? _a : {
+      headerText = getLocalizedDateTime(this.locale, this.getActivePartsWithFallback(), (_a91 = formatOptions === null || formatOptions === void 0 ? void 0 : formatOptions.date) !== null && _a91 !== void 0 ? _a91 : {
         weekday: "short",
         month: "short",
         day: "numeric"
@@ -25281,7 +21534,7 @@ var getIconMap2 = () => {
     return CACHED_MAP2;
   }
 };
-var getUrl3 = (i) => {
+var getUrl2 = (i) => {
   let url = getSrc2(i.src);
   if (url) {
     return url;
@@ -25509,7 +21762,7 @@ var Icon3 = proxyCustomElement(class Icon4 extends H {
   }
   loadIcon() {
     if (Build.isBrowser && this.isVisible) {
-      const url = getUrl3(this);
+      const url = getUrl2(this);
       if (url) {
         if (ioniconContent2.has(url)) {
           this.svgContent = ioniconContent2.get(url);
@@ -25733,7 +21986,7 @@ var createSlotMutationController = (el, slotName, mutationCallback) => {
     });
   }
   const watchForSlotChange = (slottedEl) => {
-    var _a;
+    var _a91;
     if (slottedContentMutationObserver) {
       slottedContentMutationObserver.disconnect();
       slottedContentMutationObserver = void 0;
@@ -25748,7 +22001,7 @@ var createSlotMutationController = (el, slotName, mutationCallback) => {
         }
       }
     });
-    slottedContentMutationObserver.observe((_a = slottedEl.parentElement) !== null && _a !== void 0 ? _a : slottedEl, {
+    slottedContentMutationObserver.observe((_a91 = slottedEl.parentElement) !== null && _a91 !== void 0 ? _a91 : slottedEl, {
       subtree: true,
       childList: true
     });
@@ -25792,7 +22045,7 @@ var inputIosCss = ".sc-ion-input-ios-h{--placeholder-color:initial;--placeholder
 var IonInputIosStyle0 = inputIosCss;
 var inputMdCss = ".sc-ion-input-md-h{--placeholder-color:initial;--placeholder-font-style:initial;--placeholder-font-weight:initial;--placeholder-opacity:var(--ion-placeholder-opacity, 0.6);--padding-top:0px;--padding-end:0px;--padding-bottom:0px;--padding-start:0px;--background:transparent;--color:initial;--border-style:solid;--highlight-color-focused:var(--ion-color-primary, #0054e9);--highlight-color-valid:var(--ion-color-success, #2dd55b);--highlight-color-invalid:var(--ion-color-danger, #c5000f);--highlight-color:var(--highlight-color-focused);display:block;position:relative;width:100%;min-height:44px;padding:0 !important;color:var(--color);font-family:var(--ion-font-family, inherit);z-index:2}ion-item[slot=start].sc-ion-input-md-h,ion-item [slot=start].sc-ion-input-md-h,ion-item[slot=end].sc-ion-input-md-h,ion-item [slot=end].sc-ion-input-md-h{width:auto}.ion-color.sc-ion-input-md-h{--highlight-color-focused:var(--ion-color-base)}.input-label-placement-floating.sc-ion-input-md-h,.input-label-placement-stacked.sc-ion-input-md-h{min-height:56px}.native-input.sc-ion-input-md{padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;display:inline-block;position:relative;-ms-flex:1;flex:1;width:100%;max-width:100%;max-height:100%;border:0;outline:none;background:transparent;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;z-index:1}.native-input.sc-ion-input-md::-webkit-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::-moz-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md:-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md::placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.native-input.sc-ion-input-md:-webkit-autofill{background-color:transparent}.native-input.sc-ion-input-md:invalid{-webkit-box-shadow:none;box-shadow:none}.native-input.sc-ion-input-md::-ms-clear{display:none}.cloned-input.sc-ion-input-md{top:0;bottom:0;position:absolute;pointer-events:none}.cloned-input.sc-ion-input-md{inset-inline-start:0}.cloned-input.sc-ion-input-md:disabled{opacity:1}.input-clear-icon.sc-ion-input-md{-webkit-margin-start:auto;margin-inline-start:auto;-webkit-margin-end:auto;margin-inline-end:auto;margin-top:auto;margin-bottom:auto;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;background-position:center;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:30px;height:30px;border:0;outline:none;background-color:transparent;background-repeat:no-repeat;color:var(--ion-color-step-600, var(--ion-text-color-step-400, #666666));visibility:hidden;-webkit-appearance:none;-moz-appearance:none;appearance:none}.in-item-color.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md{color:inherit}.input-clear-icon.sc-ion-input-md:focus{opacity:0.5}.has-value.sc-ion-input-md-h .input-clear-icon.sc-ion-input-md{visibility:visible}.input-wrapper.sc-ion-input-md{-webkit-padding-start:var(--padding-start);padding-inline-start:var(--padding-start);-webkit-padding-end:var(--padding-end);padding-inline-end:var(--padding-end);padding-top:var(--padding-top);padding-bottom:var(--padding-bottom);border-radius:var(--border-radius);display:-ms-flexbox;display:flex;position:relative;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:stretch;align-items:stretch;height:inherit;min-height:inherit;-webkit-transition:background-color 15ms linear;transition:background-color 15ms linear;background:var(--background);line-height:normal}.native-wrapper.sc-ion-input-md{display:-ms-flexbox;display:flex;position:relative;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center;width:100%}.ion-touched.ion-invalid.sc-ion-input-md-h{--highlight-color:var(--highlight-color-invalid)}.ion-valid.sc-ion-input-md-h{--highlight-color:var(--highlight-color-valid)}.input-bottom.sc-ion-input-md{-webkit-padding-start:var(--padding-start);padding-inline-start:var(--padding-start);-webkit-padding-end:var(--padding-end);padding-inline-end:var(--padding-end);padding-top:5px;padding-bottom:0;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;border-top:var(--border-width) var(--border-style) var(--border-color);font-size:0.75rem}.has-focus.ion-valid.sc-ion-input-md-h,.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-bottom.sc-ion-input-md .error-text.sc-ion-input-md{display:none;color:var(--highlight-color-invalid)}.input-bottom.sc-ion-input-md .helper-text.sc-ion-input-md{display:block;color:var(--ion-color-step-550, var(--ion-text-color-step-450, #737373))}.ion-touched.ion-invalid.sc-ion-input-md-h .input-bottom.sc-ion-input-md .error-text.sc-ion-input-md{display:block}.ion-touched.ion-invalid.sc-ion-input-md-h .input-bottom.sc-ion-input-md .helper-text.sc-ion-input-md{display:none}.input-bottom.sc-ion-input-md .counter.sc-ion-input-md{-webkit-margin-start:auto;margin-inline-start:auto;color:var(--ion-color-step-550, var(--ion-text-color-step-450, #737373));white-space:nowrap;-webkit-padding-start:16px;padding-inline-start:16px}.has-focus.sc-ion-input-md-h input.sc-ion-input-md{caret-color:var(--highlight-color)}.label-text-wrapper.sc-ion-input-md{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;max-width:200px;-webkit-transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:color 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);pointer-events:none}.label-text.sc-ion-input-md,.sc-ion-input-md-s>[slot=label]{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.label-text-wrapper-hidden.sc-ion-input-md,.input-outline-notch-hidden.sc-ion-input-md{display:none}.input-wrapper.sc-ion-input-md input.sc-ion-input-md{-webkit-transition:opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);transition:opacity 150ms cubic-bezier(0.4, 0, 0.2, 1)}.input-label-placement-start.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:row;flex-direction:row}.input-label-placement-start.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:16px;margin-inline-end:16px;margin-top:0;margin-bottom:0}.input-label-placement-end.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:row-reverse;flex-direction:row-reverse}.input-label-placement-end.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:0;margin-inline-end:0;margin-top:0;margin-bottom:0}.input-label-placement-fixed.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:16px;margin-inline-end:16px;margin-top:0;margin-bottom:0}.input-label-placement-fixed.sc-ion-input-md-h .label-text.sc-ion-input-md{-ms-flex:0 0 100px;flex:0 0 100px;width:100px;min-width:100px;max-width:200px}.input-label-placement-stacked.sc-ion-input-md-h .input-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{-ms-flex-direction:column;flex-direction:column;-ms-flex-align:start;align-items:start}.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:left top;transform-origin:left top;max-width:100%;z-index:2}[dir=rtl].sc-ion-input-md-h -no-combinator.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].sc-ion-input-md-h -no-combinator.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}@supports selector(:dir(rtl)){.input-label-placement-stacked.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}}.input-label-placement-stacked.sc-ion-input-md-h input.sc-ion-input-md,.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{margin-left:0;margin-right:0;margin-top:1px;margin-bottom:0}.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(100%) scale(1);transform:translateY(100%) scale(1)}.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{opacity:0}.has-focus.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md,.has-value.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{opacity:1}.label-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(50%) scale(0.75);transform:translateY(50%) scale(0.75);max-width:calc(100% / 0.75)}.sc-ion-input-md-s>[slot=start]:last-of-type{-webkit-margin-end:16px;margin-inline-end:16px;-webkit-margin-start:0;margin-inline-start:0}.sc-ion-input-md-s>[slot=end]:first-of-type{-webkit-margin-start:16px;margin-inline-start:16px;-webkit-margin-end:0;margin-inline-end:0}.sc-ion-input-md-h[disabled].sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[disabled] .sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[readonly].sc-ion-input-md-s>ion-input-password-toggle,.sc-ion-input-md-h[readonly] .sc-ion-input-md-s>ion-input-password-toggle{display:none}.input-fill-solid.sc-ion-input-md-h{--background:var(--ion-color-step-50, var(--ion-background-color-step-50, #f2f2f2));--border-color:var(--ion-color-step-500, var(--ion-background-color-step-500, gray));--border-radius:4px;--padding-start:16px;--padding-end:16px;min-height:56px}.input-fill-solid.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-bottom:var(--border-width) var(--border-style) var(--border-color)}.has-focus.input-fill-solid.ion-valid.sc-ion-input-md-h,.input-fill-solid.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-fill-solid.sc-ion-input-md-h .input-bottom.sc-ion-input-md{border-top:none}@media (any-hover: hover){.input-fill-solid.sc-ion-input-md-h:hover{--background:var(--ion-color-step-100, var(--ion-background-color-step-100, #e6e6e6));--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}}.input-fill-solid.has-focus.sc-ion-input-md-h{--background:var(--ion-color-step-150, var(--ion-background-color-step-150, #d9d9d9));--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}.input-fill-solid.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-start-start-radius:var(--border-radius);border-start-end-radius:var(--border-radius);border-end-end-radius:0px;border-end-start-radius:0px}.label-floating.input-fill-solid.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{max-width:calc(100% / 0.75)}.input-fill-outline.sc-ion-input-md-h{--border-color:var(--ion-color-step-300, var(--ion-background-color-step-300, #b3b3b3));--border-radius:4px;--padding-start:16px;--padding-end:16px;min-height:56px}.input-fill-outline.input-shape-round.sc-ion-input-md-h{--border-radius:28px;--padding-start:32px;--padding-end:32px}.has-focus.input-fill-outline.ion-valid.sc-ion-input-md-h,.input-fill-outline.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}@media (any-hover: hover){.input-fill-outline.sc-ion-input-md-h:hover{--border-color:var(--ion-color-step-750, var(--ion-background-color-step-750, #404040))}}.input-fill-outline.has-focus.sc-ion-input-md-h{--border-width:var(--highlight-height);--border-color:var(--highlight-color)}.input-fill-outline.sc-ion-input-md-h .input-bottom.sc-ion-input-md{border-top:none}.input-fill-outline.sc-ion-input-md-h .input-wrapper.sc-ion-input-md{border-bottom:none}.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:left top;transform-origin:left top;position:absolute;max-width:calc(100% - var(--padding-start) - var(--padding-end))}[dir=rtl].sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .sc-ion-input-md-h -no-combinator.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl].input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,[dir=rtl] .input-fill-outline.input-label-placement-floating.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}@supports selector(:dir(rtl)){.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h:dir(rtl) .label-text-wrapper.sc-ion-input-md{-webkit-transform-origin:right top;transform-origin:right top}}.input-fill-outline.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{position:relative}.label-floating.input-fill-outline.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{-webkit-transform:translateY(-32%) scale(0.75);transform:translateY(-32%) scale(0.75);margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;max-width:calc((100% - var(--padding-start) - var(--padding-end) - 8px) / 0.75)}.input-fill-outline.input-label-placement-stacked.sc-ion-input-md-h input.sc-ion-input-md,.input-fill-outline.input-label-placement-floating.sc-ion-input-md-h input.sc-ion-input-md{margin-left:0;margin-right:0;margin-top:6px;margin-bottom:6px}.input-fill-outline.sc-ion-input-md-h .input-outline-container.sc-ion-input-md{left:0;right:0;top:0;bottom:0;display:-ms-flexbox;display:flex;position:absolute;width:100%;height:100%}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{pointer-events:none}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md,.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{border-top:var(--border-width) var(--border-style) var(--border-color);border-bottom:var(--border-width) var(--border-style) var(--border-color)}.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md{max-width:calc(100% - var(--padding-start) - var(--padding-end))}.input-fill-outline.sc-ion-input-md-h .notch-spacer.sc-ion-input-md{-webkit-padding-end:8px;padding-inline-end:8px;font-size:calc(1em * 0.75);opacity:0;pointer-events:none;-webkit-box-sizing:content-box;box-sizing:content-box}.input-fill-outline.sc-ion-input-md-h .input-outline-start.sc-ion-input-md{border-start-start-radius:var(--border-radius);border-start-end-radius:0px;border-end-end-radius:0px;border-end-start-radius:var(--border-radius);-webkit-border-start:var(--border-width) var(--border-style) var(--border-color);border-inline-start:var(--border-width) var(--border-style) var(--border-color);width:calc(var(--padding-start) - 4px)}.input-fill-outline.sc-ion-input-md-h .input-outline-end.sc-ion-input-md{-webkit-border-end:var(--border-width) var(--border-style) var(--border-color);border-inline-end:var(--border-width) var(--border-style) var(--border-color);border-start-start-radius:0px;border-start-end-radius:var(--border-radius);border-end-end-radius:var(--border-radius);border-end-start-radius:0px;-ms-flex-positive:1;flex-grow:1}.label-floating.input-fill-outline.sc-ion-input-md-h .input-outline-notch.sc-ion-input-md{border-top:none}.sc-ion-input-md-h{--border-width:1px;--border-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-150, var(--ion-background-color-step-150, rgba(0, 0, 0, 0.13)))));--highlight-height:2px;font-size:inherit}.input-clear-icon.sc-ion-input-md ion-icon.sc-ion-input-md{width:22px;height:22px}.input-disabled.sc-ion-input-md-h{opacity:0.38}.has-focus.ion-valid.sc-ion-input-md-h,.ion-touched.ion-invalid.sc-ion-input-md-h{--border-color:var(--highlight-color)}.input-bottom.sc-ion-input-md .counter.sc-ion-input-md{letter-spacing:0.0333333333em}.input-label-placement-floating.has-focus.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-stacked.has-focus.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{color:var(--highlight-color)}.has-focus.input-label-placement-floating.ion-valid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-floating.ion-touched.ion-invalid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.has-focus.input-label-placement-stacked.ion-valid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md,.input-label-placement-stacked.ion-touched.ion-invalid.sc-ion-input-md-h .label-text-wrapper.sc-ion-input-md{color:var(--highlight-color)}.input-highlight.sc-ion-input-md{bottom:-1px;position:absolute;width:100%;height:var(--highlight-height);-webkit-transform:scale(0);transform:scale(0);-webkit-transition:-webkit-transform 200ms;transition:-webkit-transform 200ms;transition:transform 200ms;transition:transform 200ms, -webkit-transform 200ms;background:var(--highlight-color)}.input-highlight.sc-ion-input-md{inset-inline-start:0}.has-focus.sc-ion-input-md-h .input-highlight.sc-ion-input-md{-webkit-transform:scale(1);transform:scale(1)}.in-item.sc-ion-input-md-h .input-highlight.sc-ion-input-md{bottom:0}.in-item.sc-ion-input-md-h .input-highlight.sc-ion-input-md{inset-inline-start:0}.input-shape-round.sc-ion-input-md-h{--border-radius:16px}.sc-ion-input-md-s>ion-button[slot=start].button-has-icon-only,.sc-ion-input-md-s>ion-button[slot=end].button-has-icon-only{--border-radius:50%;--padding-start:8px;--padding-end:8px;--padding-top:8px;--padding-bottom:8px;aspect-ratio:1;min-height:40px}";
 var IonInputMdStyle0 = inputMdCss;
-var Input2 = proxyCustomElement(class Input3 extends H {
+var Input = proxyCustomElement(class Input2 extends H {
   constructor() {
     super();
     this.__registerHost();
@@ -25934,8 +22187,8 @@ var Input2 = proxyCustomElement(class Input3 extends H {
     this.debounceChanged();
   }
   componentDidRender() {
-    var _a;
-    (_a = this.notchController) === null || _a === void 0 ? void 0 : _a.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   disconnectedCallback() {
     if (Build.isBrowser) {
@@ -26339,7 +22592,7 @@ function defineCustomElement$160() {
     switch (tagName) {
       case "ion-input":
         if (!customElements.get(tagName)) {
-          customElements.define(tagName, Input2);
+          customElements.define(tagName, Input);
         }
         break;
       case "ion-icon":
@@ -26402,7 +22655,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     this.setupGesture = () => __async(this, null, function* () {
       const rangeSlider = this.rangeSlider;
       if (rangeSlider) {
-        this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+        this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
           el: rangeSlider,
           gestureName: "range",
           gesturePriority: 100,
@@ -26531,7 +22784,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     this.didLoad = true;
   }
   connectedCallback() {
-    var _a;
+    var _a91;
     this.updateRatio();
     this.debounceChanged();
     this.disabledChanged();
@@ -26540,7 +22793,7 @@ var Range = proxyCustomElement(class Range2 extends H {
       this.setupGesture();
     }
     const ionContent = findClosestIonContent(this.el);
-    this.contentEl = (_a = ionContent === null || ionContent === void 0 ? void 0 : ionContent.querySelector(".ion-content-scroll-host")) !== null && _a !== void 0 ? _a : ionContent;
+    this.contentEl = (_a91 = ionContent === null || ionContent === void 0 ? void 0 : ionContent.querySelector(".ion-content-scroll-host")) !== null && _a91 !== void 0 ? _a91 : ionContent;
   }
   disconnectedCallback() {
     if (this.gesture) {
@@ -26549,8 +22802,8 @@ var Range = proxyCustomElement(class Range2 extends H {
     }
   }
   getValue() {
-    var _a;
-    const value = (_a = this.value) !== null && _a !== void 0 ? _a : 0;
+    var _a91;
+    const value = (_a91 = this.value) !== null && _a91 !== void 0 ? _a91 : 0;
     if (this.dualKnobs) {
       if (typeof value === "object") {
         return value;
@@ -26626,12 +22879,12 @@ var Range = proxyCustomElement(class Range2 extends H {
    * @param detail The details of the gesture or mouse event.
    */
   onEnd(detail) {
-    var _a;
+    var _a91;
     const {
       contentEl,
       initialContentScrollY
     } = this;
-    const currentX = (_a = detail.currentX) !== null && _a !== void 0 ? _a : detail.clientX;
+    const currentX = (_a91 = detail.currentX) !== null && _a91 !== void 0 ? _a91 : detail.clientX;
     if (this.pressedKnob === void 0) {
       this.setPressedKnob(currentX);
     }
@@ -26746,7 +22999,7 @@ var Range = proxyCustomElement(class Range2 extends H {
     return this.label !== void 0 || this.el.querySelector('[slot="label"]') !== null;
   }
   renderRangeSlider() {
-    var _a;
+    var _a91;
     const {
       min,
       max,
@@ -26771,7 +23024,7 @@ var Range = proxyCustomElement(class Range2 extends H {
       };
     };
     if (this.dualKnobs === false) {
-      if (this.valA < ((_a = this.activeBarStart) !== null && _a !== void 0 ? _a : this.min)) {
+      if (this.valA < ((_a91 = this.activeBarStart) !== null && _a91 !== void 0 ? _a91 : this.min)) {
         barStart = `${ratioUpper * 100}%`;
         barEnd = `${100 - ratioLower * 100}%`;
       } else {
@@ -27609,7 +23862,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
       this.valueChanged(this.value);
     };
     this.getSegmentButton = (selector) => {
-      var _a, _b;
+      var _a91, _b;
       const buttons = this.getButtons().filter((button) => !button.disabled);
       const currIndex = buttons.findIndex((button) => button === document.activeElement);
       switch (selector) {
@@ -27618,7 +23871,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
         case "last":
           return buttons[buttons.length - 1];
         case "next":
-          return (_a = buttons[currIndex + 1]) !== null && _a !== void 0 ? _a : buttons[0];
+          return (_a91 = buttons[currIndex + 1]) !== null && _a91 !== void 0 ? _a91 : buttons[0];
         case "previous":
           return (_b = buttons[currIndex - 1]) !== null && _b !== void 0 ? _b : buttons[buttons.length - 1];
         default:
@@ -27701,7 +23954,7 @@ var Segment = proxyCustomElement(class Segment2 extends H {
       raf(() => {
         this.scrollActiveButtonIntoView(false);
       });
-      this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+      this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
         el: this.el,
         gestureName: "segment",
         gesturePriority: 100,
@@ -28698,8 +24951,8 @@ var Select = proxyCustomElement(class Select2 extends H {
     }, label));
   }
   componentDidRender() {
-    var _a;
-    (_a = this.notchController) === null || _a === void 0 ? void 0 : _a.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   /**
    * Gets any content passed into the `label` slot,
@@ -28797,13 +25050,13 @@ var Select = proxyCustomElement(class Select2 extends H {
     });
   }
   get ariaLabel() {
-    var _a;
+    var _a91;
     const {
       placeholder,
       inheritedAttributes
     } = this;
     const displayValue = this.getText();
-    const definedLabel = (_a = inheritedAttributes["aria-label"]) !== null && _a !== void 0 ? _a : this.labelText;
+    const definedLabel = (_a91 = inheritedAttributes["aria-label"]) !== null && _a91 !== void 0 ? _a91 : this.labelText;
     let renderedLabel = displayValue;
     if (renderedLabel === "" && placeholder !== void 0) {
       renderedLabel = placeholder;
@@ -29229,8 +25482,8 @@ var Textarea = proxyCustomElement(class Textarea2 extends H {
     this.runAutoGrow();
   }
   componentDidRender() {
-    var _a;
-    (_a = this.notchController) === null || _a === void 0 ? void 0 : _a.calculateNotchWidth();
+    var _a91;
+    (_a91 = this.notchController) === null || _a91 === void 0 ? void 0 : _a91.calculateNotchWidth();
   }
   /**
    * Sets focus on the native `textarea` in `ion-textarea`. Use this method instead of the global
@@ -29288,9 +25541,9 @@ var Textarea = proxyCustomElement(class Textarea2 extends H {
   runAutoGrow() {
     if (this.nativeInput && this.autoGrow) {
       writeTask(() => {
-        var _a;
+        var _a91;
         if (this.textareaWrapper) {
-          this.textareaWrapper.dataset.replicatedValue = (_a = this.value) !== null && _a !== void 0 ? _a : "";
+          this.textareaWrapper.dataset.replicatedValue = (_a91 = this.value) !== null && _a91 !== void 0 ? _a91 : "";
         }
       });
     }
@@ -29619,7 +25872,7 @@ var Toggle = proxyCustomElement(class Toggle2 extends H {
         toggleTrack
       } = this;
       if (toggleTrack) {
-        this.gesture = (yield import("./index3-RMNNIWJ4.js")).createGesture({
+        this.gesture = (yield import("./index3-PYIJVFIE.js")).createGesture({
           el: toggleTrack,
           gestureName: "toggle",
           gesturePriority: 100,
@@ -29874,7 +26127,7 @@ function defineCustomElement$166() {
 var defineCustomElement117 = defineCustomElement$166;
 
 // node_modules/@ionic/angular/fesm2022/ionic-angular-standalone.mjs
-var _c02 = ["outletContent"];
+var _c0 = ["outletContent"];
 var _c1 = ["*"];
 function IonModal_div_0_Template(rf, ctx) {
   if (rf & 1) {
@@ -29921,7 +26174,8 @@ function IonTabs_ng_content_4_Template(rf, ctx) {
     ɵɵprojection(0, 2, ["*ngIf", "tabs.length > 0"]);
   }
 }
-var IonRouterOutlet2 = class IonRouterOutlet3 extends IonRouterOutlet {
+var _a;
+var IonRouterOutlet2 = (_a = class extends IonRouterOutlet {
   parentOutlet;
   /**
    * `static: true` must be set so the query results are resolved
@@ -29941,39 +26195,37 @@ var IonRouterOutlet2 = class IonRouterOutlet3 extends IonRouterOutlet {
     super(name, tabs, commonLocation, elementRef, router, zone, activatedRoute, parentOutlet);
     this.parentOutlet = parentOutlet;
   }
-  /** @nocollapse */
-  static ɵfac = function IonRouterOutlet_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRouterOutlet3)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(IonRouterOutlet3, 12));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRouterOutlet3,
-    selectors: [["ion-router-outlet"]],
-    viewQuery: function IonRouterOutlet_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c02, 7, ViewContainerRef);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.outletContent = _t.first);
-      }
-    },
-    features: [ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 3,
-    vars: 0,
-    consts: [["outletContent", ""]],
-    template: function IonRouterOutlet_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementContainerStart(0, null, 0);
-        ɵɵprojection(2);
-        ɵɵelementContainerEnd();
-      }
-    },
-    encapsulation: 2
-  });
-};
+}, /** @nocollapse */
+__publicField(_a, "ɵfac", function IonRouterOutlet_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a)(ɵɵinjectAttribute("name"), ɵɵinjectAttribute("tabs"), ɵɵdirectiveInject(Location), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Router), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ActivatedRoute), ɵɵdirectiveInject(_a, 12));
+}), /** @nocollapse */
+__publicField(_a, "ɵcmp", ɵɵdefineComponent({
+  type: _a,
+  selectors: [["ion-router-outlet"]],
+  viewQuery: function IonRouterOutlet_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c0, 7, ViewContainerRef);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.outletContent = _t.first);
+    }
+  },
+  features: [ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 3,
+  vars: 0,
+  consts: [["outletContent", ""]],
+  template: function IonRouterOutlet_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵelementContainerStart(0, null, 0);
+      ɵɵprojection(2);
+      ɵɵelementContainerEnd();
+    }
+  },
+  encapsulation: 2
+})), _a);
 IonRouterOutlet2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement4
 })], IonRouterOutlet2);
@@ -30028,37 +26280,36 @@ IonRouterOutlet2 = __decorate([ProxyCmp({
     }]
   });
 })();
-var IonBackButton3 = class IonBackButton4 extends IonBackButton {
+var _a2;
+var IonBackButton2 = (_a2 = class extends IonBackButton {
   constructor(routerOutlet, navCtrl, config2, r, z, c) {
     super(routerOutlet, navCtrl, config2, r, z, c);
   }
-  /** @nocollapse */
-  static ɵfac = function IonBackButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBackButton4)(ɵɵdirectiveInject(IonRouterOutlet2, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonBackButton4,
-    selectors: [["ion-back-button"]],
-    features: [ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonBackButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-IonBackButton3 = __decorate([ProxyCmp({
+}, /** @nocollapse */
+__publicField(_a2, "ɵfac", function IonBackButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a2)(ɵɵdirectiveInject(IonRouterOutlet2, 8), ɵɵdirectiveInject(NavController), ɵɵdirectiveInject(Config), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
+}), /** @nocollapse */
+__publicField(_a2, "ɵcmp", ɵɵdefineComponent({
+  type: _a2,
+  selectors: [["ion-back-button"]],
+  features: [ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonBackButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a2);
+IonBackButton2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement3
-})], IonBackButton3);
+})], IonBackButton2);
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonBackButton3, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonBackButton2, [{
     type: Component,
     args: [{
       selector: "ion-back-button",
@@ -30085,40 +26336,39 @@ IonBackButton3 = __decorate([ProxyCmp({
     }];
   }, null);
 })();
-var IonModal3 = class IonModal4 extends IonModal {
-  /** @nocollapse */
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵIonModal_BaseFactory;
-    return function IonModal_Factory(__ngFactoryType__) {
-      return (ɵIonModal_BaseFactory || (ɵIonModal_BaseFactory = ɵɵgetInheritedFactory(IonModal4)))(__ngFactoryType__ || IonModal4);
-    };
-  })();
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonModal4,
-    selectors: [["ion-modal"]],
-    features: [ɵɵInheritDefinitionFeature],
-    decls: 1,
-    vars: 1,
-    consts: [["class", "ion-delegate-host ion-page", 4, "ngIf"], [1, "ion-delegate-host", "ion-page"], [3, "ngTemplateOutlet"]],
-    template: function IonModal_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, IonModal_div_0_Template, 2, 1, "div", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.isCmpOpen || ctx.keepContentsMounted);
-      }
-    },
-    dependencies: [CommonModule, NgIf, NgTemplateOutlet],
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-IonModal3 = __decorate([ProxyCmp({
+var _a3;
+var IonModal2 = (_a3 = class extends IonModal {
+}, /** @nocollapse */
+__publicField(_a3, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵIonModal_BaseFactory;
+  return function IonModal_Factory(__ngFactoryType__) {
+    return (ɵIonModal_BaseFactory || (ɵIonModal_BaseFactory = ɵɵgetInheritedFactory(_a3)))(__ngFactoryType__ || _a3);
+  };
+})()), /** @nocollapse */
+__publicField(_a3, "ɵcmp", ɵɵdefineComponent({
+  type: _a3,
+  selectors: [["ion-modal"]],
+  features: [ɵɵInheritDefinitionFeature],
+  decls: 1,
+  vars: 1,
+  consts: [["class", "ion-delegate-host ion-page", 4, "ngIf"], [1, "ion-delegate-host", "ion-page"], [3, "ngTemplateOutlet"]],
+  template: function IonModal_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, IonModal_div_0_Template, 2, 1, "div", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.isCmpOpen || ctx.keepContentsMounted);
+    }
+  },
+  dependencies: [CommonModule, NgIf, NgTemplateOutlet],
+  encapsulation: 2,
+  changeDetection: 0
+})), _a3);
+IonModal2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement7
-})], IonModal3);
+})], IonModal2);
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonModal3, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonModal2, [{
     type: Component,
     args: [{
       selector: "ion-modal",
@@ -30131,40 +26381,39 @@ IonModal3 = __decorate([ProxyCmp({
     }]
   }], null, null);
 })();
-var IonPopover3 = class IonPopover4 extends IonPopover {
-  /** @nocollapse */
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵIonPopover_BaseFactory;
-    return function IonPopover_Factory(__ngFactoryType__) {
-      return (ɵIonPopover_BaseFactory || (ɵIonPopover_BaseFactory = ɵɵgetInheritedFactory(IonPopover4)))(__ngFactoryType__ || IonPopover4);
-    };
-  })();
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonPopover4,
-    selectors: [["ion-popover"]],
-    features: [ɵɵInheritDefinitionFeature],
-    decls: 1,
-    vars: 1,
-    consts: [[3, "ngTemplateOutlet", 4, "ngIf"], [3, "ngTemplateOutlet"]],
-    template: function IonPopover_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵtemplate(0, IonPopover_ng_container_0_Template, 1, 1, "ng-container", 0);
-      }
-      if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.isCmpOpen || ctx.keepContentsMounted);
-      }
-    },
-    dependencies: [CommonModule, NgIf, NgTemplateOutlet],
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-IonPopover3 = __decorate([ProxyCmp({
+var _a4;
+var IonPopover2 = (_a4 = class extends IonPopover {
+}, /** @nocollapse */
+__publicField(_a4, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵIonPopover_BaseFactory;
+  return function IonPopover_Factory(__ngFactoryType__) {
+    return (ɵIonPopover_BaseFactory || (ɵIonPopover_BaseFactory = ɵɵgetInheritedFactory(_a4)))(__ngFactoryType__ || _a4);
+  };
+})()), /** @nocollapse */
+__publicField(_a4, "ɵcmp", ɵɵdefineComponent({
+  type: _a4,
+  selectors: [["ion-popover"]],
+  features: [ɵɵInheritDefinitionFeature],
+  decls: 1,
+  vars: 1,
+  consts: [[3, "ngTemplateOutlet", 4, "ngIf"], [3, "ngTemplateOutlet"]],
+  template: function IonPopover_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵtemplate(0, IonPopover_ng_container_0_Template, 1, 1, "ng-container", 0);
+    }
+    if (rf & 2) {
+      ɵɵproperty("ngIf", ctx.isCmpOpen || ctx.keepContentsMounted);
+    }
+  },
+  dependencies: [CommonModule, NgIf, NgTemplateOutlet],
+  encapsulation: 2,
+  changeDetection: 0
+})), _a4);
+IonPopover2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement9
-})], IonPopover3);
+})], IonPopover2);
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonPopover3, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonPopover2, [{
     type: Component,
     args: [{
       selector: "ion-popover",
@@ -30175,21 +26424,22 @@ IonPopover3 = __decorate([ProxyCmp({
     }]
   }], null, null);
 })();
-var IonRouterLink = class _IonRouterLink extends RouterLinkDelegateDirective {
-  /** @nocollapse */
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵIonRouterLink_BaseFactory;
-    return function IonRouterLink_Factory(__ngFactoryType__) {
-      return (ɵIonRouterLink_BaseFactory || (ɵIonRouterLink_BaseFactory = ɵɵgetInheritedFactory(_IonRouterLink)))(__ngFactoryType__ || _IonRouterLink);
-    };
-  })();
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _IonRouterLink,
-    selectors: [["", "routerLink", "", 5, "a", 5, "area"]],
-    features: [ɵɵInheritDefinitionFeature]
-  });
+var _IonRouterLink = class _IonRouterLink extends RouterLinkDelegateDirective {
 };
+/** @nocollapse */
+__publicField(_IonRouterLink, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵIonRouterLink_BaseFactory;
+  return function IonRouterLink_Factory(__ngFactoryType__) {
+    return (ɵIonRouterLink_BaseFactory || (ɵIonRouterLink_BaseFactory = ɵɵgetInheritedFactory(_IonRouterLink)))(__ngFactoryType__ || _IonRouterLink);
+  };
+})());
+/** @nocollapse */
+__publicField(_IonRouterLink, "ɵdir", ɵɵdefineDirective({
+  type: _IonRouterLink,
+  selectors: [["", "routerLink", "", 5, "a", 5, "area"]],
+  features: [ɵɵInheritDefinitionFeature]
+}));
+var IonRouterLink = _IonRouterLink;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonRouterLink, [{
     type: Directive,
@@ -30199,21 +26449,22 @@ var IonRouterLink = class _IonRouterLink extends RouterLinkDelegateDirective {
     }]
   }], null, null);
 })();
-var IonRouterLinkWithHref = class _IonRouterLinkWithHref extends RouterLinkWithHrefDelegateDirective {
-  /** @nocollapse */
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵIonRouterLinkWithHref_BaseFactory;
-    return function IonRouterLinkWithHref_Factory(__ngFactoryType__) {
-      return (ɵIonRouterLinkWithHref_BaseFactory || (ɵIonRouterLinkWithHref_BaseFactory = ɵɵgetInheritedFactory(_IonRouterLinkWithHref)))(__ngFactoryType__ || _IonRouterLinkWithHref);
-    };
-  })();
-  /** @nocollapse */
-  static ɵdir = ɵɵdefineDirective({
-    type: _IonRouterLinkWithHref,
-    selectors: [["a", "routerLink", ""], ["area", "routerLink", ""]],
-    features: [ɵɵInheritDefinitionFeature]
-  });
+var _IonRouterLinkWithHref = class _IonRouterLinkWithHref extends RouterLinkWithHrefDelegateDirective {
 };
+/** @nocollapse */
+__publicField(_IonRouterLinkWithHref, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵIonRouterLinkWithHref_BaseFactory;
+  return function IonRouterLinkWithHref_Factory(__ngFactoryType__) {
+    return (ɵIonRouterLinkWithHref_BaseFactory || (ɵIonRouterLinkWithHref_BaseFactory = ɵɵgetInheritedFactory(_IonRouterLinkWithHref)))(__ngFactoryType__ || _IonRouterLinkWithHref);
+  };
+})());
+/** @nocollapse */
+__publicField(_IonRouterLinkWithHref, "ɵdir", ɵɵdefineDirective({
+  type: _IonRouterLinkWithHref,
+  selectors: [["a", "routerLink", ""], ["area", "routerLink", ""]],
+  features: [ɵɵInheritDefinitionFeature]
+}));
+var IonRouterLinkWithHref = _IonRouterLinkWithHref;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonRouterLinkWithHref, [{
     type: Directive,
@@ -30223,7 +26474,7 @@ var IonRouterLinkWithHref = class _IonRouterLinkWithHref extends RouterLinkWithH
     }]
   }], null, null);
 })();
-var proxyInputs2 = (Cmp, inputs) => {
+var proxyInputs = (Cmp, inputs) => {
   const Prototype = Cmp.prototype;
   inputs.forEach((item) => {
     Object.defineProperty(Prototype, item, {
@@ -30244,7 +26495,7 @@ var proxyInputs2 = (Cmp, inputs) => {
     });
   });
 };
-var proxyMethods2 = (Cmp, methods) => {
+var proxyMethods = (Cmp, methods) => {
   const Prototype = Cmp.prototype;
   methods.forEach((methodName) => {
     Prototype[methodName] = function() {
@@ -30253,7 +26504,7 @@ var proxyMethods2 = (Cmp, methods) => {
     };
   });
 };
-var proxyOutputs2 = (instance, el, events) => {
+var proxyOutputs = (instance, el, events) => {
   events.forEach((eventName) => instance[eventName] = fromEvent(el, eventName));
 };
 function ProxyCmp2(opts) {
@@ -30267,16 +26518,17 @@ function ProxyCmp2(opts) {
       defineCustomElementFn();
     }
     if (inputs) {
-      proxyInputs2(cls, inputs);
+      proxyInputs(cls, inputs);
     }
     if (methods) {
-      proxyMethods2(cls, methods);
+      proxyMethods(cls, methods);
     }
     return cls;
   };
   return decorator;
 }
-var IonAccordion = class IonAccordion2 {
+var _a5;
+var IonAccordion = (_a5 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -30284,35 +26536,33 @@ var IonAccordion = class IonAccordion2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonAccordion_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonAccordion2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonAccordion2,
-    selectors: [["ion-accordion"]],
-    inputs: {
-      disabled: "disabled",
-      mode: "mode",
-      readonly: "readonly",
-      toggleIcon: "toggleIcon",
-      toggleIconSlot: "toggleIconSlot",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonAccordion_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a5, "ɵfac", function IonAccordion_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a5)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a5, "ɵcmp", ɵɵdefineComponent({
+  type: _a5,
+  selectors: [["ion-accordion"]],
+  inputs: {
+    disabled: "disabled",
+    mode: "mode",
+    readonly: "readonly",
+    toggleIcon: "toggleIcon",
+    toggleIconSlot: "toggleIconSlot",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonAccordion_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a5);
 IonAccordion = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement10,
   inputs: ["disabled", "mode", "readonly", "toggleIcon", "toggleIconSlot", "value"]
@@ -30338,45 +26588,44 @@ IonAccordion = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonAccordionGroup = class IonAccordionGroup2 {
+var _a6;
+var IonAccordionGroup = (_a6 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonAccordionGroup_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonAccordionGroup2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonAccordionGroup2,
-    selectors: [["ion-accordion-group"]],
-    inputs: {
-      animated: "animated",
-      disabled: "disabled",
-      expand: "expand",
-      mode: "mode",
-      multiple: "multiple",
-      readonly: "readonly",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonAccordionGroup_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a6, "ɵfac", function IonAccordionGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a6)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a6, "ɵcmp", ɵɵdefineComponent({
+  type: _a6,
+  selectors: [["ion-accordion-group"]],
+  inputs: {
+    animated: "animated",
+    disabled: "disabled",
+    expand: "expand",
+    mode: "mode",
+    multiple: "multiple",
+    readonly: "readonly",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonAccordionGroup_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a6);
 IonAccordionGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement11,
   inputs: ["animated", "disabled", "expand", "mode", "multiple", "readonly", "value"]
@@ -30402,52 +26651,51 @@ IonAccordionGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonActionSheet = class IonActionSheet2 {
+var _a7;
+var IonActionSheet = (_a7 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionActionSheetDidPresent", "ionActionSheetWillPresent", "ionActionSheetWillDismiss", "ionActionSheetDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionActionSheetDidPresent", "ionActionSheetWillPresent", "ionActionSheetWillDismiss", "ionActionSheetDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonActionSheet_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonActionSheet2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonActionSheet2,
-    selectors: [["ion-action-sheet"]],
-    inputs: {
-      animated: "animated",
-      backdropDismiss: "backdropDismiss",
-      buttons: "buttons",
-      cssClass: "cssClass",
-      enterAnimation: "enterAnimation",
-      header: "header",
-      htmlAttributes: "htmlAttributes",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      mode: "mode",
-      subHeader: "subHeader",
-      translucent: "translucent",
-      trigger: "trigger"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonActionSheet_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a7, "ɵfac", function IonActionSheet_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a7)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a7, "ɵcmp", ɵɵdefineComponent({
+  type: _a7,
+  selectors: [["ion-action-sheet"]],
+  inputs: {
+    animated: "animated",
+    backdropDismiss: "backdropDismiss",
+    buttons: "buttons",
+    cssClass: "cssClass",
+    enterAnimation: "enterAnimation",
+    header: "header",
+    htmlAttributes: "htmlAttributes",
+    isOpen: "isOpen",
+    keyboardClose: "keyboardClose",
+    leaveAnimation: "leaveAnimation",
+    mode: "mode",
+    subHeader: "subHeader",
+    translucent: "translucent",
+    trigger: "trigger"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonActionSheet_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a7);
 IonActionSheet = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement13,
   inputs: ["animated", "backdropDismiss", "buttons", "cssClass", "enterAnimation", "header", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "mode", "subHeader", "translucent", "trigger"],
@@ -30474,54 +26722,53 @@ IonActionSheet = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonAlert = class IonAlert2 {
+var _a8;
+var IonAlert = (_a8 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionAlertDidPresent", "ionAlertWillPresent", "ionAlertWillDismiss", "ionAlertDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionAlertDidPresent", "ionAlertWillPresent", "ionAlertWillDismiss", "ionAlertDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonAlert_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonAlert2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonAlert2,
-    selectors: [["ion-alert"]],
-    inputs: {
-      animated: "animated",
-      backdropDismiss: "backdropDismiss",
-      buttons: "buttons",
-      cssClass: "cssClass",
-      enterAnimation: "enterAnimation",
-      header: "header",
-      htmlAttributes: "htmlAttributes",
-      inputs: "inputs",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      message: "message",
-      mode: "mode",
-      subHeader: "subHeader",
-      translucent: "translucent",
-      trigger: "trigger"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonAlert_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a8, "ɵfac", function IonAlert_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a8)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a8, "ɵcmp", ɵɵdefineComponent({
+  type: _a8,
+  selectors: [["ion-alert"]],
+  inputs: {
+    animated: "animated",
+    backdropDismiss: "backdropDismiss",
+    buttons: "buttons",
+    cssClass: "cssClass",
+    enterAnimation: "enterAnimation",
+    header: "header",
+    htmlAttributes: "htmlAttributes",
+    inputs: "inputs",
+    isOpen: "isOpen",
+    keyboardClose: "keyboardClose",
+    leaveAnimation: "leaveAnimation",
+    message: "message",
+    mode: "mode",
+    subHeader: "subHeader",
+    translucent: "translucent",
+    trigger: "trigger"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonAlert_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a8);
 IonAlert = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement15,
   inputs: ["animated", "backdropDismiss", "buttons", "cssClass", "enterAnimation", "header", "htmlAttributes", "inputs", "isOpen", "keyboardClose", "leaveAnimation", "message", "mode", "subHeader", "translucent", "trigger"],
@@ -30548,7 +26795,8 @@ IonAlert = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonApp = class IonApp2 {
+var _a9;
+var IonApp = (_a9 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -30556,27 +26804,25 @@ var IonApp = class IonApp2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonApp_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonApp2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonApp2,
-    selectors: [["ion-app"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonApp_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a9, "ɵfac", function IonApp_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a9)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a9, "ɵcmp", ɵɵdefineComponent({
+  type: _a9,
+  selectors: [["ion-app"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonApp_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a9);
 IonApp = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement16,
   methods: ["setFocus"]
@@ -30602,7 +26848,8 @@ IonApp = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonAvatar = class IonAvatar2 {
+var _a10;
+var IonAvatar = (_a10 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -30610,27 +26857,25 @@ var IonAvatar = class IonAvatar2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonAvatar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonAvatar2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonAvatar2,
-    selectors: [["ion-avatar"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonAvatar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a10, "ɵfac", function IonAvatar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a10)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a10, "ɵcmp", ɵɵdefineComponent({
+  type: _a10,
+  selectors: [["ion-avatar"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonAvatar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a10);
 IonAvatar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement17
 })], IonAvatar);
@@ -30655,41 +26900,40 @@ IonAvatar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonBackdrop = class IonBackdrop2 {
+var _a11;
+var IonBackdrop = (_a11 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionBackdropTap"]);
+    proxyOutputs(this, this.el, ["ionBackdropTap"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonBackdrop_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBackdrop2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonBackdrop2,
-    selectors: [["ion-backdrop"]],
-    inputs: {
-      stopPropagation: "stopPropagation",
-      tappable: "tappable",
-      visible: "visible"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonBackdrop_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a11, "ɵfac", function IonBackdrop_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a11)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a11, "ɵcmp", ɵɵdefineComponent({
+  type: _a11,
+  selectors: [["ion-backdrop"]],
+  inputs: {
+    stopPropagation: "stopPropagation",
+    tappable: "tappable",
+    visible: "visible"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonBackdrop_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a11);
 IonBackdrop = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement18,
   inputs: ["stopPropagation", "tappable", "visible"]
@@ -30715,7 +26959,8 @@ IonBackdrop = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonBadge = class IonBadge2 {
+var _a12;
+var IonBadge = (_a12 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -30723,31 +26968,29 @@ var IonBadge = class IonBadge2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonBadge_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBadge2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonBadge2,
-    selectors: [["ion-badge"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonBadge_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a12, "ɵfac", function IonBadge_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a12)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a12, "ɵcmp", ɵɵdefineComponent({
+  type: _a12,
+  selectors: [["ion-badge"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonBadge_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a12);
 IonBadge = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement19,
   inputs: ["color", "mode"]
@@ -30773,49 +27016,48 @@ IonBadge = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonBreadcrumb = class IonBreadcrumb2 {
+var _a13;
+var IonBreadcrumb = (_a13 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonBreadcrumb_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBreadcrumb2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonBreadcrumb2,
-    selectors: [["ion-breadcrumb"]],
-    inputs: {
-      active: "active",
-      color: "color",
-      disabled: "disabled",
-      download: "download",
-      href: "href",
-      mode: "mode",
-      rel: "rel",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection",
-      separator: "separator",
-      target: "target"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonBreadcrumb_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a13, "ɵfac", function IonBreadcrumb_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a13)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a13, "ɵcmp", ɵɵdefineComponent({
+  type: _a13,
+  selectors: [["ion-breadcrumb"]],
+  inputs: {
+    active: "active",
+    color: "color",
+    disabled: "disabled",
+    download: "download",
+    href: "href",
+    mode: "mode",
+    rel: "rel",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection",
+    separator: "separator",
+    target: "target"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonBreadcrumb_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a13);
 IonBreadcrumb = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement20,
   inputs: ["active", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "separator", "target"]
@@ -30841,43 +27083,42 @@ IonBreadcrumb = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonBreadcrumbs = class IonBreadcrumbs2 {
+var _a14;
+var IonBreadcrumbs = (_a14 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionCollapsedClick"]);
+    proxyOutputs(this, this.el, ["ionCollapsedClick"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonBreadcrumbs_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonBreadcrumbs2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonBreadcrumbs2,
-    selectors: [["ion-breadcrumbs"]],
-    inputs: {
-      color: "color",
-      itemsAfterCollapse: "itemsAfterCollapse",
-      itemsBeforeCollapse: "itemsBeforeCollapse",
-      maxItems: "maxItems",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonBreadcrumbs_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a14, "ɵfac", function IonBreadcrumbs_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a14)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a14, "ɵcmp", ɵɵdefineComponent({
+  type: _a14,
+  selectors: [["ion-breadcrumbs"]],
+  inputs: {
+    color: "color",
+    itemsAfterCollapse: "itemsAfterCollapse",
+    itemsBeforeCollapse: "itemsBeforeCollapse",
+    maxItems: "maxItems",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonBreadcrumbs_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a14);
 IonBreadcrumbs = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement21,
   inputs: ["color", "itemsAfterCollapse", "itemsBeforeCollapse", "maxItems", "mode"]
@@ -30903,55 +27144,54 @@ IonBreadcrumbs = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonButton = class IonButton2 {
+var _a15;
+var IonButton = (_a15 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonButton2,
-    selectors: [["ion-button"]],
-    inputs: {
-      buttonType: "buttonType",
-      color: "color",
-      disabled: "disabled",
-      download: "download",
-      expand: "expand",
-      fill: "fill",
-      form: "form",
-      href: "href",
-      mode: "mode",
-      rel: "rel",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection",
-      shape: "shape",
-      size: "size",
-      strong: "strong",
-      target: "target",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a15, "ɵfac", function IonButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a15)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a15, "ɵcmp", ɵɵdefineComponent({
+  type: _a15,
+  selectors: [["ion-button"]],
+  inputs: {
+    buttonType: "buttonType",
+    color: "color",
+    disabled: "disabled",
+    download: "download",
+    expand: "expand",
+    fill: "fill",
+    form: "form",
+    href: "href",
+    mode: "mode",
+    rel: "rel",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection",
+    shape: "shape",
+    size: "size",
+    strong: "strong",
+    target: "target",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a15);
 IonButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement23,
   inputs: ["buttonType", "color", "disabled", "download", "expand", "fill", "form", "href", "mode", "rel", "routerAnimation", "routerDirection", "shape", "size", "strong", "target", "type"]
@@ -30977,7 +27217,8 @@ IonButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonButtons = class IonButtons2 {
+var _a16;
+var IonButtons = (_a16 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -30985,30 +27226,28 @@ var IonButtons = class IonButtons2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonButtons_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonButtons2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonButtons2,
-    selectors: [["ion-buttons"]],
-    inputs: {
-      collapse: "collapse"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonButtons_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a16, "ɵfac", function IonButtons_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a16)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a16, "ɵcmp", ɵɵdefineComponent({
+  type: _a16,
+  selectors: [["ion-buttons"]],
+  inputs: {
+    collapse: "collapse"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonButtons_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a16);
 IonButtons = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement25,
   inputs: ["collapse"]
@@ -31034,7 +27273,8 @@ IonButtons = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCard = class IonCard2 {
+var _a17;
+var IonCard = (_a17 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31042,40 +27282,38 @@ var IonCard = class IonCard2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCard_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCard2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCard2,
-    selectors: [["ion-card"]],
-    inputs: {
-      button: "button",
-      color: "color",
-      disabled: "disabled",
-      download: "download",
-      href: "href",
-      mode: "mode",
-      rel: "rel",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection",
-      target: "target",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCard_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a17, "ɵfac", function IonCard_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a17)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a17, "ɵcmp", ɵɵdefineComponent({
+  type: _a17,
+  selectors: [["ion-card"]],
+  inputs: {
+    button: "button",
+    color: "color",
+    disabled: "disabled",
+    download: "download",
+    href: "href",
+    mode: "mode",
+    rel: "rel",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection",
+    target: "target",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCard_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a17);
 IonCard = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement26,
   inputs: ["button", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "target", "type"]
@@ -31101,7 +27339,8 @@ IonCard = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCardContent = class IonCardContent2 {
+var _a18;
+var IonCardContent = (_a18 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31109,30 +27348,28 @@ var IonCardContent = class IonCardContent2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCardContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCardContent2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCardContent2,
-    selectors: [["ion-card-content"]],
-    inputs: {
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCardContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a18, "ɵfac", function IonCardContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a18)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a18, "ɵcmp", ɵɵdefineComponent({
+  type: _a18,
+  selectors: [["ion-card-content"]],
+  inputs: {
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCardContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a18);
 IonCardContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement27,
   inputs: ["mode"]
@@ -31158,7 +27395,8 @@ IonCardContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCardHeader = class IonCardHeader2 {
+var _a19;
+var IonCardHeader = (_a19 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31166,32 +27404,30 @@ var IonCardHeader = class IonCardHeader2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCardHeader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCardHeader2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCardHeader2,
-    selectors: [["ion-card-header"]],
-    inputs: {
-      color: "color",
-      mode: "mode",
-      translucent: "translucent"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCardHeader_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a19, "ɵfac", function IonCardHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a19)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a19, "ɵcmp", ɵɵdefineComponent({
+  type: _a19,
+  selectors: [["ion-card-header"]],
+  inputs: {
+    color: "color",
+    mode: "mode",
+    translucent: "translucent"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCardHeader_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a19);
 IonCardHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement28,
   inputs: ["color", "mode", "translucent"]
@@ -31217,7 +27453,8 @@ IonCardHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCardSubtitle = class IonCardSubtitle2 {
+var _a20;
+var IonCardSubtitle = (_a20 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31225,31 +27462,29 @@ var IonCardSubtitle = class IonCardSubtitle2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCardSubtitle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCardSubtitle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCardSubtitle2,
-    selectors: [["ion-card-subtitle"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCardSubtitle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a20, "ɵfac", function IonCardSubtitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a20)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a20, "ɵcmp", ɵɵdefineComponent({
+  type: _a20,
+  selectors: [["ion-card-subtitle"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCardSubtitle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a20);
 IonCardSubtitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement29,
   inputs: ["color", "mode"]
@@ -31275,7 +27510,8 @@ IonCardSubtitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCardTitle = class IonCardTitle2 {
+var _a21;
+var IonCardTitle = (_a21 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31283,31 +27519,29 @@ var IonCardTitle = class IonCardTitle2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCardTitle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCardTitle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCardTitle2,
-    selectors: [["ion-card-title"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCardTitle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a21, "ɵfac", function IonCardTitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a21)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a21, "ɵcmp", ɵɵdefineComponent({
+  type: _a21,
+  selectors: [["ion-card-title"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCardTitle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a21);
 IonCardTitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement30,
   inputs: ["color", "mode"]
@@ -31333,7 +27567,8 @@ IonCardTitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonChip = class IonChip2 {
+var _a22;
+var IonChip = (_a22 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31341,33 +27576,31 @@ var IonChip = class IonChip2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonChip_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonChip2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonChip2,
-    selectors: [["ion-chip"]],
-    inputs: {
-      color: "color",
-      disabled: "disabled",
-      mode: "mode",
-      outline: "outline"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonChip_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a22, "ɵfac", function IonChip_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a22)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a22, "ɵcmp", ɵɵdefineComponent({
+  type: _a22,
+  selectors: [["ion-chip"]],
+  inputs: {
+    color: "color",
+    disabled: "disabled",
+    mode: "mode",
+    outline: "outline"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonChip_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a22);
 IonChip = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement31,
   inputs: ["color", "disabled", "mode", "outline"]
@@ -31393,7 +27626,8 @@ IonChip = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonCol = class IonCol2 {
+var _a23;
+var IonCol = (_a23 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31401,53 +27635,51 @@ var IonCol = class IonCol2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonCol_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCol2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCol2,
-    selectors: [["ion-col"]],
-    inputs: {
-      offset: "offset",
-      offsetLg: "offsetLg",
-      offsetMd: "offsetMd",
-      offsetSm: "offsetSm",
-      offsetXl: "offsetXl",
-      offsetXs: "offsetXs",
-      pull: "pull",
-      pullLg: "pullLg",
-      pullMd: "pullMd",
-      pullSm: "pullSm",
-      pullXl: "pullXl",
-      pullXs: "pullXs",
-      push: "push",
-      pushLg: "pushLg",
-      pushMd: "pushMd",
-      pushSm: "pushSm",
-      pushXl: "pushXl",
-      pushXs: "pushXs",
-      size: "size",
-      sizeLg: "sizeLg",
-      sizeMd: "sizeMd",
-      sizeSm: "sizeSm",
-      sizeXl: "sizeXl",
-      sizeXs: "sizeXs"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCol_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a23, "ɵfac", function IonCol_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a23)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a23, "ɵcmp", ɵɵdefineComponent({
+  type: _a23,
+  selectors: [["ion-col"]],
+  inputs: {
+    offset: "offset",
+    offsetLg: "offsetLg",
+    offsetMd: "offsetMd",
+    offsetSm: "offsetSm",
+    offsetXl: "offsetXl",
+    offsetXs: "offsetXs",
+    pull: "pull",
+    pullLg: "pullLg",
+    pullMd: "pullMd",
+    pullSm: "pullSm",
+    pullXl: "pullXl",
+    pullXs: "pullXs",
+    push: "push",
+    pushLg: "pushLg",
+    pushMd: "pushMd",
+    pushSm: "pushSm",
+    pushXl: "pushXl",
+    pushXs: "pushXs",
+    size: "size",
+    sizeLg: "sizeLg",
+    sizeMd: "sizeMd",
+    sizeSm: "sizeSm",
+    sizeXl: "sizeXl",
+    sizeXs: "sizeXs"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCol_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a23);
 IonCol = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement32,
   inputs: ["offset", "offsetLg", "offsetMd", "offsetSm", "offsetXl", "offsetXs", "pull", "pullLg", "pullMd", "pullSm", "pullXl", "pullXs", "push", "pushLg", "pushMd", "pushSm", "pushXl", "pushXs", "size", "sizeLg", "sizeMd", "sizeSm", "sizeXl", "sizeXs"]
@@ -31473,45 +27705,44 @@ IonCol = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonContent = class IonContent2 {
+var _a24;
+var IonContent = (_a24 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionScrollStart", "ionScroll", "ionScrollEnd"]);
+    proxyOutputs(this, this.el, ["ionScrollStart", "ionScroll", "ionScrollEnd"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonContent2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonContent2,
-    selectors: [["ion-content"]],
-    inputs: {
-      color: "color",
-      fixedSlotPlacement: "fixedSlotPlacement",
-      forceOverscroll: "forceOverscroll",
-      fullscreen: "fullscreen",
-      scrollEvents: "scrollEvents",
-      scrollX: "scrollX",
-      scrollY: "scrollY"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a24, "ɵfac", function IonContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a24)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a24, "ɵcmp", ɵɵdefineComponent({
+  type: _a24,
+  selectors: [["ion-content"]],
+  inputs: {
+    color: "color",
+    fixedSlotPlacement: "fixedSlotPlacement",
+    forceOverscroll: "forceOverscroll",
+    fullscreen: "fullscreen",
+    scrollEvents: "scrollEvents",
+    scrollX: "scrollX",
+    scrollY: "scrollY"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a24);
 IonContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement34,
   inputs: ["color", "fixedSlotPlacement", "forceOverscroll", "fullscreen", "scrollEvents", "scrollX", "scrollY"],
@@ -31538,7 +27769,8 @@ IonContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonDatetimeButton = class IonDatetimeButton2 {
+var _a25;
+var IonDatetimeButton = (_a25 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31546,33 +27778,31 @@ var IonDatetimeButton = class IonDatetimeButton2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonDatetimeButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonDatetimeButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonDatetimeButton2,
-    selectors: [["ion-datetime-button"]],
-    inputs: {
-      color: "color",
-      datetime: "datetime",
-      disabled: "disabled",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonDatetimeButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a25, "ɵfac", function IonDatetimeButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a25)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a25, "ɵcmp", ɵɵdefineComponent({
+  type: _a25,
+  selectors: [["ion-datetime-button"]],
+  inputs: {
+    color: "color",
+    datetime: "datetime",
+    disabled: "disabled",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonDatetimeButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a25);
 IonDatetimeButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement35,
   inputs: ["color", "datetime", "disabled", "mode"]
@@ -31598,7 +27828,8 @@ IonDatetimeButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonFab = class IonFab2 {
+var _a26;
+var IonFab = (_a26 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31606,33 +27837,31 @@ var IonFab = class IonFab2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonFab_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonFab2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonFab2,
-    selectors: [["ion-fab"]],
-    inputs: {
-      activated: "activated",
-      edge: "edge",
-      horizontal: "horizontal",
-      vertical: "vertical"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonFab_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a26, "ɵfac", function IonFab_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a26)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a26, "ɵcmp", ɵɵdefineComponent({
+  type: _a26,
+  selectors: [["ion-fab"]],
+  inputs: {
+    activated: "activated",
+    edge: "edge",
+    horizontal: "horizontal",
+    vertical: "vertical"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonFab_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a26);
 IonFab = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement36,
   inputs: ["activated", "edge", "horizontal", "vertical"],
@@ -31659,53 +27888,52 @@ IonFab = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonFabButton = class IonFabButton2 {
+var _a27;
+var IonFabButton = (_a27 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonFabButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonFabButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonFabButton2,
-    selectors: [["ion-fab-button"]],
-    inputs: {
-      activated: "activated",
-      closeIcon: "closeIcon",
-      color: "color",
-      disabled: "disabled",
-      download: "download",
-      href: "href",
-      mode: "mode",
-      rel: "rel",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection",
-      show: "show",
-      size: "size",
-      target: "target",
-      translucent: "translucent",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonFabButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a27, "ɵfac", function IonFabButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a27)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a27, "ɵcmp", ɵɵdefineComponent({
+  type: _a27,
+  selectors: [["ion-fab-button"]],
+  inputs: {
+    activated: "activated",
+    closeIcon: "closeIcon",
+    color: "color",
+    disabled: "disabled",
+    download: "download",
+    href: "href",
+    mode: "mode",
+    rel: "rel",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection",
+    show: "show",
+    size: "size",
+    target: "target",
+    translucent: "translucent",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonFabButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a27);
 IonFabButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement37,
   inputs: ["activated", "closeIcon", "color", "disabled", "download", "href", "mode", "rel", "routerAnimation", "routerDirection", "show", "size", "target", "translucent", "type"]
@@ -31731,7 +27959,8 @@ IonFabButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonFabList = class IonFabList2 {
+var _a28;
+var IonFabList = (_a28 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31739,31 +27968,29 @@ var IonFabList = class IonFabList2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonFabList_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonFabList2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonFabList2,
-    selectors: [["ion-fab-list"]],
-    inputs: {
-      activated: "activated",
-      side: "side"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonFabList_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a28, "ɵfac", function IonFabList_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a28)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a28, "ɵcmp", ɵɵdefineComponent({
+  type: _a28,
+  selectors: [["ion-fab-list"]],
+  inputs: {
+    activated: "activated",
+    side: "side"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonFabList_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a28);
 IonFabList = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement38,
   inputs: ["activated", "side"]
@@ -31789,7 +28016,8 @@ IonFabList = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonFooter = class IonFooter2 {
+var _a29;
+var IonFooter = (_a29 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31797,32 +28025,30 @@ var IonFooter = class IonFooter2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonFooter_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonFooter2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonFooter2,
-    selectors: [["ion-footer"]],
-    inputs: {
-      collapse: "collapse",
-      mode: "mode",
-      translucent: "translucent"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonFooter_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a29, "ɵfac", function IonFooter_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a29)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a29, "ɵcmp", ɵɵdefineComponent({
+  type: _a29,
+  selectors: [["ion-footer"]],
+  inputs: {
+    collapse: "collapse",
+    mode: "mode",
+    translucent: "translucent"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonFooter_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a29);
 IonFooter = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement39,
   inputs: ["collapse", "mode", "translucent"]
@@ -31848,7 +28074,8 @@ IonFooter = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonGrid = class IonGrid2 {
+var _a30;
+var IonGrid = (_a30 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31856,30 +28083,28 @@ var IonGrid = class IonGrid2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonGrid_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonGrid2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonGrid2,
-    selectors: [["ion-grid"]],
-    inputs: {
-      fixed: "fixed"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonGrid_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a30, "ɵfac", function IonGrid_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a30)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a30, "ɵcmp", ɵɵdefineComponent({
+  type: _a30,
+  selectors: [["ion-grid"]],
+  inputs: {
+    fixed: "fixed"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonGrid_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a30);
 IonGrid = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement40,
   inputs: ["fixed"]
@@ -31905,7 +28130,8 @@ IonGrid = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonHeader = class IonHeader2 {
+var _a31;
+var IonHeader = (_a31 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -31913,32 +28139,30 @@ var IonHeader = class IonHeader2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonHeader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonHeader2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonHeader2,
-    selectors: [["ion-header"]],
-    inputs: {
-      collapse: "collapse",
-      mode: "mode",
-      translucent: "translucent"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonHeader_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a31, "ɵfac", function IonHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a31)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a31, "ɵcmp", ɵɵdefineComponent({
+  type: _a31,
+  selectors: [["ion-header"]],
+  inputs: {
+    collapse: "collapse",
+    mode: "mode",
+    translucent: "translucent"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonHeader_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a31);
 IonHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement42,
   inputs: ["collapse", "mode", "translucent"]
@@ -31964,40 +28188,39 @@ IonHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonImg = class IonImg2 {
+var _a32;
+var IonImg = (_a32 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionImgWillLoad", "ionImgDidLoad", "ionError"]);
+    proxyOutputs(this, this.el, ["ionImgWillLoad", "ionImgDidLoad", "ionError"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonImg_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonImg2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonImg2,
-    selectors: [["ion-img"]],
-    inputs: {
-      alt: "alt",
-      src: "src"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonImg_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a32, "ɵfac", function IonImg_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a32)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a32, "ɵcmp", ɵɵdefineComponent({
+  type: _a32,
+  selectors: [["ion-img"]],
+  inputs: {
+    alt: "alt",
+    src: "src"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonImg_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a32);
 IonImg = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement43,
   inputs: ["alt", "src"]
@@ -32023,41 +28246,40 @@ IonImg = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonInfiniteScroll = class IonInfiniteScroll2 {
+var _a33;
+var IonInfiniteScroll = (_a33 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInfinite"]);
+    proxyOutputs(this, this.el, ["ionInfinite"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonInfiniteScroll_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonInfiniteScroll2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonInfiniteScroll2,
-    selectors: [["ion-infinite-scroll"]],
-    inputs: {
-      disabled: "disabled",
-      position: "position",
-      threshold: "threshold"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonInfiniteScroll_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a33, "ɵfac", function IonInfiniteScroll_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a33)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a33, "ɵcmp", ɵɵdefineComponent({
+  type: _a33,
+  selectors: [["ion-infinite-scroll"]],
+  inputs: {
+    disabled: "disabled",
+    position: "position",
+    threshold: "threshold"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonInfiniteScroll_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a33);
 IonInfiniteScroll = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement44,
   inputs: ["disabled", "position", "threshold"],
@@ -32084,7 +28306,8 @@ IonInfiniteScroll = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonInfiniteScrollContent = class IonInfiniteScrollContent2 {
+var _a34;
+var IonInfiniteScrollContent = (_a34 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32092,31 +28315,29 @@ var IonInfiniteScrollContent = class IonInfiniteScrollContent2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonInfiniteScrollContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonInfiniteScrollContent2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonInfiniteScrollContent2,
-    selectors: [["ion-infinite-scroll-content"]],
-    inputs: {
-      loadingSpinner: "loadingSpinner",
-      loadingText: "loadingText"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonInfiniteScrollContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a34, "ɵfac", function IonInfiniteScrollContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a34)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a34, "ɵcmp", ɵɵdefineComponent({
+  type: _a34,
+  selectors: [["ion-infinite-scroll-content"]],
+  inputs: {
+    loadingSpinner: "loadingSpinner",
+    loadingText: "loadingText"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonInfiniteScrollContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a34);
 IonInfiniteScrollContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement46,
   inputs: ["loadingSpinner", "loadingText"]
@@ -32142,7 +28363,8 @@ IonInfiniteScrollContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonInputPasswordToggle = class IonInputPasswordToggle2 {
+var _a35;
+var IonInputPasswordToggle = (_a35 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32150,33 +28372,31 @@ var IonInputPasswordToggle = class IonInputPasswordToggle2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonInputPasswordToggle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonInputPasswordToggle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonInputPasswordToggle2,
-    selectors: [["ion-input-password-toggle"]],
-    inputs: {
-      color: "color",
-      hideIcon: "hideIcon",
-      mode: "mode",
-      showIcon: "showIcon"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonInputPasswordToggle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a35, "ɵfac", function IonInputPasswordToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a35)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a35, "ɵcmp", ɵɵdefineComponent({
+  type: _a35,
+  selectors: [["ion-input-password-toggle"]],
+  inputs: {
+    color: "color",
+    hideIcon: "hideIcon",
+    mode: "mode",
+    showIcon: "showIcon"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonInputPasswordToggle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a35);
 IonInputPasswordToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement47,
   inputs: ["color", "hideIcon", "mode", "showIcon"]
@@ -32202,7 +28422,8 @@ IonInputPasswordToggle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItem = class IonItem2 {
+var _a36;
+var IonItem = (_a36 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32210,43 +28431,41 @@ var IonItem = class IonItem2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonItem_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItem2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItem2,
-    selectors: [["ion-item"]],
-    inputs: {
-      button: "button",
-      color: "color",
-      detail: "detail",
-      detailIcon: "detailIcon",
-      disabled: "disabled",
-      download: "download",
-      href: "href",
-      lines: "lines",
-      mode: "mode",
-      rel: "rel",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection",
-      target: "target",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItem_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a36, "ɵfac", function IonItem_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a36)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a36, "ɵcmp", ɵɵdefineComponent({
+  type: _a36,
+  selectors: [["ion-item"]],
+  inputs: {
+    button: "button",
+    color: "color",
+    detail: "detail",
+    detailIcon: "detailIcon",
+    disabled: "disabled",
+    download: "download",
+    href: "href",
+    lines: "lines",
+    mode: "mode",
+    rel: "rel",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection",
+    target: "target",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItem_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a36);
 IonItem = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement49,
   inputs: ["button", "color", "detail", "detailIcon", "disabled", "download", "href", "lines", "mode", "rel", "routerAnimation", "routerDirection", "target", "type"]
@@ -32272,7 +28491,8 @@ IonItem = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItemDivider = class IonItemDivider2 {
+var _a37;
+var IonItemDivider = (_a37 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32280,32 +28500,30 @@ var IonItemDivider = class IonItemDivider2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonItemDivider_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItemDivider2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItemDivider2,
-    selectors: [["ion-item-divider"]],
-    inputs: {
-      color: "color",
-      mode: "mode",
-      sticky: "sticky"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItemDivider_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a37, "ɵfac", function IonItemDivider_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a37)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a37, "ɵcmp", ɵɵdefineComponent({
+  type: _a37,
+  selectors: [["ion-item-divider"]],
+  inputs: {
+    color: "color",
+    mode: "mode",
+    sticky: "sticky"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItemDivider_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a37);
 IonItemDivider = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement50,
   inputs: ["color", "mode", "sticky"]
@@ -32331,7 +28549,8 @@ IonItemDivider = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItemGroup = class IonItemGroup2 {
+var _a38;
+var IonItemGroup = (_a38 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32339,27 +28558,25 @@ var IonItemGroup = class IonItemGroup2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonItemGroup_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItemGroup2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItemGroup2,
-    selectors: [["ion-item-group"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItemGroup_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a38, "ɵfac", function IonItemGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a38)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a38, "ɵcmp", ɵɵdefineComponent({
+  type: _a38,
+  selectors: [["ion-item-group"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItemGroup_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a38);
 IonItemGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement51
 })], IonItemGroup);
@@ -32384,7 +28601,8 @@ IonItemGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItemOption = class IonItemOption2 {
+var _a39;
+var IonItemOption = (_a39 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32392,38 +28610,36 @@ var IonItemOption = class IonItemOption2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonItemOption_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItemOption2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItemOption2,
-    selectors: [["ion-item-option"]],
-    inputs: {
-      color: "color",
-      disabled: "disabled",
-      download: "download",
-      expandable: "expandable",
-      href: "href",
-      mode: "mode",
-      rel: "rel",
-      target: "target",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItemOption_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a39, "ɵfac", function IonItemOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a39)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a39, "ɵcmp", ɵɵdefineComponent({
+  type: _a39,
+  selectors: [["ion-item-option"]],
+  inputs: {
+    color: "color",
+    disabled: "disabled",
+    download: "download",
+    expandable: "expandable",
+    href: "href",
+    mode: "mode",
+    rel: "rel",
+    target: "target",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItemOption_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a39);
 IonItemOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement52,
   inputs: ["color", "disabled", "download", "expandable", "href", "mode", "rel", "target", "type"]
@@ -32449,39 +28665,38 @@ IonItemOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItemOptions = class IonItemOptions2 {
+var _a40;
+var IonItemOptions = (_a40 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSwipe"]);
+    proxyOutputs(this, this.el, ["ionSwipe"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonItemOptions_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItemOptions2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItemOptions2,
-    selectors: [["ion-item-options"]],
-    inputs: {
-      side: "side"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItemOptions_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a40, "ɵfac", function IonItemOptions_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a40)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a40, "ɵcmp", ɵɵdefineComponent({
+  type: _a40,
+  selectors: [["ion-item-options"]],
+  inputs: {
+    side: "side"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItemOptions_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a40);
 IonItemOptions = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement53,
   inputs: ["side"]
@@ -32507,39 +28722,38 @@ IonItemOptions = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonItemSliding = class IonItemSliding2 {
+var _a41;
+var IonItemSliding = (_a41 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionDrag"]);
+    proxyOutputs(this, this.el, ["ionDrag"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonItemSliding_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonItemSliding2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonItemSliding2,
-    selectors: [["ion-item-sliding"]],
-    inputs: {
-      disabled: "disabled"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonItemSliding_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a41, "ɵfac", function IonItemSliding_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a41)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a41, "ɵcmp", ɵɵdefineComponent({
+  type: _a41,
+  selectors: [["ion-item-sliding"]],
+  inputs: {
+    disabled: "disabled"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonItemSliding_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a41);
 IonItemSliding = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement54,
   inputs: ["disabled"],
@@ -32566,7 +28780,8 @@ IonItemSliding = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonLabel = class IonLabel2 {
+var _a42;
+var IonLabel = (_a42 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32574,32 +28789,30 @@ var IonLabel = class IonLabel2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonLabel_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonLabel2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonLabel2,
-    selectors: [["ion-label"]],
-    inputs: {
-      color: "color",
-      mode: "mode",
-      position: "position"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonLabel_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a42, "ɵfac", function IonLabel_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a42)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a42, "ɵcmp", ɵɵdefineComponent({
+  type: _a42,
+  selectors: [["ion-label"]],
+  inputs: {
+    color: "color",
+    mode: "mode",
+    position: "position"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonLabel_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a42);
 IonLabel = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement56,
   inputs: ["color", "mode", "position"]
@@ -32625,7 +28838,8 @@ IonLabel = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonList = class IonList2 {
+var _a43;
+var IonList = (_a43 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32633,32 +28847,30 @@ var IonList = class IonList2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonList_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonList2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonList2,
-    selectors: [["ion-list"]],
-    inputs: {
-      inset: "inset",
-      lines: "lines",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonList_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a43, "ɵfac", function IonList_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a43)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a43, "ɵcmp", ɵɵdefineComponent({
+  type: _a43,
+  selectors: [["ion-list"]],
+  inputs: {
+    inset: "inset",
+    lines: "lines",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonList_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a43);
 IonList = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement58,
   inputs: ["inset", "lines", "mode"],
@@ -32685,7 +28897,8 @@ IonList = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonListHeader = class IonListHeader2 {
+var _a44;
+var IonListHeader = (_a44 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32693,32 +28906,30 @@ var IonListHeader = class IonListHeader2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonListHeader_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonListHeader2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonListHeader2,
-    selectors: [["ion-list-header"]],
-    inputs: {
-      color: "color",
-      lines: "lines",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonListHeader_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a44, "ɵfac", function IonListHeader_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a44)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a44, "ɵcmp", ɵɵdefineComponent({
+  type: _a44,
+  selectors: [["ion-list-header"]],
+  inputs: {
+    color: "color",
+    lines: "lines",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonListHeader_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a44);
 IonListHeader = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement60,
   inputs: ["color", "lines", "mode"]
@@ -32744,53 +28955,52 @@ IonListHeader = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonLoading = class IonLoading2 {
+var _a45;
+var IonLoading = (_a45 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionLoadingDidPresent", "ionLoadingWillPresent", "ionLoadingWillDismiss", "ionLoadingDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionLoadingDidPresent", "ionLoadingWillPresent", "ionLoadingWillDismiss", "ionLoadingDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonLoading_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonLoading2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonLoading2,
-    selectors: [["ion-loading"]],
-    inputs: {
-      animated: "animated",
-      backdropDismiss: "backdropDismiss",
-      cssClass: "cssClass",
-      duration: "duration",
-      enterAnimation: "enterAnimation",
-      htmlAttributes: "htmlAttributes",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      message: "message",
-      mode: "mode",
-      showBackdrop: "showBackdrop",
-      spinner: "spinner",
-      translucent: "translucent",
-      trigger: "trigger"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonLoading_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a45, "ɵfac", function IonLoading_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a45)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a45, "ɵcmp", ɵɵdefineComponent({
+  type: _a45,
+  selectors: [["ion-loading"]],
+  inputs: {
+    animated: "animated",
+    backdropDismiss: "backdropDismiss",
+    cssClass: "cssClass",
+    duration: "duration",
+    enterAnimation: "enterAnimation",
+    htmlAttributes: "htmlAttributes",
+    isOpen: "isOpen",
+    keyboardClose: "keyboardClose",
+    leaveAnimation: "leaveAnimation",
+    message: "message",
+    mode: "mode",
+    showBackdrop: "showBackdrop",
+    spinner: "spinner",
+    translucent: "translucent",
+    trigger: "trigger"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonLoading_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a45);
 IonLoading = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement61,
   inputs: ["animated", "backdropDismiss", "cssClass", "duration", "enterAnimation", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "message", "mode", "showBackdrop", "spinner", "translucent", "trigger"],
@@ -32817,45 +29027,44 @@ IonLoading = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonMenu = class IonMenu2 {
+var _a46;
+var IonMenu = (_a46 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionWillOpen", "ionWillClose", "ionDidOpen", "ionDidClose"]);
+    proxyOutputs(this, this.el, ["ionWillOpen", "ionWillClose", "ionDidOpen", "ionDidClose"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonMenu_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonMenu2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonMenu2,
-    selectors: [["ion-menu"]],
-    inputs: {
-      contentId: "contentId",
-      disabled: "disabled",
-      maxEdgeStart: "maxEdgeStart",
-      menuId: "menuId",
-      side: "side",
-      swipeGesture: "swipeGesture",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonMenu_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a46, "ɵfac", function IonMenu_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a46)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a46, "ɵcmp", ɵɵdefineComponent({
+  type: _a46,
+  selectors: [["ion-menu"]],
+  inputs: {
+    contentId: "contentId",
+    disabled: "disabled",
+    maxEdgeStart: "maxEdgeStart",
+    menuId: "menuId",
+    side: "side",
+    swipeGesture: "swipeGesture",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonMenu_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a46);
 IonMenu = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement62,
   inputs: ["contentId", "disabled", "maxEdgeStart", "menuId", "side", "swipeGesture", "type"],
@@ -32882,7 +29091,8 @@ IonMenu = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonMenuButton = class IonMenuButton2 {
+var _a47;
+var IonMenuButton = (_a47 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32890,35 +29100,33 @@ var IonMenuButton = class IonMenuButton2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonMenuButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonMenuButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonMenuButton2,
-    selectors: [["ion-menu-button"]],
-    inputs: {
-      autoHide: "autoHide",
-      color: "color",
-      disabled: "disabled",
-      menu: "menu",
-      mode: "mode",
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonMenuButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a47, "ɵfac", function IonMenuButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a47)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a47, "ɵcmp", ɵɵdefineComponent({
+  type: _a47,
+  selectors: [["ion-menu-button"]],
+  inputs: {
+    autoHide: "autoHide",
+    color: "color",
+    disabled: "disabled",
+    menu: "menu",
+    mode: "mode",
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonMenuButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a47);
 IonMenuButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement63,
   inputs: ["autoHide", "color", "disabled", "menu", "mode", "type"]
@@ -32944,7 +29152,8 @@ IonMenuButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonMenuToggle = class IonMenuToggle2 {
+var _a48;
+var IonMenuToggle = (_a48 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -32952,31 +29161,29 @@ var IonMenuToggle = class IonMenuToggle2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonMenuToggle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonMenuToggle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonMenuToggle2,
-    selectors: [["ion-menu-toggle"]],
-    inputs: {
-      autoHide: "autoHide",
-      menu: "menu"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonMenuToggle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a48, "ɵfac", function IonMenuToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a48)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a48, "ɵcmp", ɵɵdefineComponent({
+  type: _a48,
+  selectors: [["ion-menu-toggle"]],
+  inputs: {
+    autoHide: "autoHide",
+    menu: "menu"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonMenuToggle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a48);
 IonMenuToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement64,
   inputs: ["autoHide", "menu"]
@@ -33002,7 +29209,8 @@ IonMenuToggle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonNavLink = class IonNavLink2 {
+var _a49;
+var IonNavLink = (_a49 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33010,33 +29218,31 @@ var IonNavLink = class IonNavLink2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonNavLink_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonNavLink2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonNavLink2,
-    selectors: [["ion-nav-link"]],
-    inputs: {
-      component: "component",
-      componentProps: "componentProps",
-      routerAnimation: "routerAnimation",
-      routerDirection: "routerDirection"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonNavLink_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a49, "ɵfac", function IonNavLink_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a49)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a49, "ɵcmp", ɵɵdefineComponent({
+  type: _a49,
+  selectors: [["ion-nav-link"]],
+  inputs: {
+    component: "component",
+    componentProps: "componentProps",
+    routerAnimation: "routerAnimation",
+    routerDirection: "routerDirection"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonNavLink_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a49);
 IonNavLink = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement65,
   inputs: ["component", "componentProps", "routerAnimation", "routerDirection"]
@@ -33062,7 +29268,8 @@ IonNavLink = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonNote = class IonNote2 {
+var _a50;
+var IonNote = (_a50 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33070,31 +29277,29 @@ var IonNote = class IonNote2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonNote_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonNote2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonNote2,
-    selectors: [["ion-note"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonNote_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a50, "ɵfac", function IonNote_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a50)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a50, "ɵcmp", ɵɵdefineComponent({
+  type: _a50,
+  selectors: [["ion-note"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonNote_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a50);
 IonNote = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement66,
   inputs: ["color", "mode"]
@@ -33120,7 +29325,8 @@ IonNote = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonPicker = class IonPicker2 {
+var _a51;
+var IonPicker = (_a51 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33128,30 +29334,28 @@ var IonPicker = class IonPicker2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonPicker_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonPicker2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonPicker2,
-    selectors: [["ion-picker"]],
-    inputs: {
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonPicker_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a51, "ɵfac", function IonPicker_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a51)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a51, "ɵcmp", ɵɵdefineComponent({
+  type: _a51,
+  selectors: [["ion-picker"]],
+  inputs: {
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonPicker_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a51);
 IonPicker = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement68,
   inputs: ["mode"]
@@ -33177,42 +29381,41 @@ IonPicker = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonPickerColumn = class IonPickerColumn2 {
+var _a52;
+var IonPickerColumn = (_a52 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonPickerColumn_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonPickerColumn2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonPickerColumn2,
-    selectors: [["ion-picker-column"]],
-    inputs: {
-      color: "color",
-      disabled: "disabled",
-      mode: "mode",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonPickerColumn_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a52, "ɵfac", function IonPickerColumn_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a52)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a52, "ɵcmp", ɵɵdefineComponent({
+  type: _a52,
+  selectors: [["ion-picker-column"]],
+  inputs: {
+    color: "color",
+    disabled: "disabled",
+    mode: "mode",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonPickerColumn_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a52);
 IonPickerColumn = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement70,
   inputs: ["color", "disabled", "mode", "value"],
@@ -33239,7 +29442,8 @@ IonPickerColumn = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonPickerColumnOption = class IonPickerColumnOption2 {
+var _a53;
+var IonPickerColumnOption = (_a53 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33247,32 +29451,30 @@ var IonPickerColumnOption = class IonPickerColumnOption2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonPickerColumnOption_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonPickerColumnOption2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonPickerColumnOption2,
-    selectors: [["ion-picker-column-option"]],
-    inputs: {
-      color: "color",
-      disabled: "disabled",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonPickerColumnOption_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a53, "ɵfac", function IonPickerColumnOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a53)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a53, "ɵcmp", ɵɵdefineComponent({
+  type: _a53,
+  selectors: [["ion-picker-column-option"]],
+  inputs: {
+    color: "color",
+    disabled: "disabled",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonPickerColumnOption_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a53);
 IonPickerColumnOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement72,
   inputs: ["color", "disabled", "value"]
@@ -33298,52 +29500,51 @@ IonPickerColumnOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonPickerLegacy = class IonPickerLegacy2 {
+var _a54;
+var IonPickerLegacy = (_a54 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionPickerDidPresent", "ionPickerWillPresent", "ionPickerWillDismiss", "ionPickerDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionPickerDidPresent", "ionPickerWillPresent", "ionPickerWillDismiss", "ionPickerDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonPickerLegacy_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonPickerLegacy2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonPickerLegacy2,
-    selectors: [["ion-picker-legacy"]],
-    inputs: {
-      animated: "animated",
-      backdropDismiss: "backdropDismiss",
-      buttons: "buttons",
-      columns: "columns",
-      cssClass: "cssClass",
-      duration: "duration",
-      enterAnimation: "enterAnimation",
-      htmlAttributes: "htmlAttributes",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      leaveAnimation: "leaveAnimation",
-      mode: "mode",
-      showBackdrop: "showBackdrop",
-      trigger: "trigger"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonPickerLegacy_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a54, "ɵfac", function IonPickerLegacy_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a54)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a54, "ɵcmp", ɵɵdefineComponent({
+  type: _a54,
+  selectors: [["ion-picker-legacy"]],
+  inputs: {
+    animated: "animated",
+    backdropDismiss: "backdropDismiss",
+    buttons: "buttons",
+    columns: "columns",
+    cssClass: "cssClass",
+    duration: "duration",
+    enterAnimation: "enterAnimation",
+    htmlAttributes: "htmlAttributes",
+    isOpen: "isOpen",
+    keyboardClose: "keyboardClose",
+    leaveAnimation: "leaveAnimation",
+    mode: "mode",
+    showBackdrop: "showBackdrop",
+    trigger: "trigger"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonPickerLegacy_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a54);
 IonPickerLegacy = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement74,
   inputs: ["animated", "backdropDismiss", "buttons", "columns", "cssClass", "duration", "enterAnimation", "htmlAttributes", "isOpen", "keyboardClose", "leaveAnimation", "mode", "showBackdrop", "trigger"],
@@ -33370,7 +29571,8 @@ IonPickerLegacy = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonProgressBar = class IonProgressBar2 {
+var _a55;
+var IonProgressBar = (_a55 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33378,35 +29580,33 @@ var IonProgressBar = class IonProgressBar2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonProgressBar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonProgressBar2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonProgressBar2,
-    selectors: [["ion-progress-bar"]],
-    inputs: {
-      buffer: "buffer",
-      color: "color",
-      mode: "mode",
-      reversed: "reversed",
-      type: "type",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonProgressBar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a55, "ɵfac", function IonProgressBar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a55)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a55, "ɵcmp", ɵɵdefineComponent({
+  type: _a55,
+  selectors: [["ion-progress-bar"]],
+  inputs: {
+    buffer: "buffer",
+    color: "color",
+    mode: "mode",
+    reversed: "reversed",
+    type: "type",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonProgressBar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a55);
 IonProgressBar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement75,
   inputs: ["buffer", "color", "mode", "reversed", "type", "value"]
@@ -33432,46 +29632,45 @@ IonProgressBar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonRadio = class IonRadio2 {
+var _a56;
+var IonRadio = (_a56 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionFocus", "ionBlur"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonRadio_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRadio2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRadio2,
-    selectors: [["ion-radio"]],
-    inputs: {
-      alignment: "alignment",
-      color: "color",
-      disabled: "disabled",
-      justify: "justify",
-      labelPlacement: "labelPlacement",
-      mode: "mode",
-      name: "name",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRadio_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a56, "ɵfac", function IonRadio_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a56)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a56, "ɵcmp", ɵɵdefineComponent({
+  type: _a56,
+  selectors: [["ion-radio"]],
+  inputs: {
+    alignment: "alignment",
+    color: "color",
+    disabled: "disabled",
+    justify: "justify",
+    labelPlacement: "labelPlacement",
+    mode: "mode",
+    name: "name",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRadio_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a56);
 IonRadio = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement77,
   inputs: ["alignment", "color", "disabled", "justify", "labelPlacement", "mode", "name", "value"]
@@ -33497,45 +29696,44 @@ IonRadio = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonRefresher = class IonRefresher2 {
+var _a57;
+var IonRefresher = (_a57 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionRefresh", "ionPull", "ionStart"]);
+    proxyOutputs(this, this.el, ["ionRefresh", "ionPull", "ionStart"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonRefresher_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRefresher2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRefresher2,
-    selectors: [["ion-refresher"]],
-    inputs: {
-      closeDuration: "closeDuration",
-      disabled: "disabled",
-      mode: "mode",
-      pullFactor: "pullFactor",
-      pullMax: "pullMax",
-      pullMin: "pullMin",
-      snapbackDuration: "snapbackDuration"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRefresher_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a57, "ɵfac", function IonRefresher_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a57)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a57, "ɵcmp", ɵɵdefineComponent({
+  type: _a57,
+  selectors: [["ion-refresher"]],
+  inputs: {
+    closeDuration: "closeDuration",
+    disabled: "disabled",
+    mode: "mode",
+    pullFactor: "pullFactor",
+    pullMax: "pullMax",
+    pullMin: "pullMin",
+    snapbackDuration: "snapbackDuration"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRefresher_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a57);
 IonRefresher = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement78,
   inputs: ["closeDuration", "disabled", "mode", "pullFactor", "pullMax", "pullMin", "snapbackDuration"],
@@ -33562,7 +29760,8 @@ IonRefresher = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonRefresherContent = class IonRefresherContent2 {
+var _a58;
+var IonRefresherContent = (_a58 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33570,33 +29769,31 @@ var IonRefresherContent = class IonRefresherContent2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonRefresherContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRefresherContent2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRefresherContent2,
-    selectors: [["ion-refresher-content"]],
-    inputs: {
-      pullingIcon: "pullingIcon",
-      pullingText: "pullingText",
-      refreshingSpinner: "refreshingSpinner",
-      refreshingText: "refreshingText"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRefresherContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a58, "ɵfac", function IonRefresherContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a58)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a58, "ɵcmp", ɵɵdefineComponent({
+  type: _a58,
+  selectors: [["ion-refresher-content"]],
+  inputs: {
+    pullingIcon: "pullingIcon",
+    pullingText: "pullingText",
+    refreshingSpinner: "refreshingSpinner",
+    refreshingText: "refreshingText"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRefresherContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a58);
 IonRefresherContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement79,
   inputs: ["pullingIcon", "pullingText", "refreshingSpinner", "refreshingText"]
@@ -33622,7 +29819,8 @@ IonRefresherContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonReorder = class IonReorder2 {
+var _a59;
+var IonReorder = (_a59 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33630,27 +29828,25 @@ var IonReorder = class IonReorder2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonReorder_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonReorder2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonReorder2,
-    selectors: [["ion-reorder"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonReorder_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a59, "ɵfac", function IonReorder_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a59)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a59, "ɵcmp", ɵɵdefineComponent({
+  type: _a59,
+  selectors: [["ion-reorder"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonReorder_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a59);
 IonReorder = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement80
 })], IonReorder);
@@ -33675,39 +29871,38 @@ IonReorder = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonReorderGroup = class IonReorderGroup2 {
+var _a60;
+var IonReorderGroup = (_a60 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionItemReorder"]);
+    proxyOutputs(this, this.el, ["ionItemReorder"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonReorderGroup_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonReorderGroup2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonReorderGroup2,
-    selectors: [["ion-reorder-group"]],
-    inputs: {
-      disabled: "disabled"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonReorderGroup_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a60, "ɵfac", function IonReorderGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a60)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a60, "ɵcmp", ɵɵdefineComponent({
+  type: _a60,
+  selectors: [["ion-reorder-group"]],
+  inputs: {
+    disabled: "disabled"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonReorderGroup_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a60);
 IonReorderGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement81,
   inputs: ["disabled"],
@@ -33734,7 +29929,8 @@ IonReorderGroup = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonRippleEffect = class IonRippleEffect2 {
+var _a61;
+var IonRippleEffect = (_a61 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33742,30 +29938,28 @@ var IonRippleEffect = class IonRippleEffect2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonRippleEffect_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRippleEffect2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRippleEffect2,
-    selectors: [["ion-ripple-effect"]],
-    inputs: {
-      type: "type"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRippleEffect_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a61, "ɵfac", function IonRippleEffect_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a61)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a61, "ɵcmp", ɵɵdefineComponent({
+  type: _a61,
+  selectors: [["ion-ripple-effect"]],
+  inputs: {
+    type: "type"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRippleEffect_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a61);
 IonRippleEffect = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement82,
   inputs: ["type"],
@@ -33792,7 +29986,8 @@ IonRippleEffect = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonRow = class IonRow2 {
+var _a62;
+var IonRow = (_a62 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33800,27 +29995,25 @@ var IonRow = class IonRow2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonRow_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRow2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRow2,
-    selectors: [["ion-row"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRow_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a62, "ɵfac", function IonRow_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a62)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a62, "ɵcmp", ɵɵdefineComponent({
+  type: _a62,
+  selectors: [["ion-row"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRow_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a62);
 IonRow = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement83
 })], IonRow);
@@ -33845,7 +30038,8 @@ IonRow = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSegmentButton = class IonSegmentButton2 {
+var _a63;
+var IonSegmentButton = (_a63 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33853,35 +30047,33 @@ var IonSegmentButton = class IonSegmentButton2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSegmentButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSegmentButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSegmentButton2,
-    selectors: [["ion-segment-button"]],
-    inputs: {
-      contentId: "contentId",
-      disabled: "disabled",
-      layout: "layout",
-      mode: "mode",
-      type: "type",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSegmentButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a63, "ɵfac", function IonSegmentButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a63)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a63, "ɵcmp", ɵɵdefineComponent({
+  type: _a63,
+  selectors: [["ion-segment-button"]],
+  inputs: {
+    contentId: "contentId",
+    disabled: "disabled",
+    layout: "layout",
+    mode: "mode",
+    type: "type",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSegmentButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a63);
 IonSegmentButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement84,
   inputs: ["contentId", "disabled", "layout", "mode", "type", "value"]
@@ -33907,7 +30099,8 @@ IonSegmentButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSegmentContent = class IonSegmentContent2 {
+var _a64;
+var IonSegmentContent = (_a64 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -33915,27 +30108,25 @@ var IonSegmentContent = class IonSegmentContent2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSegmentContent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSegmentContent2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSegmentContent2,
-    selectors: [["ion-segment-content"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSegmentContent_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a64, "ɵfac", function IonSegmentContent_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a64)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a64, "ɵcmp", ɵɵdefineComponent({
+  type: _a64,
+  selectors: [["ion-segment-content"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSegmentContent_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a64);
 IonSegmentContent = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement85
 })], IonSegmentContent);
@@ -33960,39 +30151,38 @@ IonSegmentContent = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSegmentView = class IonSegmentView2 {
+var _a65;
+var IonSegmentView = (_a65 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSegmentViewScroll"]);
+    proxyOutputs(this, this.el, ["ionSegmentViewScroll"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonSegmentView_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSegmentView2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSegmentView2,
-    selectors: [["ion-segment-view"]],
-    inputs: {
-      disabled: "disabled"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSegmentView_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a65, "ɵfac", function IonSegmentView_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a65)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a65, "ɵcmp", ɵɵdefineComponent({
+  type: _a65,
+  selectors: [["ion-segment-view"]],
+  inputs: {
+    disabled: "disabled"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSegmentView_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a65);
 IonSegmentView = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement86,
   inputs: ["disabled"]
@@ -34018,7 +30208,8 @@ IonSegmentView = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSelectModal = class IonSelectModal2 {
+var _a66;
+var IonSelectModal = (_a66 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34026,32 +30217,30 @@ var IonSelectModal = class IonSelectModal2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSelectModal_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSelectModal2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSelectModal2,
-    selectors: [["ion-select-modal"]],
-    inputs: {
-      header: "header",
-      multiple: "multiple",
-      options: "options"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSelectModal_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a66, "ɵfac", function IonSelectModal_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a66)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a66, "ɵcmp", ɵɵdefineComponent({
+  type: _a66,
+  selectors: [["ion-select-modal"]],
+  inputs: {
+    header: "header",
+    multiple: "multiple",
+    options: "options"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSelectModal_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a66);
 IonSelectModal = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement92,
   inputs: ["header", "multiple", "options"]
@@ -34077,7 +30266,8 @@ IonSelectModal = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSelectOption = class IonSelectOption2 {
+var _a67;
+var IonSelectOption = (_a67 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34085,31 +30275,29 @@ var IonSelectOption = class IonSelectOption2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSelectOption_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSelectOption2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSelectOption2,
-    selectors: [["ion-select-option"]],
-    inputs: {
-      disabled: "disabled",
-      value: "value"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSelectOption_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a67, "ɵfac", function IonSelectOption_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a67)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a67, "ɵcmp", ɵɵdefineComponent({
+  type: _a67,
+  selectors: [["ion-select-option"]],
+  inputs: {
+    disabled: "disabled",
+    value: "value"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSelectOption_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a67);
 IonSelectOption = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement93,
   inputs: ["disabled", "value"]
@@ -34135,7 +30323,8 @@ IonSelectOption = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSkeletonText = class IonSkeletonText2 {
+var _a68;
+var IonSkeletonText = (_a68 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34143,30 +30332,28 @@ var IonSkeletonText = class IonSkeletonText2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSkeletonText_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSkeletonText2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSkeletonText2,
-    selectors: [["ion-skeleton-text"]],
-    inputs: {
-      animated: "animated"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSkeletonText_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a68, "ɵfac", function IonSkeletonText_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a68)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a68, "ɵcmp", ɵɵdefineComponent({
+  type: _a68,
+  selectors: [["ion-skeleton-text"]],
+  inputs: {
+    animated: "animated"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSkeletonText_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a68);
 IonSkeletonText = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement94,
   inputs: ["animated"]
@@ -34192,7 +30379,8 @@ IonSkeletonText = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSpinner = class IonSpinner2 {
+var _a69;
+var IonSpinner = (_a69 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34200,33 +30388,31 @@ var IonSpinner = class IonSpinner2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonSpinner_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSpinner2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSpinner2,
-    selectors: [["ion-spinner"]],
-    inputs: {
-      color: "color",
-      duration: "duration",
-      name: "name",
-      paused: "paused"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSpinner_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a69, "ɵfac", function IonSpinner_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a69)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a69, "ɵcmp", ɵɵdefineComponent({
+  type: _a69,
+  selectors: [["ion-spinner"]],
+  inputs: {
+    color: "color",
+    duration: "duration",
+    name: "name",
+    paused: "paused"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSpinner_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a69);
 IonSpinner = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement95,
   inputs: ["color", "duration", "name", "paused"]
@@ -34252,41 +30438,40 @@ IonSpinner = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonSplitPane = class IonSplitPane2 {
+var _a70;
+var IonSplitPane = (_a70 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionSplitPaneVisible"]);
+    proxyOutputs(this, this.el, ["ionSplitPaneVisible"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonSplitPane_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSplitPane2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSplitPane2,
-    selectors: [["ion-split-pane"]],
-    inputs: {
-      contentId: "contentId",
-      disabled: "disabled",
-      when: "when"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSplitPane_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a70, "ɵfac", function IonSplitPane_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a70)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a70, "ɵcmp", ɵɵdefineComponent({
+  type: _a70,
+  selectors: [["ion-split-pane"]],
+  inputs: {
+    contentId: "contentId",
+    disabled: "disabled",
+    when: "when"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSplitPane_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a70);
 IonSplitPane = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement96,
   inputs: ["contentId", "disabled", "when"]
@@ -34312,7 +30497,8 @@ IonSplitPane = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonTab = class IonTab2 {
+var _a71;
+var IonTab = (_a71 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34320,31 +30506,29 @@ var IonTab = class IonTab2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonTab_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonTab2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonTab2,
-    selectors: [["ion-tab"]],
-    inputs: {
-      component: "component",
-      tab: "tab"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonTab_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a71, "ɵfac", function IonTab_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a71)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a71, "ɵcmp", ɵɵdefineComponent({
+  type: _a71,
+  selectors: [["ion-tab"]],
+  inputs: {
+    component: "component",
+    tab: "tab"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonTab_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a71);
 IonTab = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement97,
   inputs: ["component", "tab"],
@@ -34371,7 +30555,8 @@ IonTab = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonTabBar = class IonTabBar2 {
+var _a72;
+var IonTabBar = (_a72 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34379,33 +30564,31 @@ var IonTabBar = class IonTabBar2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonTabBar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonTabBar2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonTabBar2,
-    selectors: [["ion-tab-bar"]],
-    inputs: {
-      color: "color",
-      mode: "mode",
-      selectedTab: "selectedTab",
-      translucent: "translucent"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonTabBar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a72, "ɵfac", function IonTabBar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a72)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a72, "ɵcmp", ɵɵdefineComponent({
+  type: _a72,
+  selectors: [["ion-tab-bar"]],
+  inputs: {
+    color: "color",
+    mode: "mode",
+    selectedTab: "selectedTab",
+    translucent: "translucent"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonTabBar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a72);
 IonTabBar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement98,
   inputs: ["color", "mode", "selectedTab", "translucent"]
@@ -34431,7 +30614,8 @@ IonTabBar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonTabButton = class IonTabButton2 {
+var _a73;
+var IonTabButton = (_a73 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34439,38 +30623,36 @@ var IonTabButton = class IonTabButton2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonTabButton_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonTabButton2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonTabButton2,
-    selectors: [["ion-tab-button"]],
-    inputs: {
-      disabled: "disabled",
-      download: "download",
-      href: "href",
-      layout: "layout",
-      mode: "mode",
-      rel: "rel",
-      selected: "selected",
-      tab: "tab",
-      target: "target"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonTabButton_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a73, "ɵfac", function IonTabButton_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a73)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a73, "ɵcmp", ɵɵdefineComponent({
+  type: _a73,
+  selectors: [["ion-tab-button"]],
+  inputs: {
+    disabled: "disabled",
+    download: "download",
+    href: "href",
+    layout: "layout",
+    mode: "mode",
+    rel: "rel",
+    selected: "selected",
+    tab: "tab",
+    target: "target"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonTabButton_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a73);
 IonTabButton = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement99,
   inputs: ["disabled", "download", "href", "layout", "mode", "rel", "selected", "tab", "target"]
@@ -34496,7 +30678,8 @@ IonTabButton = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonText = class IonText2 {
+var _a74;
+var IonText = (_a74 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34504,31 +30687,29 @@ var IonText = class IonText2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonText_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonText2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonText2,
-    selectors: [["ion-text"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonText_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a74, "ɵfac", function IonText_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a74)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a74, "ɵcmp", ɵɵdefineComponent({
+  type: _a74,
+  selectors: [["ion-text"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonText_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a74);
 IonText = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement100,
   inputs: ["color", "mode"]
@@ -34554,7 +30735,8 @@ IonText = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonThumbnail = class IonThumbnail2 {
+var _a75;
+var IonThumbnail = (_a75 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34562,27 +30744,25 @@ var IonThumbnail = class IonThumbnail2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonThumbnail_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonThumbnail2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonThumbnail2,
-    selectors: [["ion-thumbnail"]],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonThumbnail_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a75, "ɵfac", function IonThumbnail_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a75)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a75, "ɵcmp", ɵɵdefineComponent({
+  type: _a75,
+  selectors: [["ion-thumbnail"]],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonThumbnail_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a75);
 IonThumbnail = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement101
 })], IonThumbnail);
@@ -34607,7 +30787,8 @@ IonThumbnail = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonTitle = class IonTitle2 {
+var _a76;
+var IonTitle = (_a76 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34615,31 +30796,29 @@ var IonTitle = class IonTitle2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonTitle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonTitle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonTitle2,
-    selectors: [["ion-title"]],
-    inputs: {
-      color: "color",
-      size: "size"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonTitle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a76, "ɵfac", function IonTitle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a76)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a76, "ɵcmp", ɵɵdefineComponent({
+  type: _a76,
+  selectors: [["ion-title"]],
+  inputs: {
+    color: "color",
+    size: "size"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonTitle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a76);
 IonTitle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement102,
   inputs: ["color", "size"]
@@ -34665,58 +30844,57 @@ IonTitle = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonToast = class IonToast2 {
+var _a77;
+var IonToast = (_a77 = class {
   z;
   el;
   constructor(c, r, z) {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionToastDidPresent", "ionToastWillPresent", "ionToastWillDismiss", "ionToastDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
+    proxyOutputs(this, this.el, ["ionToastDidPresent", "ionToastWillPresent", "ionToastWillDismiss", "ionToastDidDismiss", "didPresent", "willPresent", "willDismiss", "didDismiss"]);
   }
-  /** @nocollapse */
-  static ɵfac = function IonToast_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonToast2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonToast2,
-    selectors: [["ion-toast"]],
-    inputs: {
-      animated: "animated",
-      buttons: "buttons",
-      color: "color",
-      cssClass: "cssClass",
-      duration: "duration",
-      enterAnimation: "enterAnimation",
-      header: "header",
-      htmlAttributes: "htmlAttributes",
-      icon: "icon",
-      isOpen: "isOpen",
-      keyboardClose: "keyboardClose",
-      layout: "layout",
-      leaveAnimation: "leaveAnimation",
-      message: "message",
-      mode: "mode",
-      position: "position",
-      positionAnchor: "positionAnchor",
-      swipeGesture: "swipeGesture",
-      translucent: "translucent",
-      trigger: "trigger"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonToast_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a77, "ɵfac", function IonToast_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a77)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a77, "ɵcmp", ɵɵdefineComponent({
+  type: _a77,
+  selectors: [["ion-toast"]],
+  inputs: {
+    animated: "animated",
+    buttons: "buttons",
+    color: "color",
+    cssClass: "cssClass",
+    duration: "duration",
+    enterAnimation: "enterAnimation",
+    header: "header",
+    htmlAttributes: "htmlAttributes",
+    icon: "icon",
+    isOpen: "isOpen",
+    keyboardClose: "keyboardClose",
+    layout: "layout",
+    leaveAnimation: "leaveAnimation",
+    message: "message",
+    mode: "mode",
+    position: "position",
+    positionAnchor: "positionAnchor",
+    swipeGesture: "swipeGesture",
+    translucent: "translucent",
+    trigger: "trigger"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonToast_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a77);
 IonToast = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement103,
   inputs: ["animated", "buttons", "color", "cssClass", "duration", "enterAnimation", "header", "htmlAttributes", "icon", "isOpen", "keyboardClose", "layout", "leaveAnimation", "message", "mode", "position", "positionAnchor", "swipeGesture", "translucent", "trigger"],
@@ -34743,7 +30921,8 @@ IonToast = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonToolbar = class IonToolbar2 {
+var _a78;
+var IonToolbar = (_a78 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -34751,31 +30930,29 @@ var IonToolbar = class IonToolbar2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonToolbar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonToolbar2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonToolbar2,
-    selectors: [["ion-toolbar"]],
-    inputs: {
-      color: "color",
-      mode: "mode"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonToolbar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a78, "ɵfac", function IonToolbar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a78)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a78, "ɵcmp", ɵɵdefineComponent({
+  type: _a78,
+  selectors: [["ion-toolbar"]],
+  inputs: {
+    color: "color",
+    mode: "mode"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonToolbar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a78);
 IonToolbar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement104,
   inputs: ["color", "mode"]
@@ -34801,69 +30978,70 @@ IonToolbar = __decorate([ProxyCmp2({
     }];
   }, null);
 })();
-var IonTabs2 = class _IonTabs extends IonTabs {
+var _IonTabs = class _IonTabs extends IonTabs {
   outlet;
   tabBar;
   tabBars;
   tabs;
-  /** @nocollapse */
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵIonTabs_BaseFactory;
-    return function IonTabs_Factory(__ngFactoryType__) {
-      return (ɵIonTabs_BaseFactory || (ɵIonTabs_BaseFactory = ɵɵgetInheritedFactory(_IonTabs)))(__ngFactoryType__ || _IonTabs);
-    };
-  })();
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: _IonTabs,
-    selectors: [["ion-tabs"]],
-    contentQueries: function IonTabs_ContentQueries(rf, ctx, dirIndex) {
-      if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, IonTabBar, 5);
-        ɵɵcontentQuery(dirIndex, IonTabBar, 4);
-        ɵɵcontentQuery(dirIndex, IonTab, 4);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabBar = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabBars = _t);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabs = _t);
-      }
-    },
-    viewQuery: function IonTabs_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c2, 5, IonRouterOutlet2);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.outlet = _t.first);
-      }
-    },
-    features: [ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c4,
-    decls: 6,
-    vars: 2,
-    consts: [["tabsInner", ""], ["outlet", ""], [1, "tabs-inner"], ["tabs", "true", 3, "stackWillChange", "stackDidChange", 4, "ngIf"], [4, "ngIf"], ["tabs", "true", 3, "stackWillChange", "stackDidChange"]],
-    template: function IonTabs_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef(_c3);
-        ɵɵprojection(0);
-        ɵɵelementStart(1, "div", 2, 0);
-        ɵɵtemplate(3, IonTabs_ion_router_outlet_3_Template, 2, 0, "ion-router-outlet", 3)(4, IonTabs_ng_content_4_Template, 1, 0, "ng-content", 4);
-        ɵɵelementEnd();
-        ɵɵprojection(5, 1);
-      }
-      if (rf & 2) {
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.tabs.length === 0);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.tabs.length > 0);
-      }
-    },
-    dependencies: [IonRouterOutlet2, NgIf],
-    styles: ["[_nghost-%COMP%]{display:flex;position:absolute;inset:0;flex-direction:column;width:100%;height:100%;contain:layout size style}.tabs-inner[_ngcontent-%COMP%]{position:relative;flex:1;contain:layout size style}"]
-  });
 };
+/** @nocollapse */
+__publicField(_IonTabs, "ɵfac", /* @__PURE__ */ (() => {
+  let ɵIonTabs_BaseFactory;
+  return function IonTabs_Factory(__ngFactoryType__) {
+    return (ɵIonTabs_BaseFactory || (ɵIonTabs_BaseFactory = ɵɵgetInheritedFactory(_IonTabs)))(__ngFactoryType__ || _IonTabs);
+  };
+})());
+/** @nocollapse */
+__publicField(_IonTabs, "ɵcmp", ɵɵdefineComponent({
+  type: _IonTabs,
+  selectors: [["ion-tabs"]],
+  contentQueries: function IonTabs_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      ɵɵcontentQuery(dirIndex, IonTabBar, 5);
+      ɵɵcontentQuery(dirIndex, IonTabBar, 4);
+      ɵɵcontentQuery(dirIndex, IonTab, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabBar = _t.first);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabBars = _t);
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tabs = _t);
+    }
+  },
+  viewQuery: function IonTabs_Query(rf, ctx) {
+    if (rf & 1) {
+      ɵɵviewQuery(_c2, 5, IonRouterOutlet2);
+    }
+    if (rf & 2) {
+      let _t;
+      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.outlet = _t.first);
+    }
+  },
+  features: [ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c4,
+  decls: 6,
+  vars: 2,
+  consts: [["tabsInner", ""], ["outlet", ""], [1, "tabs-inner"], ["tabs", "true", 3, "stackWillChange", "stackDidChange", 4, "ngIf"], [4, "ngIf"], ["tabs", "true", 3, "stackWillChange", "stackDidChange"]],
+  template: function IonTabs_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef(_c3);
+      ɵɵprojection(0);
+      ɵɵelementStart(1, "div", 2, 0);
+      ɵɵtemplate(3, IonTabs_ion_router_outlet_3_Template, 2, 0, "ion-router-outlet", 3)(4, IonTabs_ng_content_4_Template, 1, 0, "ng-content", 4);
+      ɵɵelementEnd();
+      ɵɵprojection(5, 1);
+    }
+    if (rf & 2) {
+      ɵɵadvance(3);
+      ɵɵproperty("ngIf", ctx.tabs.length === 0);
+      ɵɵadvance();
+      ɵɵproperty("ngIf", ctx.tabs.length > 0);
+    }
+  },
+  dependencies: [IonRouterOutlet2, NgIf],
+  styles: ["[_nghost-%COMP%]{display:flex;position:absolute;inset:0;flex-direction:column;width:100%;height:100%;contain:layout size style}.tabs-inner[_ngcontent-%COMP%]{position:relative;flex:1;contain:layout size style}"]
+}));
+var IonTabs2 = _IonTabs;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonTabs2, [{
     type: Component,
@@ -34911,7 +31089,7 @@ var IonTabs2 = class _IonTabs extends IonTabs {
     }]
   });
 })();
-var ModalController = class _ModalController extends OverlayBaseController {
+var _ModalController = class _ModalController extends OverlayBaseController {
   angularDelegate = inject(AngularDelegate);
   injector = inject(Injector);
   environmentInjector = inject(EnvironmentInjector);
@@ -34924,16 +31102,17 @@ var ModalController = class _ModalController extends OverlayBaseController {
       delegate: this.angularDelegate.create(this.environmentInjector, this.injector, "modal")
     }));
   }
-  /** @nocollapse */
-  static ɵfac = function ModalController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ModalController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _ModalController,
-    factory: _ModalController.ɵfac
-  });
 };
+/** @nocollapse */
+__publicField(_ModalController, "ɵfac", function ModalController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ModalController)();
+});
+/** @nocollapse */
+__publicField(_ModalController, "ɵprov", ɵɵdefineInjectable({
+  token: _ModalController,
+  factory: _ModalController.ɵfac
+}));
+var ModalController = _ModalController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ModalController, [{
     type: Injectable
@@ -34972,22 +31151,23 @@ var initializeIonicAngular = (config2, doc2) => {
     initialize(config2);
   };
 };
-var ActionSheetController = class _ActionSheetController extends OverlayBaseController {
+var _ActionSheetController = class _ActionSheetController extends OverlayBaseController {
   constructor() {
     super(actionSheetController);
     defineCustomElement13();
   }
-  /** @nocollapse */
-  static ɵfac = function ActionSheetController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ActionSheetController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _ActionSheetController,
-    factory: _ActionSheetController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_ActionSheetController, "ɵfac", function ActionSheetController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ActionSheetController)();
+});
+/** @nocollapse */
+__publicField(_ActionSheetController, "ɵprov", ɵɵdefineInjectable({
+  token: _ActionSheetController,
+  factory: _ActionSheetController.ɵfac,
+  providedIn: "root"
+}));
+var ActionSheetController = _ActionSheetController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ActionSheetController, [{
     type: Injectable,
@@ -34998,22 +31178,23 @@ var ActionSheetController = class _ActionSheetController extends OverlayBaseCont
     return [];
   }, null);
 })();
-var AlertController = class _AlertController extends OverlayBaseController {
+var _AlertController = class _AlertController extends OverlayBaseController {
   constructor() {
     super(alertController);
     defineCustomElement15();
   }
-  /** @nocollapse */
-  static ɵfac = function AlertController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AlertController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _AlertController,
-    factory: _AlertController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_AlertController, "ɵfac", function AlertController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AlertController)();
+});
+/** @nocollapse */
+__publicField(_AlertController, "ɵprov", ɵɵdefineInjectable({
+  token: _AlertController,
+  factory: _AlertController.ɵfac,
+  providedIn: "root"
+}));
+var AlertController = _AlertController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AlertController, [{
     type: Injectable,
@@ -35024,7 +31205,7 @@ var AlertController = class _AlertController extends OverlayBaseController {
     return [];
   }, null);
 })();
-var AnimationController = class _AnimationController {
+var _AnimationController = class _AnimationController {
   /**
    * Create a new animation
    */
@@ -35048,17 +31229,18 @@ var AnimationController = class _AnimationController {
   easingTime(p0, p1, p2, p3, progression) {
     return getTimeGivenProgression(p0, p1, p2, p3, progression);
   }
-  /** @nocollapse */
-  static ɵfac = function AnimationController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _AnimationController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _AnimationController,
-    factory: _AnimationController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_AnimationController, "ɵfac", function AnimationController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _AnimationController)();
+});
+/** @nocollapse */
+__publicField(_AnimationController, "ɵprov", ɵɵdefineInjectable({
+  token: _AnimationController,
+  factory: _AnimationController.ɵfac,
+  providedIn: "root"
+}));
+var AnimationController = _AnimationController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AnimationController, [{
     type: Injectable,
@@ -35067,7 +31249,7 @@ var AnimationController = class _AnimationController {
     }]
   }], null, null);
 })();
-var GestureController = class _GestureController {
+var _GestureController = class _GestureController {
   zone;
   constructor(zone) {
     this.zone = zone;
@@ -35086,17 +31268,18 @@ var GestureController = class _GestureController {
     }
     return createGesture(opts);
   }
-  /** @nocollapse */
-  static ɵfac = function GestureController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _GestureController)(ɵɵinject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _GestureController,
-    factory: _GestureController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_GestureController, "ɵfac", function GestureController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _GestureController)(ɵɵinject(NgZone));
+});
+/** @nocollapse */
+__publicField(_GestureController, "ɵprov", ɵɵdefineInjectable({
+  token: _GestureController,
+  factory: _GestureController.ɵfac,
+  providedIn: "root"
+}));
+var GestureController = _GestureController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GestureController, [{
     type: Injectable,
@@ -35109,22 +31292,23 @@ var GestureController = class _GestureController {
     }];
   }, null);
 })();
-var LoadingController = class _LoadingController extends OverlayBaseController {
+var _LoadingController = class _LoadingController extends OverlayBaseController {
   constructor() {
     super(loadingController);
     defineCustomElement61();
   }
-  /** @nocollapse */
-  static ɵfac = function LoadingController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _LoadingController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _LoadingController,
-    factory: _LoadingController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_LoadingController, "ɵfac", function LoadingController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _LoadingController)();
+});
+/** @nocollapse */
+__publicField(_LoadingController, "ɵprov", ɵɵdefineInjectable({
+  token: _LoadingController,
+  factory: _LoadingController.ɵfac,
+  providedIn: "root"
+}));
+var LoadingController = _LoadingController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(LoadingController, [{
     type: Injectable,
@@ -35135,21 +31319,22 @@ var LoadingController = class _LoadingController extends OverlayBaseController {
     return [];
   }, null);
 })();
-var MenuController2 = class _MenuController extends MenuController {
+var _MenuController = class _MenuController extends MenuController {
   constructor() {
     super(menuController);
   }
-  /** @nocollapse */
-  static ɵfac = function MenuController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _MenuController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _MenuController,
-    factory: _MenuController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_MenuController, "ɵfac", function MenuController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _MenuController)();
+});
+/** @nocollapse */
+__publicField(_MenuController, "ɵprov", ɵɵdefineInjectable({
+  token: _MenuController,
+  factory: _MenuController.ɵfac,
+  providedIn: "root"
+}));
+var MenuController2 = _MenuController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MenuController2, [{
     type: Injectable,
@@ -35160,22 +31345,23 @@ var MenuController2 = class _MenuController extends MenuController {
     return [];
   }, null);
 })();
-var PickerController = class _PickerController extends OverlayBaseController {
+var _PickerController = class _PickerController extends OverlayBaseController {
   constructor() {
     super(pickerController);
     defineCustomElement74();
   }
-  /** @nocollapse */
-  static ɵfac = function PickerController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _PickerController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _PickerController,
-    factory: _PickerController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_PickerController, "ɵfac", function PickerController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _PickerController)();
+});
+/** @nocollapse */
+__publicField(_PickerController, "ɵprov", ɵɵdefineInjectable({
+  token: _PickerController,
+  factory: _PickerController.ɵfac,
+  providedIn: "root"
+}));
+var PickerController = _PickerController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PickerController, [{
     type: Injectable,
@@ -35186,22 +31372,23 @@ var PickerController = class _PickerController extends OverlayBaseController {
     return [];
   }, null);
 })();
-var ToastController = class _ToastController extends OverlayBaseController {
+var _ToastController = class _ToastController extends OverlayBaseController {
   constructor() {
     super(toastController);
     defineCustomElement103();
   }
-  /** @nocollapse */
-  static ɵfac = function ToastController_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToastController)();
-  };
-  /** @nocollapse */
-  static ɵprov = ɵɵdefineInjectable({
-    token: _ToastController,
-    factory: _ToastController.ɵfac,
-    providedIn: "root"
-  });
 };
+/** @nocollapse */
+__publicField(_ToastController, "ɵfac", function ToastController_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _ToastController)();
+});
+/** @nocollapse */
+__publicField(_ToastController, "ɵprov", ɵɵdefineInjectable({
+  token: _ToastController,
+  factory: _ToastController.ɵfac,
+  providedIn: "root"
+}));
+var ToastController = _ToastController;
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastController, [{
     type: Injectable,
@@ -35212,36 +31399,35 @@ var ToastController = class _ToastController extends OverlayBaseController {
     return [];
   }, null);
 })();
-var IonNav3 = class IonNav4 extends IonNav {
+var _a79;
+var IonNav2 = (_a79 = class extends IonNav {
   constructor(ref, environmentInjector, injector, angularDelegate, z, c) {
     super(ref, environmentInjector, injector, angularDelegate, z, c);
   }
-  /** @nocollapse */
-  static ɵfac = function IonNav_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonNav4)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonNav4,
-    selectors: [["ion-nav"]],
-    features: [ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonNav_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2
-  });
-};
-IonNav3 = __decorate([ProxyCmp({
+}, /** @nocollapse */
+__publicField(_a79, "ɵfac", function IonNav_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a79)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(EnvironmentInjector), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(AngularDelegate), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef));
+}), /** @nocollapse */
+__publicField(_a79, "ɵcmp", ɵɵdefineComponent({
+  type: _a79,
+  selectors: [["ion-nav"]],
+  features: [ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonNav_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2
+})), _a79);
+IonNav2 = __decorate([ProxyCmp({
   defineCustomElementFn: defineCustomElement105
-})], IonNav3);
+})], IonNav2);
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonNav3, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(IonNav2, [{
     type: Component,
     args: [{
       selector: "ion-nav",
@@ -35270,7 +31456,8 @@ var accessorProvider$9 = {
   useExisting: forwardRef(() => IonCheckbox),
   multi: true
 };
-var IonCheckbox = class IonCheckbox2 extends ValueAccessor {
+var _a80;
+var IonCheckbox = (_a80 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35278,7 +31465,7 @@ var IonCheckbox = class IonCheckbox2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
   }
   writeValue(value) {
     this.elementRef.nativeElement.checked = this.lastValue = value;
@@ -35287,46 +31474,44 @@ var IonCheckbox = class IonCheckbox2 extends ValueAccessor {
   handleIonChange(el) {
     this.handleValueChange(el, el.checked);
   }
-  /** @nocollapse */
-  static ɵfac = function IonCheckbox_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonCheckbox2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonCheckbox2,
-    selectors: [["ion-checkbox"]],
-    hostBindings: function IonCheckbox_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonCheckbox_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      checked: "checked",
-      color: "color",
-      disabled: "disabled",
-      indeterminate: "indeterminate",
-      justify: "justify",
-      labelPlacement: "labelPlacement",
-      mode: "mode",
-      name: "name",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$9]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonCheckbox_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a80, "ɵfac", function IonCheckbox_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a80)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a80, "ɵcmp", ɵɵdefineComponent({
+  type: _a80,
+  selectors: [["ion-checkbox"]],
+  hostBindings: function IonCheckbox_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonCheckbox_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    checked: "checked",
+    color: "color",
+    disabled: "disabled",
+    indeterminate: "indeterminate",
+    justify: "justify",
+    labelPlacement: "labelPlacement",
+    mode: "mode",
+    name: "name",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$9]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonCheckbox_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a80);
 IonCheckbox = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement106,
   inputs: CHECKBOX_INPUTS
@@ -35366,7 +31551,8 @@ var accessorProvider$8 = {
   useExisting: forwardRef(() => IonDatetime),
   multi: true
 };
-var IonDatetime = class IonDatetime2 extends ValueAccessor {
+var _a81;
+var IonDatetime = (_a81 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35374,73 +31560,71 @@ var IonDatetime = class IonDatetime2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionCancel", "ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionCancel", "ionChange", "ionFocus", "ionBlur"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonDatetime_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonDatetime2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonDatetime2,
-    selectors: [["ion-datetime"]],
-    hostBindings: function IonDatetime_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonDatetime_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      cancelText: "cancelText",
-      clearText: "clearText",
-      color: "color",
-      dayValues: "dayValues",
-      disabled: "disabled",
-      doneText: "doneText",
-      firstDayOfWeek: "firstDayOfWeek",
-      formatOptions: "formatOptions",
-      highlightedDates: "highlightedDates",
-      hourCycle: "hourCycle",
-      hourValues: "hourValues",
-      isDateEnabled: "isDateEnabled",
-      locale: "locale",
-      max: "max",
-      min: "min",
-      minuteValues: "minuteValues",
-      mode: "mode",
-      monthValues: "monthValues",
-      multiple: "multiple",
-      name: "name",
-      preferWheel: "preferWheel",
-      presentation: "presentation",
-      readonly: "readonly",
-      showClearButton: "showClearButton",
-      showDefaultButtons: "showDefaultButtons",
-      showDefaultTimeLabel: "showDefaultTimeLabel",
-      showDefaultTitle: "showDefaultTitle",
-      size: "size",
-      titleSelectedDatesFormatter: "titleSelectedDatesFormatter",
-      value: "value",
-      yearValues: "yearValues"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$8]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonDatetime_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a81, "ɵfac", function IonDatetime_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a81)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a81, "ɵcmp", ɵɵdefineComponent({
+  type: _a81,
+  selectors: [["ion-datetime"]],
+  hostBindings: function IonDatetime_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonDatetime_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    cancelText: "cancelText",
+    clearText: "clearText",
+    color: "color",
+    dayValues: "dayValues",
+    disabled: "disabled",
+    doneText: "doneText",
+    firstDayOfWeek: "firstDayOfWeek",
+    formatOptions: "formatOptions",
+    highlightedDates: "highlightedDates",
+    hourCycle: "hourCycle",
+    hourValues: "hourValues",
+    isDateEnabled: "isDateEnabled",
+    locale: "locale",
+    max: "max",
+    min: "min",
+    minuteValues: "minuteValues",
+    mode: "mode",
+    monthValues: "monthValues",
+    multiple: "multiple",
+    name: "name",
+    preferWheel: "preferWheel",
+    presentation: "presentation",
+    readonly: "readonly",
+    showClearButton: "showClearButton",
+    showDefaultButtons: "showDefaultButtons",
+    showDefaultTimeLabel: "showDefaultTimeLabel",
+    showDefaultTitle: "showDefaultTitle",
+    size: "size",
+    titleSelectedDatesFormatter: "titleSelectedDatesFormatter",
+    value: "value",
+    yearValues: "yearValues"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$8]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonDatetime_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a81);
 IonDatetime = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement107,
   inputs: DATETIME_INPUTS,
@@ -35475,7 +31659,8 @@ IonDatetime = __decorate([ProxyCmp2({
     }]
   });
 })();
-var IonIcon = class IonIcon2 {
+var _a82;
+var IonIcon = (_a82 = class {
   z;
   el;
   constructor(c, r, z) {
@@ -35483,40 +31668,38 @@ var IonIcon = class IonIcon2 {
     c.detach();
     this.el = r.nativeElement;
   }
-  /** @nocollapse */
-  static ɵfac = function IonIcon_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonIcon2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonIcon2,
-    selectors: [["ion-icon"]],
-    inputs: {
-      color: "color",
-      flipRtl: "flipRtl",
-      icon: "icon",
-      ios: "ios",
-      lazy: "lazy",
-      md: "md",
-      mode: "mode",
-      name: "name",
-      sanitize: "sanitize",
-      size: "size",
-      src: "src"
-    },
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonIcon_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a82, "ɵfac", function IonIcon_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a82)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+}), /** @nocollapse */
+__publicField(_a82, "ɵcmp", ɵɵdefineComponent({
+  type: _a82,
+  selectors: [["ion-icon"]],
+  inputs: {
+    color: "color",
+    flipRtl: "flipRtl",
+    icon: "icon",
+    ios: "ios",
+    lazy: "lazy",
+    md: "md",
+    mode: "mode",
+    name: "name",
+    sanitize: "sanitize",
+    size: "size",
+    src: "src"
+  },
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonIcon_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a82);
 IonIcon = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement108,
   inputs: ["color", "flipRtl", "icon", "ios", "lazy", "md", "mode", "name", "sanitize", "size", "src"]
@@ -35548,7 +31731,8 @@ var accessorProvider$7 = {
   useExisting: forwardRef(() => IonInput),
   multi: true
 };
-var IonInput = class IonInput2 extends ValueAccessor {
+var _a83;
+var IonInput = (_a83 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35556,7 +31740,7 @@ var IonInput = class IonInput2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInput", "ionChange", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionInput", "ionChange", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
@@ -35570,73 +31754,71 @@ var IonInput = class IonInput2 extends ValueAccessor {
       }
     });
   }
-  /** @nocollapse */
-  static ɵfac = function IonInput_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonInput2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonInput2,
-    selectors: [["ion-input"]],
-    hostBindings: function IonInput_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionInput", function IonInput_ionInput_HostBindingHandler($event) {
-          return ctx.handleIonInput($event.target);
-        });
-      }
-    },
-    inputs: {
-      accept: "accept",
-      autocapitalize: "autocapitalize",
-      autocomplete: "autocomplete",
-      autocorrect: "autocorrect",
-      autofocus: "autofocus",
-      clearInput: "clearInput",
-      clearOnEdit: "clearOnEdit",
-      color: "color",
-      counter: "counter",
-      counterFormatter: "counterFormatter",
-      debounce: "debounce",
-      disabled: "disabled",
-      enterkeyhint: "enterkeyhint",
-      errorText: "errorText",
-      fill: "fill",
-      helperText: "helperText",
-      inputmode: "inputmode",
-      label: "label",
-      labelPlacement: "labelPlacement",
-      max: "max",
-      maxlength: "maxlength",
-      min: "min",
-      minlength: "minlength",
-      mode: "mode",
-      multiple: "multiple",
-      name: "name",
-      pattern: "pattern",
-      placeholder: "placeholder",
-      readonly: "readonly",
-      required: "required",
-      shape: "shape",
-      size: "size",
-      spellcheck: "spellcheck",
-      step: "step",
-      type: "type",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$7]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonInput_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a83, "ɵfac", function IonInput_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a83)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a83, "ɵcmp", ɵɵdefineComponent({
+  type: _a83,
+  selectors: [["ion-input"]],
+  hostBindings: function IonInput_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionInput", function IonInput_ionInput_HostBindingHandler($event) {
+        return ctx.handleIonInput($event.target);
+      });
+    }
+  },
+  inputs: {
+    accept: "accept",
+    autocapitalize: "autocapitalize",
+    autocomplete: "autocomplete",
+    autocorrect: "autocorrect",
+    autofocus: "autofocus",
+    clearInput: "clearInput",
+    clearOnEdit: "clearOnEdit",
+    color: "color",
+    counter: "counter",
+    counterFormatter: "counterFormatter",
+    debounce: "debounce",
+    disabled: "disabled",
+    enterkeyhint: "enterkeyhint",
+    errorText: "errorText",
+    fill: "fill",
+    helperText: "helperText",
+    inputmode: "inputmode",
+    label: "label",
+    labelPlacement: "labelPlacement",
+    max: "max",
+    maxlength: "maxlength",
+    min: "min",
+    minlength: "minlength",
+    mode: "mode",
+    multiple: "multiple",
+    name: "name",
+    pattern: "pattern",
+    placeholder: "placeholder",
+    readonly: "readonly",
+    required: "required",
+    shape: "shape",
+    size: "size",
+    spellcheck: "spellcheck",
+    step: "step",
+    type: "type",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$7]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonInput_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a83);
 IonInput = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement109,
   inputs: INPUT_INPUTS,
@@ -35677,7 +31859,8 @@ var accessorProvider$6 = {
   useExisting: forwardRef(() => IonRadioGroup),
   multi: true
 };
-var IonRadioGroup = class IonRadioGroup2 extends ValueAccessor {
+var _a84;
+var IonRadioGroup = (_a84 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35685,46 +31868,44 @@ var IonRadioGroup = class IonRadioGroup2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonRadioGroup_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRadioGroup2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRadioGroup2,
-    selectors: [["ion-radio-group"]],
-    hostBindings: function IonRadioGroup_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonRadioGroup_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      allowEmptySelection: "allowEmptySelection",
-      compareWith: "compareWith",
-      name: "name",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$6]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRadioGroup_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a84, "ɵfac", function IonRadioGroup_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a84)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a84, "ɵcmp", ɵɵdefineComponent({
+  type: _a84,
+  selectors: [["ion-radio-group"]],
+  hostBindings: function IonRadioGroup_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonRadioGroup_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    allowEmptySelection: "allowEmptySelection",
+    compareWith: "compareWith",
+    name: "name",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$6]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRadioGroup_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a84);
 IonRadioGroup = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement110,
   inputs: RADIO_GROUP_INPUTS
@@ -35764,7 +31945,8 @@ var accessorProvider$5 = {
   useExisting: forwardRef(() => IonRange),
   multi: true
 };
-var IonRange = class IonRange2 extends ValueAccessor {
+var _a85;
+var IonRange = (_a85 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35772,59 +31954,57 @@ var IonRange = class IonRange2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionInput", "ionFocus", "ionBlur", "ionKnobMoveStart", "ionKnobMoveEnd"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionInput", "ionFocus", "ionBlur", "ionKnobMoveStart", "ionKnobMoveEnd"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonRange_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonRange2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonRange2,
-    selectors: [["ion-range"]],
-    hostBindings: function IonRange_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionInput", function IonRange_ionInput_HostBindingHandler($event) {
-          return ctx.handleIonInput($event.target);
-        });
-      }
-    },
-    inputs: {
-      activeBarStart: "activeBarStart",
-      color: "color",
-      debounce: "debounce",
-      disabled: "disabled",
-      dualKnobs: "dualKnobs",
-      label: "label",
-      labelPlacement: "labelPlacement",
-      max: "max",
-      min: "min",
-      mode: "mode",
-      name: "name",
-      pin: "pin",
-      pinFormatter: "pinFormatter",
-      snaps: "snaps",
-      step: "step",
-      ticks: "ticks",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$5]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonRange_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a85, "ɵfac", function IonRange_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a85)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a85, "ɵcmp", ɵɵdefineComponent({
+  type: _a85,
+  selectors: [["ion-range"]],
+  hostBindings: function IonRange_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionInput", function IonRange_ionInput_HostBindingHandler($event) {
+        return ctx.handleIonInput($event.target);
+      });
+    }
+  },
+  inputs: {
+    activeBarStart: "activeBarStart",
+    color: "color",
+    debounce: "debounce",
+    disabled: "disabled",
+    dualKnobs: "dualKnobs",
+    label: "label",
+    labelPlacement: "labelPlacement",
+    max: "max",
+    min: "min",
+    mode: "mode",
+    name: "name",
+    pin: "pin",
+    pinFormatter: "pinFormatter",
+    snaps: "snaps",
+    step: "step",
+    ticks: "ticks",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$5]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonRange_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a85);
 IonRange = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement111,
   inputs: RANGE_INPUTS
@@ -35864,7 +32044,8 @@ var accessorProvider$4 = {
   useExisting: forwardRef(() => IonSearchbar),
   multi: true
 };
-var IonSearchbar = class IonSearchbar2 extends ValueAccessor {
+var _a86;
+var IonSearchbar = (_a86 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35872,62 +32053,60 @@ var IonSearchbar = class IonSearchbar2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionInput", "ionChange", "ionCancel", "ionClear", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionInput", "ionChange", "ionCancel", "ionClear", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonSearchbar_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSearchbar2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSearchbar2,
-    selectors: [["ion-searchbar"]],
-    hostBindings: function IonSearchbar_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionInput", function IonSearchbar_ionInput_HostBindingHandler($event) {
-          return ctx.handleIonInput($event.target);
-        });
-      }
-    },
-    inputs: {
-      animated: "animated",
-      autocomplete: "autocomplete",
-      autocorrect: "autocorrect",
-      cancelButtonIcon: "cancelButtonIcon",
-      cancelButtonText: "cancelButtonText",
-      clearIcon: "clearIcon",
-      color: "color",
-      debounce: "debounce",
-      disabled: "disabled",
-      enterkeyhint: "enterkeyhint",
-      inputmode: "inputmode",
-      mode: "mode",
-      name: "name",
-      placeholder: "placeholder",
-      searchIcon: "searchIcon",
-      showCancelButton: "showCancelButton",
-      showClearButton: "showClearButton",
-      spellcheck: "spellcheck",
-      type: "type",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$4]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSearchbar_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a86, "ɵfac", function IonSearchbar_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a86)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a86, "ɵcmp", ɵɵdefineComponent({
+  type: _a86,
+  selectors: [["ion-searchbar"]],
+  hostBindings: function IonSearchbar_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionInput", function IonSearchbar_ionInput_HostBindingHandler($event) {
+        return ctx.handleIonInput($event.target);
+      });
+    }
+  },
+  inputs: {
+    animated: "animated",
+    autocomplete: "autocomplete",
+    autocorrect: "autocorrect",
+    cancelButtonIcon: "cancelButtonIcon",
+    cancelButtonText: "cancelButtonText",
+    clearIcon: "clearIcon",
+    color: "color",
+    debounce: "debounce",
+    disabled: "disabled",
+    enterkeyhint: "enterkeyhint",
+    inputmode: "inputmode",
+    mode: "mode",
+    name: "name",
+    placeholder: "placeholder",
+    searchIcon: "searchIcon",
+    showCancelButton: "showCancelButton",
+    showClearButton: "showClearButton",
+    spellcheck: "spellcheck",
+    type: "type",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$4]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSearchbar_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a86);
 IonSearchbar = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement112,
   inputs: SEARCHBAR_INPUTS,
@@ -35968,7 +32147,8 @@ var accessorProvider$3 = {
   useExisting: forwardRef(() => IonSegment),
   multi: true
 };
-var IonSegment = class IonSegment2 extends ValueAccessor {
+var _a87;
+var IonSegment = (_a87 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -35976,49 +32156,47 @@ var IonSegment = class IonSegment2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange"]);
+    proxyOutputs(this, this.el, ["ionChange"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonSegment_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSegment2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSegment2,
-    selectors: [["ion-segment"]],
-    hostBindings: function IonSegment_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonSegment_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      color: "color",
-      disabled: "disabled",
-      mode: "mode",
-      scrollable: "scrollable",
-      selectOnFocus: "selectOnFocus",
-      swipeGesture: "swipeGesture",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$3]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSegment_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a87, "ɵfac", function IonSegment_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a87)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a87, "ɵcmp", ɵɵdefineComponent({
+  type: _a87,
+  selectors: [["ion-segment"]],
+  hostBindings: function IonSegment_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonSegment_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    color: "color",
+    disabled: "disabled",
+    mode: "mode",
+    scrollable: "scrollable",
+    selectOnFocus: "selectOnFocus",
+    swipeGesture: "swipeGesture",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$3]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSegment_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a87);
 IonSegment = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement113,
   inputs: SEGMENT_INPUTS
@@ -36058,7 +32236,8 @@ var accessorProvider$2 = {
   useExisting: forwardRef(() => IonSelect),
   multi: true
 };
-var IonSelect = class IonSelect2 extends ValueAccessor {
+var _a88;
+var IonSelect = (_a88 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -36066,62 +32245,60 @@ var IonSelect = class IonSelect2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionCancel", "ionDismiss", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionCancel", "ionDismiss", "ionFocus", "ionBlur"]);
   }
   handleIonChange(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonSelect_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonSelect2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonSelect2,
-    selectors: [["ion-select"]],
-    hostBindings: function IonSelect_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonSelect_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      cancelText: "cancelText",
-      color: "color",
-      compareWith: "compareWith",
-      disabled: "disabled",
-      expandedIcon: "expandedIcon",
-      fill: "fill",
-      interface: "interface",
-      interfaceOptions: "interfaceOptions",
-      justify: "justify",
-      label: "label",
-      labelPlacement: "labelPlacement",
-      mode: "mode",
-      multiple: "multiple",
-      name: "name",
-      okText: "okText",
-      placeholder: "placeholder",
-      selectedText: "selectedText",
-      shape: "shape",
-      toggleIcon: "toggleIcon",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$2]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonSelect_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a88, "ɵfac", function IonSelect_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a88)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a88, "ɵcmp", ɵɵdefineComponent({
+  type: _a88,
+  selectors: [["ion-select"]],
+  hostBindings: function IonSelect_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonSelect_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    cancelText: "cancelText",
+    color: "color",
+    compareWith: "compareWith",
+    disabled: "disabled",
+    expandedIcon: "expandedIcon",
+    fill: "fill",
+    interface: "interface",
+    interfaceOptions: "interfaceOptions",
+    justify: "justify",
+    label: "label",
+    labelPlacement: "labelPlacement",
+    mode: "mode",
+    multiple: "multiple",
+    name: "name",
+    okText: "okText",
+    placeholder: "placeholder",
+    selectedText: "selectedText",
+    shape: "shape",
+    toggleIcon: "toggleIcon",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$2]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonSelect_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a88);
 IonSelect = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement115,
   inputs: SELECT_INPUTS,
@@ -36162,7 +32339,8 @@ var accessorProvider$1 = {
   useExisting: forwardRef(() => IonTextarea),
   multi: true
 };
-var IonTextarea = class IonTextarea2 extends ValueAccessor {
+var _a89;
+var IonTextarea = (_a89 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -36170,71 +32348,69 @@ var IonTextarea = class IonTextarea2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionInput", "ionBlur", "ionFocus"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionInput", "ionBlur", "ionFocus"]);
   }
   handleIonInput(el) {
     this.handleValueChange(el, el.value);
   }
-  /** @nocollapse */
-  static ɵfac = function IonTextarea_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonTextarea2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonTextarea2,
-    selectors: [["ion-textarea"]],
-    hostBindings: function IonTextarea_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionInput", function IonTextarea_ionInput_HostBindingHandler($event) {
-          return ctx.handleIonInput($event.target);
-        });
-      }
-    },
-    inputs: {
-      autoGrow: "autoGrow",
-      autocapitalize: "autocapitalize",
-      autofocus: "autofocus",
-      clearOnEdit: "clearOnEdit",
-      color: "color",
-      cols: "cols",
-      counter: "counter",
-      counterFormatter: "counterFormatter",
-      debounce: "debounce",
-      disabled: "disabled",
-      enterkeyhint: "enterkeyhint",
-      errorText: "errorText",
-      fill: "fill",
-      helperText: "helperText",
-      inputmode: "inputmode",
-      label: "label",
-      labelPlacement: "labelPlacement",
-      maxlength: "maxlength",
-      minlength: "minlength",
-      mode: "mode",
-      name: "name",
-      placeholder: "placeholder",
-      readonly: "readonly",
-      required: "required",
-      rows: "rows",
-      shape: "shape",
-      spellcheck: "spellcheck",
-      value: "value",
-      wrap: "wrap"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider$1]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonTextarea_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a89, "ɵfac", function IonTextarea_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a89)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a89, "ɵcmp", ɵɵdefineComponent({
+  type: _a89,
+  selectors: [["ion-textarea"]],
+  hostBindings: function IonTextarea_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionInput", function IonTextarea_ionInput_HostBindingHandler($event) {
+        return ctx.handleIonInput($event.target);
+      });
+    }
+  },
+  inputs: {
+    autoGrow: "autoGrow",
+    autocapitalize: "autocapitalize",
+    autofocus: "autofocus",
+    clearOnEdit: "clearOnEdit",
+    color: "color",
+    cols: "cols",
+    counter: "counter",
+    counterFormatter: "counterFormatter",
+    debounce: "debounce",
+    disabled: "disabled",
+    enterkeyhint: "enterkeyhint",
+    errorText: "errorText",
+    fill: "fill",
+    helperText: "helperText",
+    inputmode: "inputmode",
+    label: "label",
+    labelPlacement: "labelPlacement",
+    maxlength: "maxlength",
+    minlength: "minlength",
+    mode: "mode",
+    name: "name",
+    placeholder: "placeholder",
+    readonly: "readonly",
+    required: "required",
+    rows: "rows",
+    shape: "shape",
+    spellcheck: "spellcheck",
+    value: "value",
+    wrap: "wrap"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider$1]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonTextarea_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a89);
 IonTextarea = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement116,
   inputs: TEXTAREA_INPUTS,
@@ -36275,7 +32451,8 @@ var accessorProvider = {
   useExisting: forwardRef(() => IonToggle),
   multi: true
 };
-var IonToggle = class IonToggle2 extends ValueAccessor {
+var _a90;
+var IonToggle = (_a90 = class extends ValueAccessor {
   z;
   el;
   constructor(c, r, z, injector) {
@@ -36283,7 +32460,7 @@ var IonToggle = class IonToggle2 extends ValueAccessor {
     this.z = z;
     c.detach();
     this.el = r.nativeElement;
-    proxyOutputs2(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
+    proxyOutputs(this, this.el, ["ionChange", "ionFocus", "ionBlur"]);
   }
   writeValue(value) {
     this.elementRef.nativeElement.checked = this.lastValue = value;
@@ -36292,46 +32469,44 @@ var IonToggle = class IonToggle2 extends ValueAccessor {
   handleIonChange(el) {
     this.handleValueChange(el, el.checked);
   }
-  /** @nocollapse */
-  static ɵfac = function IonToggle_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || IonToggle2)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
-  };
-  /** @nocollapse */
-  static ɵcmp = ɵɵdefineComponent({
-    type: IonToggle2,
-    selectors: [["ion-toggle"]],
-    hostBindings: function IonToggle_HostBindings(rf, ctx) {
-      if (rf & 1) {
-        ɵɵlistener("ionChange", function IonToggle_ionChange_HostBindingHandler($event) {
-          return ctx.handleIonChange($event.target);
-        });
-      }
-    },
-    inputs: {
-      checked: "checked",
-      color: "color",
-      disabled: "disabled",
-      enableOnOffLabels: "enableOnOffLabels",
-      justify: "justify",
-      labelPlacement: "labelPlacement",
-      mode: "mode",
-      name: "name",
-      value: "value"
-    },
-    features: [ɵɵProvidersFeature([accessorProvider]), ɵɵInheritDefinitionFeature],
-    ngContentSelectors: _c1,
-    decls: 1,
-    vars: 0,
-    template: function IonToggle_Template(rf, ctx) {
-      if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-      }
-    },
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
+}, /** @nocollapse */
+__publicField(_a90, "ɵfac", function IonToggle_Factory(__ngFactoryType__) {
+  return new (__ngFactoryType__ || _a90)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Injector));
+}), /** @nocollapse */
+__publicField(_a90, "ɵcmp", ɵɵdefineComponent({
+  type: _a90,
+  selectors: [["ion-toggle"]],
+  hostBindings: function IonToggle_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      ɵɵlistener("ionChange", function IonToggle_ionChange_HostBindingHandler($event) {
+        return ctx.handleIonChange($event.target);
+      });
+    }
+  },
+  inputs: {
+    checked: "checked",
+    color: "color",
+    disabled: "disabled",
+    enableOnOffLabels: "enableOnOffLabels",
+    justify: "justify",
+    labelPlacement: "labelPlacement",
+    mode: "mode",
+    name: "name",
+    value: "value"
+  },
+  features: [ɵɵProvidersFeature([accessorProvider]), ɵɵInheritDefinitionFeature],
+  ngContentSelectors: _c1,
+  decls: 1,
+  vars: 0,
+  template: function IonToggle_Template(rf, ctx) {
+    if (rf & 1) {
+      ɵɵprojectionDef();
+      ɵɵprojection(0);
+    }
+  },
+  encapsulation: 2,
+  changeDetection: 0
+})), _a90);
 IonToggle = __decorate([ProxyCmp2({
   defineCustomElementFn: defineCustomElement117,
   inputs: TOGGLE_INPUTS
@@ -36378,7 +32553,7 @@ export {
   IonAlert,
   IonApp,
   IonAvatar,
-  IonBackButton3 as IonBackButton,
+  IonBackButton2 as IonBackButton,
   IonBackdrop,
   IonBadge,
   IonBreadcrumb,
@@ -36421,15 +32596,15 @@ export {
   IonMenu,
   IonMenuButton,
   IonMenuToggle,
-  IonModal3 as IonModal,
-  IonNav3 as IonNav,
+  IonModal2 as IonModal,
+  IonNav2 as IonNav,
   IonNavLink,
   IonNote,
   IonPicker,
   IonPickerColumn,
   IonPickerColumnOption,
   IonPickerLegacy,
-  IonPopover3 as IonPopover,
+  IonPopover2 as IonPopover,
   IonProgressBar,
   IonRadio,
   IonRadioGroup,
@@ -36487,41 +32662,6 @@ export {
   provideIonicAngular
 };
 /*! Bundled license information:
-
-@ionic/core/components/cubic-bezier.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/config.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/theme.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/index4.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/framework-delegate.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/overlays.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
-
-@ionic/core/components/index.js:
-  (*!
-   * (C) Ionic http://ionicframework.com - MIT License
-   *)
 
 @ionic/core/components/index7.js:
   (*!

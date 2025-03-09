@@ -1,16 +1,25 @@
 import {
-  AppCheckInstances,
   AuthInstances
-} from "./chunk-G57XXEQJ.js";
+} from "./chunk-IR5QCW2F.js";
 import {
-  Component,
+  AppCheckInstances
+} from "./chunk-E2R7PNYF.js";
+import "./chunk-DIYZLUMN.js";
+import {
   FirebaseApp,
   FirebaseApps,
+  VERSION,
+  ɵAngularFireSchedulers,
+  ɵgetAllInstancesOf,
+  ɵgetDefaultInstanceOf,
+  ɵzoneWrap
+} from "./chunk-PDZYZDBO.js";
+import {
+  Component,
   FirebaseError,
   LogLevel,
   Logger,
   SDK_VERSION,
-  VERSION,
   _getProvider,
   _isFirebaseServerApp,
   _registerComponent,
@@ -23,13 +32,9 @@ import {
   getUA,
   isIndexedDBAvailable,
   isSafari,
-  registerVersion,
-  ɵAngularFireSchedulers,
-  ɵgetAllInstancesOf,
-  ɵgetDefaultInstanceOf,
-  ɵzoneWrap
-} from "./chunk-JI4ETGRL.js";
-import "./chunk-G6G4OKN5.js";
+  registerVersion
+} from "./chunk-D34DVMXN.js";
+import "./chunk-4GFTN2P2.js";
 import {
   InjectionToken,
   Injector,
@@ -52,11 +57,12 @@ import {
   timer,
   ɵɵdefineInjector,
   ɵɵdefineNgModule
-} from "./chunk-5E6VJ3EL.js";
+} from "./chunk-FPGELOXR.js";
+import "./chunk-S3YC363S.js";
 import {
   __async,
   __superGet
-} from "./chunk-EGSMBJJY.js";
+} from "./chunk-4VWZEZJW.js";
 
 // node_modules/@firebase/webchannel-wrapper/dist/bloom-blob/esm/bloom_blob_es2018.js
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};

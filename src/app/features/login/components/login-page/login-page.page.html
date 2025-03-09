@@ -1,23 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Inicio de Sesión</ion-title>
+    <ion-title>Iniciar Sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()">
     <ion-item>
       <ion-label position="floating">Correo electrónico</ion-label>
-      <ion-input type="email" formControlName="email" [ngClass]="{'error-input': email?.invalid && email?.touched}"></ion-input>
-      <ion-text color="danger" *ngIf="email?.invalid && email?.touched">Correo inválido</ion-text>
+      <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" formControlName="password" [ngClass]="{'error-input': password?.invalid && password?.touched}"></ion-input>
-      <ion-text color="danger" *ngIf="password?.invalid && password?.touched">Campo requerido</ion-text>
+      <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
     </ion-item>
 
-    <ion-button type="submit" expand="full" [disabled]="!loginForm.valid">Iniciar Sesión</ion-button>
+    <ion-button type="submit" expand="full">Iniciar Sesión</ion-button>
   </form>
+
+  <ion-text color="danger" *ngIf="error">{{ error }}</ion-text>
 </ion-content>

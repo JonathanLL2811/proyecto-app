@@ -1,10 +1,16 @@
-import "./chunk-2XNNKSYZ.js";
+import "./chunk-526W24WL.js";
 import {
-  Component,
-  ErrorFactory,
   FirebaseApp,
   FirebaseApps,
   VERSION,
+  ɵAngularFireSchedulers,
+  ɵgetAllInstancesOf,
+  ɵgetDefaultInstanceOf,
+  ɵzoneWrap
+} from "./chunk-PDZYZDBO.js";
+import {
+  Component,
+  ErrorFactory,
   _getProvider,
   _registerComponent,
   areCookiesEnabled,
@@ -14,15 +20,11 @@ import {
   isIndexedDBAvailable,
   openDB,
   registerVersion,
-  validateIndexedDBOpenable,
-  ɵAngularFireSchedulers,
-  ɵgetAllInstancesOf,
-  ɵgetDefaultInstanceOf,
-  ɵzoneWrap
-} from "./chunk-JI4ETGRL.js";
+  validateIndexedDBOpenable
+} from "./chunk-D34DVMXN.js";
 import {
   isPlatformServer
-} from "./chunk-G6G4OKN5.js";
+} from "./chunk-4GFTN2P2.js";
 import {
   InjectionToken,
   Injector,
@@ -38,10 +40,11 @@ import {
   timer,
   ɵɵdefineInjector,
   ɵɵdefineNgModule
-} from "./chunk-5E6VJ3EL.js";
+} from "./chunk-FPGELOXR.js";
+import "./chunk-S3YC363S.js";
 import {
   __async
-} from "./chunk-EGSMBJJY.js";
+} from "./chunk-4VWZEZJW.js";
 
 // node_modules/@firebase/messaging/dist/esm/index.esm2017.js
 var DEFAULT_SW_PATH = "/firebase-messaging-sw.js";

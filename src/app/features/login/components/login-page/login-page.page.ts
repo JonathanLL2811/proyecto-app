@@ -1,36 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Login } from '../../interfaces/login.interface';
+import { Component } from '@angular/core';
+import { AuthService } from 'src/app/service/auth.service';
+import { FormsModule } from '@angular/forms';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonButton, IonLabel, IonText } from '@ionic/angular/standalone';
-import { NgClass, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.page.html',
   styleUrls: ['./login-page.page.scss'],
   standalone: true,
-  imports: [ReactiveFormsModule, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonButton, IonLabel, NgClass, IonText, NgIf]
+  imports: [FormsModule, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonButton, IonLabel, IonText, NgIf]
 })
-export class LoginPageComponent implements OnInit {
-  loginForm: FormGroup;
+export class LoginPageComponent {
+  email = '';
+  password = '';
+  error: string | null = null;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
-    });
-  }
+  constructor(private authService: AuthService) { }
 
-  ngOnInit() {}
-
-  get email() { return this.loginForm.get('email'); }
-  get password() { return this.loginForm.get('password'); }
-
-  onSubmit() {
-    if (this.loginForm.valid) {
-      const login: Login = this.loginForm.value;
-      console.log(login);
-      // Aquí puedes enviar los datos del usuario a tu servicio de inicio de sesión
+  async onSubmit() {
+    try {
+      await this.authService.login(this.email, this.password);
+      // Redirige a la página principal si el inicio de sesión es exitoso
+    } catch (err: any) {
+      this.error = err.message;
     }
   }
 }
